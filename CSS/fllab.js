@@ -12,7 +12,7 @@ var snect = "<div id=\"banner\">"+
 "    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
+"    <li class=\"last\"><a href=\"../issue/links.html\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
 "    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
@@ -36,7 +36,7 @@ var snect = "<div id=\"banner\">"+
 "    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
+"    <li class=\"last\"><a href=\"../issue/links.html\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
 "    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
@@ -59,7 +59,7 @@ var snect = "<div id=\"banner\">"+
 "    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
+"    <li class=\"last\"><a href=\"../issue/links.html\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
 "    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
@@ -81,7 +81,7 @@ var snect = "<div id=\"banner\">"+
 "    <li><a class=\"now\" href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
+"    <li class=\"last\"><a href=\"../issue/links.html\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
 "    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
@@ -104,7 +104,7 @@ var snect = "<div id=\"banner\">"+
 "    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a class=\"now\" href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
+"    <li class=\"last\"><a href=\"../issue/links.html\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
 "    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
@@ -127,7 +127,7 @@ var snect = "<div id=\"banner\">"+
 "    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a class=\"now\" href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
+"    <li class=\"last\"><a href=\"../issue/links.html\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
 "    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
@@ -150,7 +150,7 @@ var snect = "<div id=\"banner\">"+
 "    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
+"    <li class=\"last\"><a href=\"../issue/links.html\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
 "    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
