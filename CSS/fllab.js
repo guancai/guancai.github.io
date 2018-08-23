@@ -163,11 +163,8 @@ document.writeln(snect);
 function links_list()
 {
 var snect = "<ul type=\"1\">"+
-"    <li><a href=\"http://pec.sjtu.edu.cn/\" target=\"_blank\">上海交大物理实验中心</a></li>"+
-"    <li><a href=\"http://202.202.11.135/mpl/\" target=\"_blank\">重庆大学材料物理实验室</a></li>"+
-"    <li><a href=\"http://www.cqu.edu.cn/\" target=\"_blank\">重庆大学主页</a></li>"+
-"    <li><a href=\"http://lib.cqu.edu.cn/\" target=\"_blank\">重庆大学数字图书馆</a></li>"+
-"    <li><a href=\"http://202.202.11.135/phys/\" target=\"_blank\">重庆大学物理学院</a></li>"+
+"    <li><a href=\"http://www.nanoctr.cn/\" target=\"_blank\">NCNST</a></li>"+
+"    <li><a href=\"http://www.cqu.edu.cn/\" target=\"_blank\">CQU</a></li>"+
 "  </ul>";
 document.writeln(snect);
 }
@@ -191,11 +188,11 @@ function main_footer_img()
 {
 var snect = "<div id=\"footer_img\">"+
   "<p class=\"footmenu\" style=\"color:#FFFFFF;\">"+
-    "<a href=\"\" target=\"_blank\">关于我们</a> | "+
-    "<a href=\"http://www.cqu.edu.cn\" target=\"_blank\">重庆大学</a> | "+
-    "<a href=\"../book\" target=\"_blank\">联系我们</a> "+
+    "<a href=\"\" target=\"_blank\">About us</a> | "+
+    "<a href=\"http://www.cqu.edu.cn\" target=\"_blank\">FDI</a> | "+
+    "<a href=\"../book\" target=\"_blank\">Contact us</a> "+
   "</p>"+
-  "<p class=\"copy\"><font style=\"font-family: Arial;\">&copy;</font> 2010-2011 <a href=../ target=_self><font color=#CC0000>重庆大学物理学院方亮教授课题组</font></a> 版权所有 </a> Made by FDI"+
+  "<p class=\"copy\"><font style=\"font-family: Arial;\">&copy;</font>  2018-2100 <a href=./ target=_self>Guancai Xie Homepage</a> Copyright by FDI"+
   "</p>"+
 "</div>";
 document.writeln(snect);
