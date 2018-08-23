@@ -23,7 +23,7 @@ document.writeln(snect);
 }
 
 //------·ÖÒ³ banner+menu---------------------------------------------------
-function childpage_top_group()
+function childpage_group()
 {
 var snect = "<div id=\"banner\">"+
 "  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
@@ -46,7 +46,7 @@ var snect = "<div id=\"banner\">"+
 document.writeln(snect);
 }
 
-function childpage_top_research()
+function childpage_research()
 {
 var snect = "<div id=\"banner\">"+
 "  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
@@ -68,7 +68,7 @@ var snect = "<div id=\"banner\">"+
 "</div>";
 document.writeln(snect);
 }
-function childpage_top_tool()
+function childpage_tool()
 {
 var snect = "<div id=\"banner\">"+
 "  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
@@ -91,7 +91,7 @@ var snect = "<div id=\"banner\">"+
 document.writeln(snect);
 }
 
-function childpage_top_publication()
+function childpage_publication()
 {
 var snect = "<div id=\"banner\">"+
 "  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
@@ -114,7 +114,7 @@ var snect = "<div id=\"banner\">"+
 document.writeln(snect);
 }
 
-function childpage_top_activity()
+function childpage_activity()
 {
 var snect = "<div id=\"banner\">"+
 "<EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
