@@ -16,7 +16,7 @@ h3 {color:black;font-family:ZhunYuan,"楷体",Arial,SimSun, "Times New Roman", ;fo
 h4 {color: white;font-family:ZhunYuan,"楷体",Arial,SimSun, "Times New Roman", Times, serif; font-size:130%;letter-spacing:4pt;font-weight:bold;}
 h5 {color:#093089;font-family:ZhunYuan,"楷体";font-size:30px;font-weight:bold;}
 /*banner*/
-#banner {width:970px;height: 100px;background: url(../CSS/banner970x100.png);clear:both;overflow:hidden;}
+#banner {width:970px;height: 100px;background: url(../CSS/banner_home_bg.png);clear:both;overflow:hidden;}
 
 /* 导航*/
 .menu {width: 970px;height: 30px;color: red;background: url(../CSS/menu_bg.gif) no-repeat;clear: both;overflow: hidden;}
