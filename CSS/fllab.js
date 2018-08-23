@@ -23,7 +23,52 @@ document.writeln(snect);
 }
 
 //------·ÖÒ³ banner+menu---------------------------------------------------
-function childpage_top2()
+function childpage_top_group()
+{
+var snect = "<div id=\"banner\">"+
+"  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
+"</div>"+
+"<div id=\"menu\" class=\"menu\">"+
+"  <ul class=\"menuL\">"+
+"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
+"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
+"    <li><a href=\"../issue/research.html\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../issue\" target=\"_self\">Tools</a></li>"+
+"    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
+"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
+"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
+"  </ul>"+
+"  <ul class=\"menuR\">"+
+"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
+"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
+"  </ul>"+
+"</div>";
+document.writeln(snect);
+}
+
+function childpage_top_research()
+{
+var snect = "<div id=\"banner\">"+
+"  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
+"</div>"+
+"<div id=\"menu\" class=\"menu\">"+
+"  <ul class=\"menuL\">"+
+"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
+"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
+"    <li><a href=\"../childpage/members.html\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../childpage\" target=\"_self\">Tools</a></li>"+
+"    <li><a href=\"../activity/results.html\" target=\"_self\">Publications</a></li>"+
+"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
+"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
+"  </ul>"+
+"  <ul class=\"menuR\">"+
+"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
+"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
+"  </ul>"+
+"</div>";
+document.writeln(snect);
+}
+function childpage_top_tool()
 {
 var snect = "<div id=\"banner\">"+
 "  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
@@ -46,29 +91,7 @@ var snect = "<div id=\"banner\">"+
 document.writeln(snect);
 }
 
-function childpage_top3()
-{
-var snect = "<div id=\"banner\">"+
-"  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
-"</div>"+
-"<div id=\"menu\" class=\"menu\">"+
-"  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
-"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../childpage/members.html\" target=\"_self\">Research</a></li>"+
-"    <li><a href=\"../childpage\" target=\"_self\">Tools</a></li>"+
-"    <li><a href=\"../activity/results.html\" target=\"_self\">Publications</a></li>"+
-"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
-"  </ul>"+
-"  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
-"  </ul>"+
-"</div>";
-document.writeln(snect);
-}
-function childpage_top4()
+function childpage_top_publication()
 {
 var snect = "<div id=\"banner\">"+
 "  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
@@ -91,38 +114,15 @@ var snect = "<div id=\"banner\">"+
 document.writeln(snect);
 }
 
-function childpage_top5()
-{
-var snect = "<div id=\"banner\">"+
-"  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
-"</div>"+
-"<div id=\"menu\" class=\"menu\">"+
-"  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
-"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../childpage/members.html\" target=\"_self\">Research</a></li>"+
-"    <li><a href=\"../childpage\" target=\"_self\">Tools</a></li>"+
-"    <li><a href=\"../activity/results.html\" target=\"_self\">Publications</a></li>"+
-"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
-"  </ul>"+
-"  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
-"  </ul>"+
-"</div>";
-document.writeln(snect);
-}
-
-function childpage_top6()
+function childpage_top_activity()
 {
 var snect = "<div id=\"banner\">"+
 "<EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
 "</div>"+
 "<div id=\"menu\" class=\"menu\">"+
 "  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
-"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
+"    <li><a class=\"now\" href=\"../\" target=\"_self\">Homepage</a></li>"+
+"    <li><a href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
 "    <li><a href=\"../childpage/members.html\" target=\"_self\">Research</a></li>"+
 "    <li><a href=\"../childpage\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../activity/results.html\" target=\"_self\">Publications</a></li>"+
