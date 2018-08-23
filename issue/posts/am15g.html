@@ -1,0 +1,127 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+  <title>==Welcome to Guancai Xie's Homepage==</title>
+  <meta name="keywords" content="Guancai Xie, photocatalysis, photoelectrochemical, water splitting, Graphene" />
+  <meta name="description" content="Guancai Xie" />
+  <meta name="author" content="G.C. Xie" />
+  <link href="../CSS/fllab.css" rel="stylesheet" type="text/css" id="cssSwitch">
+  <script src="../CSS/fllab.js"></script>
+</head>
+<body>
+<center>
+<!--顶部banner  + 导航 menu-->
+<script>childpage_research();</script>
+
+<div id="main">
+思路：AM1.5G是什么→SMARTS是什么（AM1.5G居然不是权威机构测出来的，而是这个软件算出来的）→37°什么意思→48.19°与AM1.5→AM0与地面辐射光谱→AM0的测量历史→ASTM E490 AM0→Kurucz的计算→E490具体分类→Kurucz光谱模板库
+
+从事太阳能利用方面研究的人员对于AM1.5G都不会陌生，AM1.5G是广泛用于太阳能转换系统标准测试的参考光谱。在技术上，一般认为AM1.5G出自于一项与太阳能相关的ASTM标准——ASTM G173 - 03(2012)Standard Tables for Reference Solar Spectral Irradiances: Direct Normal and Hemispherical on 37°Tilted Surface《太阳光谱参照表：垂直辐射及37°倾角面半球辐射》。
+
+ASTM是美国材料与试验协会（American Society for Testing and Materials）的简称。http://www.astm.org/Standards/G173.htm 网站上有关于G173 -03(2012)的解释：G = corrosion，deterioration，and degradation of materials; 173 = assigned sequential number 03 =year of original adoption (or，in the case of revision，the year of last revision)（03即2003年） (2012) = year of last reapproval。该标准是由ASTM技术委员会G03《老化和耐用性的研究》中的分委员会G03.09《辐射测量》牵头制定的。
+
+该标准参考光谱是由一个软件SMARTS（Version 2.9.2）生成的。SMARTS是Simple Model of the Atmospheric Radiative Transfer of Sunshine（太阳光的大气辐射传输简易模型）的简称，是由Gueymard开发的小程序，最新版本2.9.2和2.9.5为美国国家可再生能源实验室（the National Renewable Energy Laboratory，NREL）所有。该程序用于评估无云条件下，光谱范围在280-4000纳米的太阳辐射分布，只需输入一些参数（如大气压、海拔高度、水蒸气、臭氧的计算、二氧化碳的体积混合比和气溶胶模型，接收器倾斜度，大气质量数值[或太阳的天顶角位置]，等等）就可以得到太阳辐射光谱。
+
+SMART很大程度上参考了美国空军地球物理实验室（AFGL，Air Force Geophysical Laboratory）开发的计算大气透过率及辐射的软件包 MODTARN（Moderate Resolution Transmission），SMART的独特之处是可以算接收面的倾角。
+
+ASTM G173–03（37°倾角面半球辐射）也被采用至国际电工委员会标准IEC 60904-3-2008 Photovoltaic devices - Part 3: Measurement principles for terrestrial photovoltaic (PV) solar devices with reference spectral irradiance data光伏器件.第3部分:具有标准光谱辐照度数据的地面用太阳光伏(PV)器件的测量原理
+
+ASTM G173–03的AM1.5G光谱采用变步长梯形求积积分，结果为1000.37 W/m2。
+
+【上面材料参考自ASTM G173 - 03(2012)】
+
+
+
+图1.几何位置图形，n是斜面的法线方向。
+
+
+
+图2.示意图，水平的黄线为太阳光方向，蓝色的切线为纬度37°的地面上的人认为的“水平线”。简单的数学推算可得红线与蓝线夹角恰好为37°。红线为该地面上与“水平线”倾斜37°角的太阳电池平面。
+
+AM1.5 Global tilted 定义的太阳电池的安装位置如图1，37°角倾斜的选择是基于美国48个洲的平均纬度恰好等于人类文明荟萃和文史胜迹聚集之地的北纬37°。当倾斜角度等于当地纬度时，一整年获得的能量最大（至于为什么，可以根据图2发挥想象。一年间，太阳直射点在赤道附近波动）。SMARTS软件可以算出不同倾角的电池所接受的光谱辐照度。需要注意的是，大气质量AM算出来的一个角度z=48.19°，这个角度跟前面37°是一点关系都没有的。AM1.5的选取是基于美国国家航空航天局喷射推进实验室的Gonzalez和Ross在1980年的研究建议的，从美国东北部缅因州卡里布市（纬度46°52′）到美国西南部亚利桑那州凤凰城（纬度33°26′），约50%的用于光伏产品的太阳资源都是在AM1.5上下。AM是大气质量Air Mass的的简称，并非ASTM的缩写。AM的计算公式在图1，一般认为AM0即地外光谱辐照度。
+
+可见AM1.5 Global tilted中每个词语都是根据美国的实际情况限定的，但却成了世界通用的标准。
+
+【上面材料参考自GUEYMARD，2002，SolarEnergy，PROPOSED REFERENCE IRRADIANCE SPECTRA FORSOLAR ENERGY SYSTEMS TESTING】
+
+可以猜测，地面太阳光谱极有可能是根据地外太阳光谱修正的，简单的理解就是朗伯比尔定律化成透射率乘以AM0。
+
+succinct summary简洁的介绍
+
+E(λ) = Io(λ) Tr(λ) To(λ) Tmg(λ) Ttg(λ)Tw(λ) Ta(λ)
+
+E是地面光谱辐照度，Io是地外光谱辐照度或AM0，光谱透射率分为：瑞利散射(Tr)，臭氧吸收(To)，混合气体吸收(Tmg)，示踪气体吸收tracegas absorption (Ttg)，水汽吸收(Tw)，气溶胶消光系数aerosol extinction (Ta).
+
+对于地外光谱AM0的测量，不同仪器，不同时间，不同地点，不同方法测出来的光谱都不会一样，最早的时候，是爬到高海拔的山顶测的。后来就通过高空气球和航天飞机。到了太空时代，探测器被安装在绕地的宇宙飞船上。最后，到了计算机年代，计算天体物理学家Kurucz用第一性原理（其实我都不知道什么是第一性原理，暂且理解为纯理论计算吧）计算出高分辨率的地外太阳光谱。
+
+ASTM E490 AM0 参考光谱标准的数据来源有卫星，航天飞机任务，高空飞机，火箭，地面太阳望远镜，和理论模拟。具体来说由以下光谱数据合成的，高层大气研究卫星the Upper Atmosphere Research Satellite (UARS，该卫星搭载了下面两个探测器SUSIM和SOLSTICE，进行了代号为ATLAS-1 (1992)，ATLAS-2 (1993)，ATLAS-3 (1994)的航天任务)，太阳紫外光谱辐照度监测仪the Solar Ultraviolet Spectral Irradiance Monitor (SUSIM)，太阳恒星辐照度对比实验the Solar Stellar Irradiance Comparison Experiment (SOLSTICE）；美国亚利桑那州基特峰的McMath太阳望远镜the McMath Solar Telescope at Kitt Peak，Arizona；Kurucz计算出来的高分辨率太阳图谱the high-resolution solar atlas。
+
+【上面材料参考自(Energy and the environment (Boca Raton,Fla.)) Daryl Myers-Solar radiation practical modeling for renewable energy applications-CRC Press_Taylor& Francis Group (2013)p130-140】
+
+对于Kurucz是纯理论计算还是基于观测数据的计算，我也搞不清楚，急需高人指点迷津。这里还有一文献，似乎说明Kurucz计算出来的高分辨率太阳光谱是基于傅里叶变换光谱仪观测得到的数据整理的。1984年Kurucz使用了美国亚利桑那州基特峰国家天文台的McMath-Pierce太阳观测设备进行观测。
+
+【“Solar Flux Atlas from 296 to 1300 nm，” Robert L. Kurucz，IngemarFurenlid，James Brault，and Larry Testerman，National Solar Observatory Atlas No. 1，June 1984】
+
+地面观测和太空观测的太阳光谱的数据虽然不同，但是确是互补的。一般紫外和红外都用太空观测的数据。
+
+基特峰天文台指向太阳中心的望远镜基于高性能光谱仪、傅里叶变换光谱仪观测到太阳光谱，其分辨率极高（0.0005 nm），但是由于地球大气层在紫外和红外有非常强烈的吸收，所以其精准范围仅在可见光波段。由于考虑了大气吸收，The Neckel & Labs spectrum (1984)是当今被引最多被公认最精准的地外光谱光谱，但是其范围只有330–1250 nm。
+
+ASTM E490 AM0 参考光谱标准的具体分类：
+
+119-380 nm用的是ATLAS-2光谱（Woods，1996，UARS上的两个不同的探测器SUSIM和SOLSTICE探测到的数值的平均）乘以比例系数0.968443。
+
+380-825 nm用的是Neckel and Labs光谱（1984，美国亚利桑那州基特峰McMath太阳望远镜），不需调整比例。
+
+825-4000 nm用的是Kurucz（1995）计算出来的光谱模型，比例系数是1.00085。
+
+4-1000μm用的是Smith andGottlieb（1974）光谱，比例系数是0.99437。
+
+最后所有光谱乘以比例系数0.99745得到1366.1W/m2接近联合国世界气象组织WMO (Wehrli，1985)的推荐太阳常数1367W/m2。
+
+【The sun’s total and spectral irradiance for solar energy applications and solar radiation models】
+
+为了实现世界各国气象观测的标准化和为保证各国日射观测值的可靠性和一致性，早在1957年，世界气象组织仪器与观测方法委员会第二次大会（CIMO-II）就设立了世界辐射中心。共两个，设置在达沃斯（瑞士）、列宁格勒（苏联）。【大气科学辞典.气象出版社，1994】
+
+根据1978-1998年6颗卫星上的观测平台近20年连续不断的观测结果，得出的太阳常数值为1366.1 W/m2，标准差为425ppm，0.37%的波动范围(1363-1368 W/m2)(Lean and Rind，1998)。20年的观测表明太阳常数存在不同时间尺度的波动。【百度百科】
+
+目前比较常用的恒星理论光谱库是Kurucz光谱模板库。Kurucz模板库是由ATLAS模型计算出来的。ATLAS模型由Robert L. Kurucz在1970年最初提出，其基木假设是局部热力学平衡和平行平面层大气理论。ATLAS是一个模型计算程序包，输入要计算的恒星大气物理参数、ODF文件和Rosseland不透明文件，计算输出恒星大气模型。ATLAS可以直接计算得到目标恒星大气模型，也可以在一个已有模型的基础上调整以得到目标模型。
+
+现在比较常用的版本是Fiorella Castelli和Robert L. Kurucz在2003年推出的在Linux操作系统下基于新的ODF (opacity distribution function，即不透明分布函数)的ATLAS9模型网格。
+
+Robert L. Kurucz是最早提出恒星大气模型计算的天文工作者之一。在上世纪70年代，Robert L. Kurucz就提出将辐射转移方程和约束方程分开求解恒星大气模型，并对有效温度进行校正。Kurucz模型经过二十年的发展，已经成为天文学比较常用的模型之一。
+
+Kurucz模型的基木计算方法是:首先，给定恒星大气的三个基木参数:表面有效温度Teff、表面重力加速度g和元素丰度([M/H])。然后反复迭代计算恒星的不同平行平面层的物理性质，如温度、压力、电子密度等，得到大气模型。最后，根据辐射转移方程计算恒星的连续谱和各条谱线，得到合成光谱。
+
+【参考自，张瑞敏，2012，并行环境下恒星理论光谱模板库的构建】
+
+后记，自己不是从事这方面研究的，但是打破沙锅问到底的性格驱使我深入了解。最大的感悟是很多标准都是美国根据美国的情况制定的，然后成了世界各国都遵循的标准。还有我国在这方面的中文文献也太少了。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--页脚-->
+<script>main_footer_img();</script>
+</center>
+</body>
+</html>
