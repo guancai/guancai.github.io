@@ -44,46 +44,6 @@ h5 {color:#093089;font-family:ZhunYuan,"楷体";font-size:30px;font-weight:bold;}
 .sidebar {width:250px;height:auto;float:left;overflow:hidden;text-align:left;}
 .container {width:710px;height:auto;float:right;overflow:hidden;text-align:left;font-size:150%;}
 
-/* 组内动态*/
-.main_news{width:100%;height: auto;margin-top: 10px; float:right;clear:both;background:url(main_bckg.jpg) repeat-x top;} /* 添加背景图片*/
-.main_news ul {float: left;width:100%; margin: 6px 0 10px 30px;display: inline;clear:both;}
-.main_news ul li {text-indent:28px;float:left;width: 90%;color:black;height: 30px;overflow: hidden;background: url(main_new.gif) no-repeat;}
-.main_news ul li a {display: block;color:#ff6f08;white-space: nowrap;}
-.main_news ul li a:visited {color:gray;}
-.main_news ul li a:hover {color:#ff6f08;}
-.main_news p {color: white;font-size: 80%;margin-top: 10px;line-height: 25px;}
-
-/* 侧边栏标题*/
-.siderlist {float: left;margin: 0 0 10px 0;display: block;}
-.siderlist .siderlist_title {float: left;width:250px;height:30px;background: url(side_blue.gif) no-repeat;}
-.siderlist .siderlist_title h3 {float: left;display: block;width: 170px;font-family:  "微软雅黑","黑体","文泉驿等宽正黑";text-indent: 10px;margin-top: 5px;}
-.siderlist .siderlist_title span {float: right;margin-top: 8px;}
-.siderlist .siderlist_title span a {display: block;width: 58px;text-align: center;color: #999;color: white;}
-.siderlist .siderlist_title span a:hover {color:#ff6f08;text-decoration: none;} 
-
-/* 公告栏*/
-.note{width:250px;height: auto; float:left;display: block;background: url(note_bg.gif)} /*添加背景图片*/
-.note ul {float: left;width: 220px;}
-.note ul li {float:left;font-size:120%;width: 220px;height: 28px;background: url(note_label.gif) no-repeat;margin-left: 5px;}
-.note ul li a {display: block;text-indent:20px; color:black;white-space: nowrap;text-overflow:ellipsis;overflow: hidden;}
-.note ul li a:hover {color:#ff6f08;background-position: 2px -24px;}
-/* 公告栏-更多*/
-#logo {margin:0px 50px -20px 30px; height:80px;}
-#logo p {color:#EDECEC; text-decoration:none; font-size:x-large; background:url(images/logo.gif) no-repeat; padding:15px 0 20px 60px; float:left;font-weight: bold;}
-#logo span {float: right; width: 350px;margin: 12px 10px 0 0;line-height: 20px;text-align: right;color: white;}
-#logo span a {color: white;}
-#logo span a:hover {color: #ff6f08;}
-
-
-/* 学术动态栏*/
-.news{width:250px;height: 188px;float:left;background: url(sider_bg.gif) no-repeat;} /* 添加背景图片*/
-.news ul {float: left;width: 240px; margin: 6px 0 10px 6px;display: inline;}
-.news .new {text-indent:22px;background: url(news_new.gif) no-repeat;}
-.news ul li {float:left;width: 240px;color:black;height: 20px;}
-.news ul li a {display: block;color:#23abd2;white-space: nowrap;text-overflow:ellipsis;overflow: hidden;}
-.news ul li a:hover {color:#ff6f08;}
-/* 学术动态栏-更多*/
-
 /* 友情链接*/
 .youlian{width:250px;height: 200px;float:left;background: url(sider_bg.gif) no-repeat;} /* 添加背景图片*/
 .youlian ul  {float: left;width: 100%;margin-top: 5px; display: inline;}
