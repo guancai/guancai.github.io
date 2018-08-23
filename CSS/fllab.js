@@ -6,17 +6,17 @@ var snect = "<div id=\"banner\">"+
 "</div>"+
 "<div id=\"menu\" class=\"menu\">"+
 "  <ul class=\"menuL\">"+
-"    <li><a class=\"now\" href=\"../\" target=\"_self\">首页</a></li>"+
-"    <li><a href=\"childpage/leader.html\" target=\"_self\">导师简介</a></li>"+
-"    <li><a href=\"../childpage/members.html\" target=\"_self\">小组成员</a></li>"+
-"    <li><a href=\"../childpage\" target=\"_self\">仪器设备</a></li>"+
-"    <li><a href=\"../activity/results.html\" target=\"_self\">科研成果</a></li>"+
-"    <li><a href=\"../activity\" target=\"_self\">活动图片</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">文档中心</a></li>"+
+"    <li><a class=\"now\" href=\"../\" target=\"_self\">Homepage</a></li>"+
+"    <li><a href=\"childpage/leader.html\" target=\"_self\">Group</a></li>"+
+"    <li><a href=\"../childpage/members.html\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../childpage\" target=\"_self\">Tools</a></li>"+
+"    <li><a href=\"../activity/results.html\" target=\"_self\">Publications</a></li>"+
+"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
+"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','重庆大学凝聚态物理实验室')\">->>收藏本站</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>设为首页</a></li>"+
+"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
+"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>set homepage</a></li>"+
 "  </ul>"+
 "</div>";
 document.writeln(snect);
@@ -30,17 +30,17 @@ var snect = "<div id=\"banner\">"+
 "</div>"+
 "<div id=\"menu\" class=\"menu\">"+
 "  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">首页</a></li>"+
-"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">导师简介</a></li>"+
-"    <li><a href=\"../childpage/members.html\" target=\"_self\">小组成员</a></li>"+
-"    <li><a href=\"../childpage\" target=\"_self\">仪器设备</a></li>"+
-"    <li><a href=\"../activity/results.html\" target=\"_self\">科研成果</a></li>"+
-"    <li><a href=\"../activity\" target=\"_self\">活动图片</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">文档中心</a></li>"+
+"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
+"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
+"    <li><a href=\"../childpage/members.html\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../childpage\" target=\"_self\">Tools</a></li>"+
+"    <li><a href=\"../activity/results.html\" target=\"_self\">Publications</a></li>"+
+"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
+"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','重庆大学凝聚态物理实验室')\">->>收藏本站</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>设为首页</a></li>"+
+"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
+"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
 "  </ul>"+
 "</div>";
 document.writeln(snect);
@@ -53,17 +53,17 @@ var snect = "<div id=\"banner\">"+
 "</div>"+
 "<div id=\"menu\" class=\"menu\">"+
 "  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">首页</a></li>"+
-"    <li><a href=\"../childpage/leader.html\" target=\"_self\">导师简介</a></li>"+
-"    <li><a class=\"now\" href=\"../childpage/members.html\" target=\"_self\">小组成员</a></li>"+
-"    <li><a href=\"../childpage\" target=\"_self\">仪器设备</a></li>"+
-"    <li><a href=\"../activity/results.html\" target=\"_self\">科研成果</a></li>"+
-"    <li><a href=\"../activity\" target=\"_self\">活动图片</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">文档中心</a></li>"+
+"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
+"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
+"    <li><a href=\"../childpage/members.html\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../childpage\" target=\"_self\">Tools</a></li>"+
+"    <li><a href=\"../activity/results.html\" target=\"_self\">Publications</a></li>"+
+"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
+"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','重庆大学凝聚态物理实验室')\">->>收藏本站</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>设为首页</a></li>"+
+"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
+"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
 "  </ul>"+
 "</div>";
 document.writeln(snect);
@@ -75,17 +75,17 @@ var snect = "<div id=\"banner\">"+
 "</div>"+
 "<div id=\"menu\" class=\"menu\">"+
 "  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">首页</a></li>"+
-"    <li><a href=\"../childpage/leader.html\" target=\"_self\">导师简介</a></li>"+
-"    <li><a href=\"../childpage/members.html\" target=\"_self\">小组成员</a></li>"+
-"    <li><a class=\"now\" href=\"../childpage\" target=\"_self\">仪器设备</a></li>"+
-"    <li><a href=\"../activity/results.html\" target=\"_self\">科研成果</a></li>"+
-"    <li><a href=\"../activity\" target=\"_self\">活动图片</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">文档中心</a></li>"+
+"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
+"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
+"    <li><a href=\"../childpage/members.html\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../childpage\" target=\"_self\">Tools</a></li>"+
+"    <li><a href=\"../activity/results.html\" target=\"_self\">Publications</a></li>"+
+"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
+"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','重庆大学凝聚态物理实验室')\">->>收藏本站</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>设为首页</a></li>"+
+"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
+"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
 "  </ul>"+
 "</div>";
 document.writeln(snect);
@@ -98,17 +98,17 @@ var snect = "<div id=\"banner\">"+
 "</div>"+
 "<div id=\"menu\" class=\"menu\">"+
 "  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">首页</a></li>"+
-"    <li><a href=\"../childpage/leader.html\" target=\"_self\">导师简介</a></li>"+
-"    <li><a href=\"../childpage/members.html\" target=\"_self\">小组成员</a></li>"+
-"    <li><a href=\"../childpage\" target=\"_self\">仪器设备</a></li>"+
-"    <li><a class=\"now\" href=\"../activity/results.html\" target=\"_self\">科研成果</a></li>"+
-"    <li><a href=\"../activity\" target=\"_self\">活动图片</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">文档中心</a></li>"+
+"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
+"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
+"    <li><a href=\"../childpage/members.html\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../childpage\" target=\"_self\">Tools</a></li>"+
+"    <li><a href=\"../activity/results.html\" target=\"_self\">Publications</a></li>"+
+"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
+"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','重庆大学凝聚态物理实验室')\">->>收藏本站</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>设为首页</a></li>"+
+"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
+"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
 "  </ul>"+
 "</div>";
 document.writeln(snect);
@@ -121,17 +121,17 @@ var snect = "<div id=\"banner\">"+
 "</div>"+
 "<div id=\"menu\" class=\"menu\">"+
 "  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">首页</a></li>"+
-"    <li><a href=\"../childpage/leader.html\" target=\"_self\">导师简介</a></li>"+
-"    <li><a href=\"../childpage/members.html\" target=\"_self\">小组成员</a></li>"+
-"    <li><a href=\"../childpage\" target=\"_self\">仪器设备</a></li>"+
-"    <li><a href=\"../activity/results.html\" target=\"_self\">科研成果</a></li>"+
-"    <li><a class=\"now\" href=\"../activity\" target=\"_self\">活动图片</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">文档中心</a></li>"+
+"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
+"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
+"    <li><a href=\"../childpage/members.html\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../childpage\" target=\"_self\">Tools</a></li>"+
+"    <li><a href=\"../activity/results.html\" target=\"_self\">Publications</a></li>"+
+"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
+"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','重庆大学凝聚态物理实验室')\">->>收藏本站</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>设为首页</a></li>"+
+"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
+"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
 "  </ul>"+
 "</div>";
 document.writeln(snect);
@@ -144,17 +144,17 @@ var snect = "<div id=\"banner\">"+
 "</div>"+
 "<div id=\"menu\" class=\"menu\">"+
 "  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">首页</a></li>"+
-"    <li><a href=\"../childpage/leader.html\" target=\"_self\">导师简介</a></li>"+
-"    <li><a href=\"../childpage/members.html\" target=\"_self\">小组成员</a></li>"+
-"    <li><a href=\"../childpage\" target=\"_self\">仪器设备</a></li>"+
-"    <li><a href=\"../activity/results.html\" target=\"_self\">科研成果</a></li>"+
-"    <li><a href=\"../activity\" target=\"_self\">活动图片</a></li>"+
-"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">文档中心</a></li>"+
+"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
+"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
+"    <li><a href=\"../childpage/members.html\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../childpage\" target=\"_self\">Tools</a></li>"+
+"    <li><a href=\"../activity/results.html\" target=\"_self\">Publications</a></li>"+
+"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
+"    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
 "  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','重庆大学凝聚态物理实验室')\">->>收藏本站</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>设为首页</a></li>"+
+"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
+"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
 "  </ul>"+
 "</div>";
 document.writeln(snect);
@@ -177,11 +177,11 @@ function main_footer()
 {
 var snect = "<div id=\"footer\">"+
   "<p class=\"footmenu\" style=\"color:#FFFFFF;\">"+
-    "<a href=\"\" target=\"_blank\">关于我们</a> | "+
-    "<a href=\"http://www.cqu.edu.cn\" target=\"_blank\">重庆大学</a> | "+
-    "<a href=\"\" target=\"_blank\">联系我们</a> "+
+    "<a href=\"\" target=\"_blank\">About us</a> | "+
+    "<a href=\"http://www.cqu.edu.cn\" target=\"_blank\">FDI</a> | "+
+    "<a href=\"\" target=\"_blank\">Contact us</a> "+
   "</p>"+
-  "<p class=\"copy\"><font style=\"font-family: Arial;\">&copy;</font> 2010-2011 <a href=./ target=_self>重庆大学物理学院方亮教授课题组</a> 版权所有Made by FDI"+
+  "<p class=\"copy\"><font style=\"font-family: Arial;\">&copy;</font> 2018-2100 <a href=./ target=_self>Guancai Xie Homepage</a> Copyright by FDI"+
   "</p>"+
 "</div>";
 document.writeln(snect);
