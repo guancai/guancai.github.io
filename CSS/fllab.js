@@ -99,10 +99,10 @@ var snect = "<div id=\"banner\">"+
 "<div id=\"menu\" class=\"menu\">"+
 "  <ul class=\"menuL\">"+
 "    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
-"    <li><a class=\"now\" href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../childpage/members.html\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../childpage/leader.html\" target=\"_self\">Group</a></li>"+
+"    <li><a href=\"../issue/index.html\" target=\"_self\">Research</a></li>"+
 "    <li><a href=\"../childpage\" target=\"_self\">Tools</a></li>"+
-"    <li><a href=\"../activity/results.html\" target=\"_self\">Publications</a></li>"+
+"    <li><a class=\"now\" href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
 "    <li class=\"last\"><a href=\"../doc\" target=\"_blank\">Links</a></li>"+
 "  </ul>"+
