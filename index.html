@@ -1,6 +1,109 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+  <title>==��ӭ���������ѧ�������ڿ�����==</title>
+  <meta name="keywords" content="�����ѧ����̬����ʵ���ң���������Ĥ " />
+  <meta name="description" content=" ���״�ѧ����̬����ʵ���ң�����������" />
+  <meta name="author" content="G.C. Xie" />
+  <link href="CSS/fllab.css" rel="stylesheet" type="text/css" id="cssSwitch">
+  <script src="CSS/fllab.js"></script>
+  <script src="CSS/change.js"></script>
+</head>
 <body>
-<h1>Hello world!</h1>
 
+<!--����banner  + ���� menu-->
+<script>childpage_top0();</script>
+
+<div id="main">
+    <div class="maint">
+<div id="demo">
+<div id="indemo">
+<div id="demo1" >
+<a><img src="index/top1.jpg" border="2" /></a>
+<a><img src="index/top2.jpg" border="2" /></a>
+<a><img src="index/top3.jpg" border="2" /></a>
+<a><img src="index/top4.jpg" border="2" /></a>
+<a><img src="index/top5.jpg" border="2" /></a>
+<a><img src="index/top6.jpg" border="2" /></a>
+</div>
+<div id="demo2"></div>
+</div>
+</div>
+
+<script>
+<!--
+var speed=10; //����Խ���ٶ�Խ��
+var tab=document.getElementById("demo");
+var tab1=document.getElementById("demo1");
+var tab2=document.getElementById("demo2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab.scrollLeft<=0)
+tab.scrollLeft+=tab2.offsetWidth
+else{
+tab.scrollLeft--;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+-->
+</script>
+   </div>
+  
+  <div class="sidebar">
+      <div class="siderlist">
+            <div class="siderlist_title">
+                <h3>֪ͨ����</h3>
+	                <span><a href="index/tzgg.html" >����>>></a></span>
+            </div>
+               <div class="note">
+                <marquee direction="up" scrolldelay="10" scrollamount="2" height="130px" onMouseOver="javascript:this.stop();" 
+                onMouseOut="javascript:this.start();" behavior="loop">
+               <script>notes_list();</script>
+               </marquee>
+               </div>
+             <div class="siderlist_title">
+                <h3>ѧ����̬</h3>
+	                <span><a href="index/xsdt.html" >����>>></a></span>
+               </div>
+                  <div class="news">
+                      <script>news_list();</script>
+                  </div>
+            <div class="siderlist_title">
+                <h3>ʵ������</h3>
+	                <span><a href="index/sylj.html" >����>>></a></span>
+            </div>
+              <div class="youlian">
+                <script>links_list();</script>
+              </div>
+              <div class="update">
+                   <script language="JavaScript">
+<!--hide script from old browsers
+document.write("��վ������:" 
++ document.lastModified + "")
+// end hiding -->
+                   </script>
+              </div>
+     </div>
+  </div>
+  <div class="container">
+      <div class="main_title">
+              <h2><img src="CSS/images/sat.png" alt="" >         ���ڶ�̬ </h2>
+      <div class="main_news">
+               <script>team_news_list();</script>
+      </div>
+      </div>
+       <div class="main_title">
+              <h2><img src="CSS/images/info.png" alt="" >          ʵ���Ҽ��</h2>
+          <div class="main_news">
+                <p>hello world!</p>
+       </div>
+  </div>
+</div>
+
+<!--ҳ��-->
+<script>main_footer_img();</script>
+</center>
 </body>
 </html>
