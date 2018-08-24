@@ -55,7 +55,7 @@ var snect = "<div id=\"banner\">"+
 "  <ul class=\"menuL\">"+
 "    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
 "    <li><a href=\"../issue/group.html\" target=\"_self\">Group</a></li>"+
-"    <li><a class=\"now\" href=\"../issue\" target=\"_self\">Research</a></li>"+
+"    <li><a class=\"now\" href=\"../blog\" target=\"_self\">Research</a></li>"+
 "    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
