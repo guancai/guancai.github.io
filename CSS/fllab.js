@@ -1,4 +1,4 @@
-//------Ê×Ò³ banner+menu-----------------------------------------------
+//------é¦–é¡µ banner+menu-----------------------------------------------
 function home_top()
 {
 var snect = "<div id=\"banner\">"+
@@ -8,7 +8,7 @@ var snect = "<div id=\"banner\">"+
 "  <ul class=\"menuL\">"+
 "    <li><a class=\"now\" href=\"../\" target=\"_self\">Homepage</a></li>"+
 "    <li><a href=\"../issue/group.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../issue\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../blog\" target=\"_self\">Research</a></li>"+
 "    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
@@ -22,7 +22,7 @@ var snect = "<div id=\"banner\">"+
 document.writeln(snect);
 }
 
-//------·ÖÒ³ banner+menu---------------------------------------------------
+//------åˆ†é¡µ banner+menu---------------------------------------------------
 function childpage_group()
 {
 var snect = "<div id=\"banner\">"+
@@ -32,7 +32,7 @@ var snect = "<div id=\"banner\">"+
 "  <ul class=\"menuL\">"+
 "    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
 "    <li><a class=\"now\" href=\"../issue/group.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../issue\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../blog\" target=\"_self\">Research</a></li>"+
 "    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
@@ -77,7 +77,7 @@ var snect = "<div id=\"banner\">"+
 "  <ul class=\"menuL\">"+
 "    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
 "    <li><a href=\"../issue/group.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../issue\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../blog\" target=\"_self\">Research</a></li>"+
 "    <li><a class=\"now\" href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
@@ -100,7 +100,7 @@ var snect = "<div id=\"banner\">"+
 "  <ul class=\"menuL\">"+
 "    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
 "    <li><a href=\"../issue/group.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../issue\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../blog\" target=\"_self\">Research</a></li>"+
 "    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a class=\"now\" href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
@@ -123,7 +123,7 @@ var snect = "<div id=\"banner\">"+
 "  <ul class=\"menuL\">"+
 "    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
 "    <li><a href=\"../issue/group.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../issue\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../blog\" target=\"_self\">Research</a></li>"+
 "    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a class=\"now\" href=\"../activity\" target=\"_self\">Activity</a></li>"+
@@ -146,7 +146,7 @@ var snect = "<div id=\"banner\">"+
 "  <ul class=\"menuL\">"+
 "    <li><a class=\"now\" href=\"../\" target=\"_self\">Homepage</a></li>"+
 "    <li><a href=\"../issue/group.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../issue\" target=\"_self\">Research</a></li>"+
+"    <li><a href=\"../blog\" target=\"_self\">Research</a></li>"+
 "    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
 "    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
 "    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
@@ -159,7 +159,7 @@ var snect = "<div id=\"banner\">"+
 "</div>";
 document.writeln(snect);
 }
-//--------ÓÑÇéÁ´½Ó²¿·Ö--------
+//--------å‹æƒ…é“¾æ¥éƒ¨åˆ†--------
 function links_list()
 {
 var snect = "<ul type=\"1\">"+
@@ -169,7 +169,7 @@ var snect = "<ul type=\"1\">"+
 document.writeln(snect);
 }
 
-//------¼òµ¥µ×²¿------------------------------------
+//------ç®€å•åº•éƒ¨------------------------------------
 function main_footer()
 {
 var snect = "<div id=\"footer\">"+
@@ -183,7 +183,7 @@ var snect = "<div id=\"footer\">"+
 "</div>";
 document.writeln(snect);
 }
-//------»î¶¯Í¼Æ¬Ò³µ×²¿------------------------------------
+//------æ´»åŠ¨å›¾ç‰‡é¡µåº•éƒ¨------------------------------------
 function main_footer_img()
 {
 var snect = "<div id=\"footer_img\">"+
