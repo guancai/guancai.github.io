@@ -248,7 +248,7 @@ img.image_frame { padding-bottom: 15px; background:url(../images/image_frame.png
 .img_topic {padding-right:30px; height:56px;}
 .img_topic ul {padding:0; margin:0; float:right;}
 .img_topic li {float:left; list-style:none;}
-.img_topic a {display:block; width:126px; height:50px; font-size:100%; text-decoration:none; color:#ABABAB; text-align:center; background:url(images/menu_deact.gif) no-repeat; padding-top:6px;}
+.img_topic a {display:block; width:126px; height:50px; font-size:100%; text-decoration:none; color:#ABABAB; text-align:center; background:url(../images/menu_deact.gif) no-repeat; padding-top:6px;}
 .img_topic a:hover, .img_topic a.active {background:url(../images/menu_act.gif) no-repeat; color:#180202;}
 
 
