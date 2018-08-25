@@ -28,7 +28,7 @@ document.writeln(snect);
 }
 
 //------分页menu---------------------------------------------------
-function childpage_research()
+function subtop_research()
 {
 var snect = "<div id=\"tooplate_header_sp\">"+
 "    	<div id=\"tooplate_menu\" class=\"ddsmoothmenu\">"+
@@ -49,119 +49,7 @@ var snect = "<div id=\"tooplate_header_sp\">"+
 document.writeln(snect);
 }
 
-function childpage_contact()
-{
-var snect = "<div id=\"banner\">"+
-"  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
-"</div>"+
-"<div id=\"menu\" class=\"menu\">"+
-"  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
-"    <li><a href=\"../issue/group.html\" target=\"_self\">Group</a></li>"+
-"    <li><a class=\"now\" href=\"../blog\" target=\"_self\">Research</a></li>"+
-"    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
-"    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
-"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../issue/links.html\" target=\"_blank\">Links</a></li>"+
-"  </ul>"+
-"  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
-"  </ul>"+
-"</div>";
-document.writeln(snect);
-}
-function childpage_tool()
-{
-var snect = "<div id=\"banner\">"+
-"  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
-"</div>"+
-"<div id=\"menu\" class=\"menu\">"+
-"  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
-"    <li><a href=\"../issue/group.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../blog\" target=\"_self\">Research</a></li>"+
-"    <li><a class=\"now\" href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
-"    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
-"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../issue/links.html\" target=\"_blank\">Links</a></li>"+
-"  </ul>"+
-"  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
-"  </ul>"+
-"</div>";
-document.writeln(snect);
-}
 
-function childpage_publication()
-{
-var snect = "<div id=\"banner\">"+
-"  <EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
-"</div>"+
-"<div id=\"menu\" class=\"menu\">"+
-"  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
-"    <li><a href=\"../issue/group.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../blog\" target=\"_self\">Research</a></li>"+
-"    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
-"    <li><a class=\"now\" href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
-"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../issue/links.html\" target=\"_blank\">Links</a></li>"+
-"  </ul>"+
-"  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
-"  </ul>"+
-"</div>";
-document.writeln(snect);
-}
-
-function childpage_activity()
-{
-var snect = "<div id=\"banner\">"+
-"<EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
-"</div>"+
-"<div id=\"menu\" class=\"menu\">"+
-"  <ul class=\"menuL\">"+
-"    <li><a href=\"../\" target=\"_self\">Homepage</a></li>"+
-"    <li><a href=\"../issue/group.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../blog\" target=\"_self\">Research</a></li>"+
-"    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
-"    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
-"    <li><a class=\"now\" href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../issue/links.html\" target=\"_blank\">Links</a></li>"+
-"  </ul>"+
-"  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
-"  </ul>"+
-"</div>";
-document.writeln(snect);
-}
-
-function childpage_top0()
-{
-var snect = "<div id=\"banner\">"+
-"<EMBED pluginspage=http://www.macromedia.com/go/getflashplayer src=../CSS/banner_bg.swf   width=\"970px\" height=\"100px\" type=application/x-shockwave-flash wmode=\"transparent\" quality=\"high\">"+
-"</div>"+
-"<div id=\"menu\" class=\"menu\">"+
-"  <ul class=\"menuL\">"+
-"    <li><a class=\"now\" href=\"../\" target=\"_self\">Homepage</a></li>"+
-"    <li><a href=\"../issue/group.html\" target=\"_self\">Group</a></li>"+
-"    <li><a href=\"../blog\" target=\"_self\">Research</a></li>"+
-"    <li><a href=\"../issue/tools.html\" target=\"_self\">Tools</a></li>"+
-"    <li><a href=\"../pubs/index.html\" target=\"_self\">Publications</a></li>"+
-"    <li><a href=\"../activity\" target=\"_self\">Activity</a></li>"+
-"    <li class=\"last\"><a href=\"../issue/links.html\" target=\"_blank\">Links</a></li>"+
-"  </ul>"+
-"  <ul class=\"menuR\">"+
-"    <li><a href=# onClick=\"window.external.addFavorite('../','Guancai's Homepage')\">->>shoucang</a></li>"+
-"    <li class=\"last\"><a href=# onClick=\"this.style.behavior='url(#default#homepage)';this.setHomePage('../');\">->>shoucang</a></li>"+
-"  </ul>"+
-"</div>";
-document.writeln(snect);
-}
 
 //------简单底部------------------------------------
 function main_footer()
