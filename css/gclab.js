@@ -101,7 +101,7 @@ var snect = "<div id=\"tooplate_header_sp\">"+
 "				<li><a href=\"../pubs/index.html\"><span></span>Publications</a></li>"+
 "				<li><a href=\"../doc/index.html\"><span></span>Resources</a></li>"+
 "				<li><a href=\"../blog\"><span></span>Blog</a></li>"+
-"               <li><a href=\"portfolio.html\"><span></span>Portfolio</a></li>"+
+"               <li><a href=\"../activity/portfolio.html\"><span></span>Portfolio</a></li>"+
 "               <li><a href=\"../contact.html\" class=\"selected\"><span></span>Contact</a></li>"+
 "            </ul>"+
 "            <br style=\"clear: left\" />"+
@@ -122,7 +122,7 @@ var snect = "<div id=\"tooplate_header_sp\">"+
 "				<li><a href=\"../pubs/index.html\"><span></span>Publications</a></li>"+
 "				<li><a href=\"../doc/index.html\"><span></span>Resources</a></li>"+
 "				<li><a href=\"../blog\"><span></span>Blog</a></li>"+
-"               <li><a href=\"portfolio.html\" class=\"selected\"><span></span>Portfolio</a></li>"+
+"               <li><a href=\"../activity/portfolio.html\" class=\"selected\"><span></span>Portfolio</a></li>"+
 "               <li><a href=\"../contact.html\"><span></span>Contact</a></li>"+
 "            </ul>"+
 "            <br style=\"clear: left\" />"+
@@ -133,26 +133,6 @@ var snect = "<div id=\"tooplate_header_sp\">"+
 document.writeln(snect);
 }
 
-function subtop_about()
-{
-var snect = "<div id=\"tooplate_header_sp\">"+
-"    	<div id=\"tooplate_menu\" class=\"ddsmoothmenu\">"+
-"            <ul>"+
-"               <li><a href=\"../\"><span></span>Home</a></li>"+
-"				<li><a href=\"../issue/research.html\"><span></span>Research</a></li>"+
-"				<li><a href=\"../pubs/index.html\"><span></span>Publications</a></li>"+
-"				<li><a href=\"../doc/index.html\"><span></span>Resources</a></li>"+
-"				<li><a href=\"../blog\"><span></span>Blog</a></li>"+
-"               <li><a href=\"portfolio.html\"><span></span>Portfolio</a></li>"+
-"               <li><a href=\"../contact.html\"><span></span>Contact</a></li>"+
-"            </ul>"+
-"            <br style=\"clear: left\" />"+
-"        </div>"+
-"       <div id=\"site_title\"><h1><a href=\"../\">Guancai Xie Homepage</a></h1></div>"+
-"		</div>"+
-"    </div>";
-document.writeln(snect);
-}
 //------简单底部------------------------------------
 function main_footer()
 {
