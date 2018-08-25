@@ -243,6 +243,29 @@ img.image_frame { padding-bottom: 15px; background:url(../images/image_frame.png
 #contact_form form textarea { width: 488px; height: 200px; padding: 5px; color: #fff; font-family: Tahoma, Geneva, sans-serif; font-size: 12px; border: 1px solid #000;  background: #212121; }
 #contact_form form .submit_btn { display: block; padding: 3px 8px; text-align: center; text-decoration: none; font-weight: bold; background: #212121;  color: #fff; border: 1px solid #000; font-size:13px; cursor: pointer }
 
+
+#chage in the page
+.img_topic {padding-right:30px; height:56px;}
+.img_topic ul {padding:0; margin:0; float:right;}
+.img_topic li {float:left; list-style:none;}
+.img_topic a {display:block; width:126px; height:50px; font-size:100%; text-decoration:none; color:#ABABAB; text-align:center; background:url(images/menu_deact.gif) no-repeat; padding-top:6px;}
+.img_topic a:hover, .img_topic a.active {background:url(../images/menu_act.gif) no-repeat; color:#180202;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 #tooplate_footer_wrapper {
 	clear: both;
