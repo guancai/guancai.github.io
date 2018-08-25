@@ -99,7 +99,7 @@ var snect = "<div id=\"tooplate_header_sp\">"+
 "               <li><a href=\"../\"><span></span>Home</a></li>"+
 "				<li><a href=\"../issue/research.html\"><span></span>Research</a></li>"+
 "				<li><a href=\"../pubs/index.html\"><span></span>Publications</a></li>"+
-"				<li><a href=\"../doc/index.html\"><span></span>Resources</a></li>"+
+"				<li><a href=\"../res/index.html\"><span></span>Resources</a></li>"+
 "				<li><a href=\"../blog\"><span></span>Blog</a></li>"+
 "               <li><a href=\"../activity/portfolio.html\"><span></span>Portfolio</a></li>"+
 "               <li><a href=\"../contact.html\" class=\"selected\"><span></span>Contact</a></li>"+
@@ -120,10 +120,10 @@ var snect = "<div id=\"tooplate_header_sp\">"+
 "               <li><a href=\"../\"><span></span>Home</a></li>"+
 "				<li><a href=\"../issue/research.html\"><span></span>Research</a></li>"+
 "				<li><a href=\"../pubs/index.html\"><span></span>Publications</a></li>"+
-"				<li><a href=\"../doc/index.html\"><span></span>Resources</a></li>"+
+"				<li><a href=\"../res/index.html\"><span></span>Resources</a></li>"+
 "				<li><a href=\"../blog\"><span></span>Blog</a></li>"+
 "               <li><a href=\"../activity/portfolio.html\" class=\"selected\"><span></span>Portfolio</a></li>"+
-"               <li><a href=\"../contact.html\"><span></span>Contact</a></li>"+
+"               <li><a href=\"../issue/contact.html\"><span></span>Contact</a></li>"+
 "            </ul>"+
 "            <br style=\"clear: left\" />"+
 "        </div>"+
