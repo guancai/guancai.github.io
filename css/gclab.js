@@ -97,7 +97,7 @@ var snect = "<div id=\"tooplate_header_sp\">"+
 "    	<div id=\"tooplate_menu\" class=\"ddsmoothmenu\">"+
 "            <ul>"+
 "               <li><a href=\"../\"><span></span>Home</a></li>"+
-"				<li><a href=\"../about.html\"><span></span>Research</a></li>"+
+"				<li><a href=\"../issue/research.html\"><span></span>Research</a></li>"+
 "				<li><a href=\"../pubs/index.html\"><span></span>Publications</a></li>"+
 "				<li><a href=\"../doc/index.html\"><span></span>Resources</a></li>"+
 "				<li><a href=\"../blog\"><span></span>Blog</a></li>"+
@@ -118,7 +118,7 @@ var snect = "<div id=\"tooplate_header_sp\">"+
 "    	<div id=\"tooplate_menu\" class=\"ddsmoothmenu\">"+
 "            <ul>"+
 "               <li><a href=\"../\"><span></span>Home</a></li>"+
-"				<li><a href=\"../about.html\"><span></span>Research</a></li>"+
+"				<li><a href=\"../issue/research.html\"><span></span>Research</a></li>"+
 "				<li><a href=\"../pubs/index.html\"><span></span>Publications</a></li>"+
 "				<li><a href=\"../doc/index.html\"><span></span>Resources</a></li>"+
 "				<li><a href=\"../blog\"><span></span>Blog</a></li>"+
@@ -139,7 +139,7 @@ var snect = "<div id=\"tooplate_header_sp\">"+
 "    	<div id=\"tooplate_menu\" class=\"ddsmoothmenu\">"+
 "            <ul>"+
 "               <li><a href=\"../\"><span></span>Home</a></li>"+
-"				<li><a href=\"../about.html\"><span></span>Research</a></li>"+
+"				<li><a href=\"../issue/research.html\"><span></span>Research</a></li>"+
 "				<li><a href=\"../pubs/index.html\"><span></span>Publications</a></li>"+
 "				<li><a href=\"../doc/index.html\"><span></span>Resources</a></li>"+
 "				<li><a href=\"../blog\"><span></span>Blog</a></li>"+
