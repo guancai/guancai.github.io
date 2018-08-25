@@ -244,7 +244,7 @@ img.image_frame { padding-bottom: 15px; background:url(../images/image_frame.png
 #contact_form form .submit_btn { display: block; padding: 3px 8px; text-align: center; text-decoration: none; font-weight: bold; background: #212121;  color: #fff; border: 1px solid #000; font-size:13px; cursor: pointer }
 
 
-#chage in the page
+/* chage in the page */
 .img_topic {padding-right:30px; height:56px;}
 .img_topic ul {padding:0; margin:0; float:right;}
 .img_topic li {float:left; list-style:none;}
