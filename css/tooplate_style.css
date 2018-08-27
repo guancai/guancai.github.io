@@ -1,3 +1,31 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-placeholder {
+    color: #aaa;
+}
+
+::-webkit-input-placeholder {
+    color: #aaa;
+}
+
+:-ms-input-placeholder {
+    color: #aaa;
+}
+
+::selection {
+    background: #111;
+    color: #fff;
+    font-weight: bold
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -54,6 +82,14 @@ img.image_frame { padding-bottom: 15px; background:url(../images/image_frame.png
 .tooplate_list li { color:#fff; margin: 0 0 5px 0; padding: 0 0 0 20px; background: url(../images/tooplate_list.png) no-repeat scroll 0 7px  }
 .tooplate_list li a { color: #fff; font-weight: normal }
 .tooplate_list li a:hover { color: #fff }
+
+li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
 
 #tooplate_wrapper { 
 	width: 100%;
@@ -243,27 +279,113 @@ img.image_frame { padding-bottom: 15px; background:url(../images/image_frame.png
 #contact_form form textarea { width: 488px; height: 200px; padding: 5px; color: #fff; font-family: Tahoma, Geneva, sans-serif; font-size: 12px; border: 1px solid #000;  background: #212121; }
 #contact_form form .submit_btn { display: block; padding: 3px 8px; text-align: center; text-decoration: none; font-weight: bold; background: #212121;  color: #fff; border: 1px solid #000; font-size:13px; cursor: pointer }
 
+#subpage_main {
+	clear: both;
+	padding: 20px 40px 20px;
+	margin: 0 auto;
+}
 
-/* chage in the page */
-.img_topic {margin: 10px 40px 0 40px; height:56px;}
-.img_topic ul {padding:0; margin:0; float:right;}
-.img_topic li {float:left; list-style:none;}
-.img_topic a {display:block; width:126px; height:50px; font-size:100%; text-decoration:none; color:#ABABAB; text-align:center; background:url(../images/menu_deact.gif) no-repeat; padding-top:6px;}
-.img_topic a:hover, .img_topic a.active {background:url(../images/menu_act.gif) no-repeat; color:#180202;}
-
-
-
-
-
-
+#subpage_content {
+	padding-left: 4.5cm;
+	width: 90%;
+	float: left;
+}
 
 
 
 
+/* tab in the subpage */
+.subpage-tab {
+    padding-left: 0px;
+    width: 90%;
+    overflow: hidden;
+	position: relative;
+	left: 60px;
+}
 
+.subpage-tab .hd {
+    width: 150px;
+    position: absolute;
+    z-index: 2;
+    left: -30px;
+    top: 0;
+    color: white;
+}
 
+.subpage-tab .hd ul {
+    margin-top: 0;
+	margin-bottom: 10px;
+}
 
+.subpage-tab .hd li {
+    height: 40px;
+	padding-left: 5px;
+    padding-top: 10px;
+    position: relative;
+    cursor: default;
+    transition: all .5s;
+    cursor: pointer
+}
 
+.subpage-tab .hd li:after {
+    content: "";
+    width: 100%;
+    border-bottom: 2px solid #000000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.subpage-tab .hd li:before {
+    background: #fd7d7d;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #2CC185 0%, #2CC185 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #2CC185 0%,#2CC185 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #2CC185 0%,#2CC185 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2CC185', endColorstr='#2CC185',GradientType=1 );
+    /* IE6-9 */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    z-index: 1;
+    width: 0;
+    transition: all .2s;
+}
+
+.subpage-tab .hd li.on:before {
+    width: 100%;
+}
+
+.subpage-tab .hd li.on:after {
+    display: none;
+}
+
+.subpage-tab .hd .text {
+    position: relative;
+    z-index: 2;
+}
+
+.subpage-tab .bd {
+    margin-left: 110px;
+	margin-top: 0px;
+}
+.subpage-tab .bd li {
+    height: 400px;
+	width: 96%;
+    position: relative;
+}
+
+/*publication list*/
+.publist {margin-left:40px; border-collapse: collapse;border: 0;width: 96%;}
+.publist tr {text-align: left; height: 40px;}
+.publist td {font-family: Tahoma, Geneva, sans-serif; padding-left: 10px; color:white;border-bottom: 1px solid #585858;}
+.publist a  {"楷体",SimSun, "Times New Roman", Times, serif; color:#FFA500; font-weight:bold;}
+.publist p  {Tahoma, Geneva, sans-serif; color:#01DF3A;}
 
 
 /* footer */
