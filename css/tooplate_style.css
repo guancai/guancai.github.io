@@ -496,12 +496,7 @@ i {
 }
 
 
-/*publication list*/
-.publist {margin-left:40px; border-collapse: collapse;border: 0;width: 100%;}
-.publist tr {text-align: left; height: 40px;}
-.publist td {font-family: Tahoma, Geneva, sans-serif; padding-left: 10px; color:white;border-bottom: 5px solid #585858;}
-.publist a  {"楷体",SimSun, "Times New Roman", Times, serif; color:#FFA500; font-weight:bold;}
-.publist p  {Tahoma, Geneva, sans-serif; color:#01DF3A;}
+
 
 /*****************************/
 /* Fill up */
@@ -576,6 +571,85 @@ i {
 	-webkit-transform: translate3d(0,-10px,0);
 	transform: translate3d(0,-10px,0);
 }
+
+/*publication list*/
+.publist {margin-left:40px; border-collapse: collapse;border: 0;width: 100%;}
+.publist tr {text-align: left; height: 40px;}
+.publist td {font-family: Tahoma, Geneva, sans-serif; padding-left: 10px; color:white;border-bottom: 5px solid #585858;}
+.publist a  {"楷体",SimSun, "Times New Roman", Times, serif; color:#FFA500; font-weight:bold;}
+.publist p  {Tahoma, Geneva, sans-serif; color:#01DF3A;}
+
+
+/*Journal list*/
+.zazhibox{
+    width:100%;
+    padding:0 20px 0px 20px;
+}
+.zazhibox ul li{
+    width:210px;
+    height:240px;
+	text-align:center;
+    list-style:none;
+    position:relative;
+    float:left;
+	padding:15px;
+}
+
+/*database list*/
+.dbasebox{
+    width:100%;
+	margin-left:0px;
+}
+.dbasebox ul li{
+    width:95%;
+	height: auto;
+	text-align:left;
+    list-style:none;
+    position:left;
+	border-bottom: 2px solid #585858;
+}
+.dbasebox ul li a{
+    font-size:24px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+    display:block;
+    text-decoration:none;
+    text-align:left;
+    line-height:40px;
+    margin:0 auto;
+}
+.dbasebox ul li a:hover {
+	text-decoration: none;
+	color: #F00;
+}
+.dbasebox ul li p{
+    font-size:20px;
+	font-family: "Times New Roman", Times, "楷体", serif;
+    text-align:left;
+	padding-left:1.2em;
+	color:#999;
+}
+
+/*useful links*/
+.ulinkbox {float:left; margin-left:40px; text-align:center; width: 95%;}
+.regroups {margin-left:0px; border-collapse: collapse;border: 0;width: 100%;border: 2px;border: 5px solid #F0FFFF;}
+.regroups tr {text-align: center; height: 60px;}
+.regroups td {font-family: Tahoma, Geneva, sans-serif; padding-left: 0px; color:white;}
+.regroups a  {"Times New Roman", Times, serif; font-weight:bold;}
+
+.retools {border-collapse: collapse;border: 0;width: 100%;border: 2px;border: 5px solid #F0FFFF;}
+.retools tr {text-align: left; height: 50px;}
+.retools td {font-family: Tahoma, Geneva, sans-serif; padding-left: 10px; color:white;}
+.retools a  {"Times New Roman", Times, serif;}
+.retools a:hover {text-decoration:none; color:#F00;}
+
+
+
+
+
+
+
+
+
 
 
 
