@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>Archivo: 2018/8 - Guancai Xie Blog</title>
+<title>Calculation of the theoretical maximum photocurrent - Guancai Xie Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -98,52 +98,91 @@
 
     <section class="section">
     <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            Calculation of the theoretical maximum photocurrent
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-08-28T08:57:55.000Z" itemprop="datePublished">Aug 28 2018</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/blog/categories/PC-PEC/">PC-PEC</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            2 minutes de lectura (Alrededor de 318 palabras)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p>&emsp;Let us assume that we have an ideal photoelectrode with no optical losses. The attainable current density for a given bandgap is then obtained by integrating the spectral distribution. Starting value is the band gap energy and the integration runs over all shorter wavelengths. If we plot the value of the integral for different starting points we get the maximum current density for a given bandgap. This is the maximum current that the photoelectrode can deliver under short circuit conditions. Lower bandgaps yield higher currents because they absorb larger parts of the spectrum. <a id="more"></a></p>
+<p>&emsp;The theoretical maximum photocurrent density under light illumination, $J_\textrm{max} (A\,m^{-2})$, is calculated by integrating the photon flux, shown in equation:</p>
+<p>$$J_\textrm{max}=e\times \int \limits_{\lambda_a}^{\lambda_b}\textrm{Flux}(\lambda)d\lambda$$</p>
+<p>where $\lambda_a$ is the shortest wavelength of the light emitted by the light source ($m$), $\lambda_b$ is the wavelength of the absorption edge of photoelectrode ($m$), $e$ is the charge of single electron ($1.602\times 10^{-19}\, C$), and $\lambda$ is the wavelength of the incident monochromatic light ($m$). Flux($\lambda$) is the photon flux of the light source ($m^{-2}\, s^{-1}\, nm^{-1}$), and it is calculated according to:</p>
+<p>   $$\textrm{Flux}(\lambda)=P(\lambda)E(\lambda)$$</p>
+<p>where $P(\lambda)$ is the power of incident photons ($W\, m^{-2}\, nm^{-1}$). $E(\lambda)$ is the photon energy ($J$) and it is calculated from</p>
+<p>   $$E(\lambda)=hc/\lambda $$</p>
+<p>where $h$ is Planck’s constant ($6.626\times 10^{-34}\, J\, s$), $c$ is the speed of light ($3\times 10^8\, m\, s^{-1}$).</p>
+<p>&emsp;Thus,    </p>
+<p>$$J_\textrm{max}=e\times \int \limits_{\lambda_a}^{\lambda_b}\frac{P(\lambda)\lambda}{hc}d\lambda$$</p>
+<p><strong>Example</strong></p>
+<p><img src="D:\GitHubPage\source\images\AM15-1.png" alt=""></p>
+<p><strong>Figure</strong> <strong>1</strong> (left) AM1.5 spectrum. (right) Converted current per area and time and wavelength interval (black) and maximum attainable photocurrent for a given bandgap (red), assuming an AM1.5 spectrum.</p>
+<p>Reference:</p>
+<p><a href="http://www.superstrate.net/pv/limit/" target="_blank" rel="noopener">http://www.superstrate.net/pv/limit/</a></p>
+
+    
+    </div>
     
     
-        <div class="archive content">
-            <h4 class="title is-4" id="2018">2018</h4>
-            <div class="articles">
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
             
-                <div class="article content>">
-                    <time class="is-text-small" datetime="2018-08-28T08:57:55.000Z" itemprop="datePublished">
-                        Aug 28</time>
-                    <h6 class="title is-6"><a href="/blog/2018/08/28/理论极限光电流/">Calculation of the theoretical maximum photocurrent</a></h6>
-                </div>
+            <a href="/blog/2018/09/01/PC-PEC效率评价/">Metrics for evaluating PEC performance</a>
             
-                <div class="article content>">
-                    <time class="is-text-small" datetime="2018-08-28T08:57:55.000Z" itemprop="datePublished">
-                        Aug 28</time>
-                    <h6 class="title is-6"><a href="/blog/2018/08/28/平带电位/">Calculation of the theoretical maximum photocurrent</a></h6>
-                </div>
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-                <div class="article content>">
-                    <time class="is-text-small" datetime="2018-08-26T05:57:55.000Z" itemprop="datePublished">
-                        Aug 26</time>
-                    <h6 class="title is-6"><a href="/blog/2018/08/26/分离注入效率/">Measurement of the charge separation and injection yields</a></h6>
-                </div>
+            <a href="/blog/2018/08/28/平带电位/">Calculation of the theoretical maximum photocurrent</a>
             
-                <div class="article content>">
-                    <time class="is-text-small" datetime="2018-08-25T05:57:55.000Z" itemprop="datePublished">
-                        Aug 25</time>
-                    <h6 class="title is-6"><a href="/blog/2018/08/25/AM15/">AM1.5G</a></h6>
-                </div>
-            
-                <div class="article content>">
-                    <time class="is-text-small" datetime="2018-08-24T05:57:55.000Z" itemprop="datePublished">
-                        Aug 24</time>
-                    <h6 class="title is-6"><a href="/blog/2018/08/24/紫外光电子能谱的原理及应用/">紫外光电子能谱的原理及应用</a></h6>
-                </div>
-            
-                <div class="article content>">
-                    <time class="is-text-small" datetime="2018-08-24T03:28:20.271Z" itemprop="datePublished">
-                        Aug 24</time>
-                    <h6 class="title is-6"><a href="/blog/2018/08/24/hello-world/">Hello World</a></h6>
-                </div>
-            
-            </div>
-        </div>
+        </span>
+    </div>
     
+</article>
+
+
+<div class="sharebox">
     
+<div class="notification is-danger">
+    You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.
+</div>
+
+</div>
+
+
+
+<div class="comments">
+    <h3 class="title is-4">Comentarios</h3>
+    
+<div id="disqus_thread">
+    
+    <div class="notification is-danger">
+        You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.
+    </div>
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
     </div>
 </section>
     <footer class="footer">
