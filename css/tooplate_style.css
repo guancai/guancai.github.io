@@ -578,6 +578,7 @@ i {
 .publist td {font-family: Tahoma, Geneva, sans-serif; padding-left: 10px; color:white;border-bottom: 5px solid #585858;}
 .publist a  {"楷体",SimSun, "Times New Roman", Times, serif; color:#FFA500; font-weight:bold;}
 .publist p  {Tahoma, Geneva, sans-serif; color:#01DF3A;}
+.publist u  {color:red;}
 
 
 /*Journal list*/
