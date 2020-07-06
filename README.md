@@ -1,2 +1,0 @@
-# guancai.github.io
-Homepage

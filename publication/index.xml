@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Guancai Xie Homepage</title>
+    <link>https://guancai.github.io/publication/</link>
+      <atom:link href="https://guancai.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://guancai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Publications</title>
+      <link>https://guancai.github.io/publication/</link>
+    </image>
+    
+    <item>
+      <title>Enhanced photochemical CO2 reduction in the gas phase by graphdiyne</title>
+      <link>https://guancai.github.io/publication/d-0-ta-02256-j/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/d-0-ta-02256-j/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GaP/GaPN core/shell nanowire array on silicon for enhanced photoelectrochemical hydrogen production</title>
+      <link>https://guancai.github.io/publication/xie-20202/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/xie-20202/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modulating Photoelectrochemical Water-Splitting Activity by Charge-Storage Capacity of Electrocatalysts</title>
+      <link>https://guancai.github.io/publication/dai-2019-id/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/dai-2019-id/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synergetic Effects of Dual Electrocatalysts for High-Performance Solar-Driven Water Oxidation</title>
+      <link>https://guancai.github.io/publication/boddula-2019-dw/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/boddula-2019-dw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improving the Water Oxidation Efficiency with a Light-Induced Electric Field in Nanograting Photoanodes</title>
+      <link>https://guancai.github.io/publication/wang-2019-dk/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/wang-2019-dk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interaction-Dependent Interfacial Charge-Transfer Behavior in Solar Water-Splitting Systems</title>
+      <link>https://guancai.github.io/publication/xie-2019-iq/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/xie-2019-iq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Irradiation Direction-Dependent Surface Charge Recombination in Hematite Thin-Film Oxygen Evolution Photoanodes</title>
+      <link>https://guancai.github.io/publication/cctc-201901524/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/cctc-201901524/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vertically Aligned Porous Organic Semiconductor Nanorod Array Photoanodes for Efficient Charge Utilization</title>
+      <link>https://guancai.github.io/publication/guo-2018-kq/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/guo-2018-kq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Facile Integration between Si and Catalyst for High-Performance Photoanodes by a Multifunctional Bridging Layer</title>
+      <link>https://guancai.github.io/publication/guo-2018-eu/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/guo-2018-eu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sacrificial Interlayer for Promoting Charge Transport in Hematite Photoanode</title>
+      <link>https://guancai.github.io/publication/zhang-2017-fb/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/zhang-2017-fb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Photoelectrochemical Investigation on the Synergetic Effect between CdS and Reduced Graphene Oxide for Solar-Energy Conversion</title>
+      <link>https://guancai.github.io/publication/xie-2013-gv/</link>
+      <pubDate>Thu, 01 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/xie-2013-gv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphene-Based Materials for Hydrogen Generation from Light-Driven Water Splitting</title>
+      <link>https://guancai.github.io/publication/xie-2013-dc/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/xie-2013-dc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

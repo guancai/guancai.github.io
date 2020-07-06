@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Akbar Ali | Guancai Xie Homepage</title>
+    <link>https://guancai.github.io/author/akbar-ali/</link>
+      <atom:link href="https://guancai.github.io/author/akbar-ali/index.xml" rel="self" type="application/rss+xml" />
+    <description>Akbar Ali</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://guancai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Akbar Ali</title>
+      <link>https://guancai.github.io/author/akbar-ali/</link>
+    </image>
+    
+    <item>
+      <title>Synergetic Effects of Dual Electrocatalysts for High-Performance Solar-Driven Water Oxidation</title>
+      <link>https://guancai.github.io/publication/boddula-2019-dw/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://guancai.github.io/publication/boddula-2019-dw/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
