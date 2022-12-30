@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-31T01:37:31+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FDI</title><subtitle>Academic webpage of Dr. Guancai Xie</subtitle><entry><title type="html">Measurement of the charge separation and injection yields</title><link href="http://localhost:4000/2022/12/01/sep&inj_eff.html" rel="alternate" type="text/html" title="Measurement of the charge separation and injection yields" /><published>2022-12-01T00:00:00+08:00</published><updated>2022-12-01T00:00:00+08:00</updated><id>http://localhost:4000/2022/12/01/sep&amp;inj_eff</id><content type="html" xml:base="http://localhost:4000/2022/12/01/sep&amp;inj_eff.html"><![CDATA[<p> The water splitting photocurrent ($J^\textrm{H2O} _\textrm{photocurrent}$) is a product of the rate of photon absorption expressed as a current density ($J _\textrm{absorbed}$), the charge separation yield of the photogenerated carriers ($\eta _\textrm{charge separation}$), and charge injection yield to the electrolyte ($\eta _\textrm{charge injection}$): 
+<!--more--></p>
+
+\[J ^\textrm{H2O} _\textrm{photocurrent} = J _\textrm{absorbed} \times \eta _\textrm{charge separation} \times \eta _\textrm{charge injection}\]
+
+<p>Where $\eta_\textrm{charge separation}$ is the yield of the photogenerated electrons/holes that reach the electrode/electrolyte interface or, in other words, the fraction of photogenerated electrons/holes that does not recombine with holes/electrons in the bulk of photoelectrodes. $\eta _\textrm{charge injection}$ is the yield of those electrons/holes that have reached the electrode/electrolyte interface and that are injected into the electrolyte to reduce/oxidize the water, or in other words, do not recombine with holes/electrons at surface traps. $J _\textrm{absorbed}$ is the current density converted from the absorbed photons when assuming that the absorbed photons are completely converted into electrons (APCE=100%), and it can be calculated by using the equation:</p>
+
+\[J_\textrm{absorbed} = e\times\int\limits_{\lambda_a}^{\lambda_b}\frac{P(\lambda)}{\frac{hc}{\lambda}}A(\lambda)d\lambda = \frac{e}{hc}\times \int\limits_{\lambda_a}^{\lambda_b} P(\lambda)A(\lambda) \lambda d\lambda ​\]
+
+<p>where $ \lambda_a$ is the shortest wavelength of the light emitted by the light source, $ \lambda_b$ is the wavelength of the absorption edge of the photoelectrode. $P$,$\lambda$, $h$, $c$, $e$, and $A$ are the power of incident photons, the wavelength of the incident monochromatic light, the Planck constant, the light speed, the charge of single electron, and the absorbance of the photoelectrode, respectively.</p>
+
+<p> On the other hand, $\eta_\textrm{charge separation}$ is assumed to become 100% ($\eta_\textrm{charge injection} = 1$) in the presence of electron scavenger (usually ascorbic acid) or hole scavenger (usually H$_2$O$_2$ or Na$_2$SO$ _3$) in the electrolyte, then the photocurrent measured with scavenger in the electrolyte ($J^\textrm{scavenger} _\textrm{photocurrent}$) is a product of $J _\textrm{absorbed}$ and $\eta _\textrm{charge separation}$ only:</p>
+
+\[J^\textrm{scavenger} _\textrm{photocurrent}=J _\textrm{absorbed}\times\eta _\textrm{charge separation}​\]
+
+<p>So, the $\eta_\textrm{charge separation}$ and $\eta_\textrm{charge injection}$ can be calculated by</p>
+
+\[\eta _\textrm{charge separation}= J^\textrm{scavenger} _\textrm{photocurrent} /J _\textrm{absorbed}\]
+
+\[\eta _\textrm{charge injection}=J^\textrm{H2O} _\textrm{photocurrent}/J^\textrm{scavenger} _\textrm{photocurrent}\]
+
+<p><strong>Notes:</strong></p>
+
+<ol>
+  <li>The scavenger used should be transparent to visible and UV light, does not corrode the photoelectrode, and importantly the injection barrier is removed and the surface recombination is suppressed. (No transient photocurrent in the chopped light J-t measurement)</li>
+  <li>The band bending should remain the same in both electrolyte solution (with and without the scavenger), namely, the flat band potential should be the same from Mott-Schottky measurement.</li>
+  <li>The C program used to process the charge separation and injection yields can be downloaded from <a href="">to be added</a>.</li>
+</ol>
+
+<p><strong>Example:</strong></p>
+
+<p><strong>Reference:</strong></p>
+
+<ol>
+  <li>
+    <p>Dotan, H. et al. Probing the Photoelectrochemical Properties of Hematite (α-Fe$_2$O$_3$) Electrodes Using Hydrogen Peroxide as a Hole Scavenger. <em>Energy Environ. Sci.</em> <strong>2011</strong>, <em>4</em> (3), 958.</p>
+  </li>
+  <li>
+    <p>Li, J, et al. Superior Visible Light Hydrogen Evolution of Janus Bilayer Junctions via Atomic-Level Charge Flow Steering. <em>Nat. Commun.</em> <strong>2016</strong>, <em>7</em>, 11480.</p>
+  </li>
+</ol>]]></content><author><name>Guancai Xie</name><email>man.xiegc@gmail.com</email></author><category term="PC-PEC" /><summary type="html"><![CDATA[ The water splitting photocurrent ($J^\textrm{H2O} _\textrm{photocurrent}$) is a product of the rate of photon absorption expressed as a current density ($J _\textrm{absorbed}$), the charge separation yield of the photogenerated carriers ($\eta _\textrm{charge separation}$), and charge injection yield to the electrolyte ($\eta _\textrm{charge injection}$):]]></summary></entry><entry><title type="html">Welcome</title><link href="http://localhost:4000/2018/07/01/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2018-07-01T00:00:00+08:00</published><updated>2018-07-01T00:00:00+08:00</updated><id>http://localhost:4000/2018/07/01/welcome</id><content type="html" xml:base="http://localhost:4000/2018/07/01/welcome.html"><![CDATA[<p>If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:</p>
+
+<p>You may want to <a href="https://kitian616.github.io/jekyll-TeXt-theme/docs/en/configuration">config the site</a> or <a href="https://kitian616.github.io/jekyll-TeXt-theme/docs/en/writing-posts">writing a post</a> next. Please feel free to <a href="https://github.com/kitian616/jekyll-TeXt-theme/issues">create an issue</a> or <a href="mailto:kitian616@outlook.com">send me an email</a> if you have any questions.</p>
+
+<!--more-->
+
+<hr />
+
+<p>If you like TeXt, don’t forget to give me a star. :star2:</p>
+
+<p><a href="https://github.com/kitian616/jekyll-TeXt-theme/"><img src="https://img.shields.io/github/stars/kitian616/jekyll-TeXt-theme.svg?label=Stars&amp;style=social" alt="Star This Project" /></a></p>]]></content><author><name></name></author><category term="TeXt" /><summary type="html"><![CDATA[If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:]]></summary></entry></feed>
