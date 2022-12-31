@@ -1,0 +1,14 @@
+- name: Dr. Guancai Xie
+  photo: headshot.jpg
+  info: Post Doc., National Center for Nanoscience and Technology
+  email: man.xiegc@gmail.com
+  #github: https://github.com/guancai
+  researchgate: https://www.researchgate.net/profile/Guancai-Xie
+  scholar: https://scholar.google.com/citations?user=9n0oCicAAAAJ&hl=en
+  cv: 
+  # Change the number below to the number of "educations" you have (up to 6)
+  number_educ: 3
+  education1: "(2020) Ph.D. Condensed Matter Physics, University of Chinese Academy of Sciences"
+  education2: "(2013) M.S. Condensed Matter Physics, Chongqing Unviersity"
+  education3: "(2010) B.S. Applied Physics, Chongqing Unviersity"
+  # education4: 

@@ -1,0 +1,1373 @@
+<!DOCTYPE html><html lang="en">
+  <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>FDI</title>
+
+<meta name="description" content="Academic webpage of Dr. Guancai Xie">
+<link rel="canonical" href="http://localhost:4000/publications"><link rel="alternate" type="application/rss+xml" title="FDI" href="/feed.xml">
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="canonical" href="http://localhost:4000/publications">
+<link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/favicon.ico">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+
+<meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
+
+<meta name="theme-color" content="#ffffff">
+<!-- end favicons snippet --><link rel="stylesheet" href="/assets/css/main.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css" ><!-- start custom head snippets -->
+
+<!-- end custom head snippets -->
+<script>(function() {
+  window.isArray = function(val) {
+    return Object.prototype.toString.call(val) === '[object Array]';
+  };
+  window.isString = function(val) {
+    return typeof val === 'string';
+  };
+
+  window.hasEvent = function(event) {
+    return 'on'.concat(event) in window.document;
+  };
+
+  window.isOverallScroller = function(node) {
+    return node === document.documentElement || node === document.body || node === window;
+  };
+
+  window.isFormElement = function(node) {
+    var tagName = node.tagName;
+    return tagName === 'INPUT' || tagName === 'SELECT' || tagName === 'TEXTAREA';
+  };
+
+  window.pageLoad = (function () {
+    var loaded = false, cbs = [];
+    window.addEventListener('load', function () {
+      var i;
+      loaded = true;
+      if (cbs.length > 0) {
+        for (i = 0; i < cbs.length; i++) {
+          cbs[i]();
+        }
+      }
+    });
+    return {
+      then: function(cb) {
+        cb && (loaded ? cb() : (cbs.push(cb)));
+      }
+    };
+  })();
+})();
+(function() {
+  window.throttle = function(func, wait) {
+    var args, result, thisArg, timeoutId, lastCalled = 0;
+
+    function trailingCall() {
+      lastCalled = new Date;
+      timeoutId = null;
+      result = func.apply(thisArg, args);
+    }
+    return function() {
+      var now = new Date,
+        remaining = wait - (now - lastCalled);
+
+      args = arguments;
+      thisArg = this;
+
+      if (remaining <= 0) {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+        lastCalled = now;
+        result = func.apply(thisArg, args);
+      } else if (!timeoutId) {
+        timeoutId = setTimeout(trailingCall, remaining);
+      }
+      return result;
+    };
+  };
+})();
+(function() {
+  var Set = (function() {
+    var add = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (data[i] === item) {
+          return;
+        }
+      }
+      this.size ++;
+      data.push(item);
+      return data;
+    };
+
+    var Set = function(data) {
+      this.size = 0;
+      this._data = [];
+      var i;
+      if (data.length > 0) {
+        for (i = 0; i < data.length; i++) {
+          add.call(this, data[i]);
+        }
+      }
+    };
+    Set.prototype.add = add;
+    Set.prototype.get = function(index) { return this._data[index]; };
+    Set.prototype.has = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (this.get(i) === item) {
+          return true;
+        }
+      }
+      return false;
+    };
+    Set.prototype.is = function(map) {
+      if (map._data.length !== this._data.length) { return false; }
+      var i, j, flag, tData = this._data, mData = map._data;
+      for (i = 0; i < tData.length; i++) {
+        for (flag = false, j = 0; j < mData.length; j++) {
+          if (tData[i] === mData[j]) {
+            flag = true;
+            break;
+          }
+        }
+        if (!flag) { return false; }
+      }
+      return true;
+    };
+    Set.prototype.values = function() {
+      return this._data;
+    };
+    return Set;
+  })();
+
+  window.Lazyload = (function(doc) {
+    var queue = {js: [], css: []}, sources = {js: {}, css: {}}, context = this;
+    var createNode = function(name, attrs) {
+      var node = doc.createElement(name), attr;
+      for (attr in attrs) {
+        if (attrs.hasOwnProperty(attr)) {
+          node.setAttribute(attr, attrs[attr]);
+        }
+      }
+      return node;
+    };
+    var end = function(type, url) {
+      var s, q, qi, cbs, i, j, cur, val, flag;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        s[url] = true;
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (cur.urls.has(url)) {
+            qi = cur, val = qi.urls.values();
+            qi && (cbs = qi.callbacks);
+            for (flag = true, j = 0; j < val.length; j++) {
+              cur = val[j];
+              if (!s[cur]) {
+                flag = false;
+              }
+            }
+            if (flag && cbs && cbs.length > 0) {
+              for (j = 0; j < cbs.length; j++) {
+                cbs[j].call(context);
+              }
+              qi.load = true;
+            }
+          }
+        }
+      }
+    };
+    var load = function(type, urls, callback) {
+      var s, q, qi, node, i, cur,
+        _urls = typeof urls === 'string' ? new Set([urls]) : new Set(urls), val, url;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (_urls.is(cur.urls)) {
+            qi = cur;
+            break;
+          }
+        }
+        val = _urls.values();
+        if (qi) {
+          callback && (qi.load || qi.callbacks.push(callback));
+          callback && (qi.load && callback());
+        } else {
+          q.push({
+            urls: _urls,
+            callbacks: callback ? [callback] : [],
+            load: false
+          });
+          for (i = 0; i < val.length; i++) {
+            node = null, url = val[i];
+            if (s[url] === undefined) {
+              (type === 'js' ) && (node = createNode('script', { src: url }));
+              (type === 'css') && (node = createNode('link', { rel: 'stylesheet', href: url }));
+              if (node) {
+                node.onload = (function(type, url) {
+                  return function() {
+                    end(type, url);
+                  };
+                })(type, url);
+                (doc.head || doc.body).appendChild(node);
+                s[url] = false;
+              }
+            }
+          }
+        }
+      }
+    };
+    return {
+      js: function(url, callback) {
+        load('js', url, callback);
+      },
+      css: function(url, callback) {
+        load('css', url, callback);
+      }
+    };
+  })(this.document);
+})();
+</script><script>
+  (function() {
+    var TEXT_VARIABLES = {
+      version: '2.2.6',
+      sources: {
+        font_awesome: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css',
+        jquery: 'https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js',
+        leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js',
+        chart: 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js',
+        gitalk: {
+          js: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js',
+          css: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css'
+        },
+        valine: 'https://unpkg.com/valine/dist/Valine.min.js',
+        mathjax: 'https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
+        mermaid: 'https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js'
+      },
+      site: {
+        toc: {
+          selectors: 'h1,h2,h3,h4'
+        }
+      },
+      paths: {
+        search_js: '/assets/search.js'
+      }
+    };
+    window.TEXT_VARIABLES = TEXT_VARIABLES;
+  })();
+</script>
+</head>
+  <body>
+    <div class="root" data-is-touch="false">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
+
+      <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
+      <div class="header__title">
+        <div class="header__brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"/></svg><a title="Academic webpage of Dr. Guancai Xie" href="/">FDI</a></div><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></div><nav class="navigation">
+        <ul><li class="navigation__item"><a href="/research">Research</a></li><li class="navigation__item navigation__item--active"><a href="/publications">Publication</a></li><li class="navigation__item"><a href="/wiki.html">Wiki</a></li><li class="navigation__item"><a href="/tool">Tool</a></li><li class="navigation__item"><a href="/archive.html">Archive</a></li><li class="navigation__item"><a href="/about.html">About</a></li></ul>
+      </nav></div>
+  </header>
+</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
+
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
+
+              <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
+
+<!-- end custom main top snippet -->
+<article itemscope itemtype="http://schema.org/WebPage"><div class="article__header"><header><h1></h1></header></div><meta itemprop="headline" content=""><div class="js-article-content"><style>
+.jumbotron{
+    padding-bottom:0px;
+    padding-top:5px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+</style>
+
+<div class="jumbotron">
+  <p>†: equal contribution;     ✉︎: corresponding author</p>
+</div>
+
+<h3 id="manuscript">Manuscript</h3>
+<div class="jumbotron">
+
+  <!--
+<div class="row">
+<div class="d-none d-md-block col-sm-2">
+<p><img src="/images/pubpic/wang21jece.jpg" width="100%" style="margin-top:5px" /></p>
+</div>
+<div class="col-md-auto col-sm-12 col-xs-12">
+<p><font color="#88af9a"><strong>11. </strong></font>
+<br>
+<br><font color="#d97b61"><i><b></b></i></font>, 2020, 41(1), 2-8.
+<br><a href="/papers/2023bf/cjc2020.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1016/s1872-2067(19)63465-0" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#cjc2020" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="cjc2020">ABSTRACT</a></p><div class="collapse" id="cjc2020">
+<div class="well-collapse"><p>
+</p></div></div></div>
+
+
+
+
+
+
+<div class="row">
+<div class="col-md-auto col-sm-12 col-xs-12">
+<p><font color="#88af9a"><strong>2. In-situ generation of high valence state metals in surface protection layer of photoanodes for enhanced water oxidation</strong></font>
+<br><b><u>Guancai Xie</u></b>, Jian Ru Gong<sup>✉︎</sup>
+<br><font color="#d97b61"><i><b>In preparation</b></i></font>.
+</p></div></div>
+
+<div class="row">
+<div class="col-md-auto col-sm-12 col-xs-12">
+<p><font color="#88af9a"><strong>1. Porous 2D Catalyst Covers Improve Photoelectrochemical Water-oxidation Performance</strong></font>
+<br><b><u>Guancai Xie</u></b>†, Xiaolong Liu†, Beidou Guo, Ting Tan<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br><font color="#d97b61"><i><b>Advanced Materials</b></i></font>, Under review.
+</p></div></div>
+-->
+</div>
+<h3 id="journal-articles">Journal articles</h3>
+<h5 id="citations-1143--h-index-10---by-google-schalor">(Citations: 1143 | h-index: 10 |  by <a href="https://scholar.google.com/citations?user=9n0oCicAAAAJ&amp;hl=en" target="_blank">Google Schalor</a>)</h5>
+
+<h4 id="2023">2023</h4>
+<div class="jumbotron">
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>2. Metal Oxide/Graphene/Metal Sandwich Structure for Efficient Photoelectrochemical Water Oxidation</strong></font>
+<br /><b><u>Guancai Xie</u></b>, Beidou Guo, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Advanced Functional Materials</b></i></font>, 2023, Online.
+<br /><a href="/papers/2023/afm2023.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1002/adfm.202210420" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#afm2023" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="afm2023">ABSTRACT</a></p>
+      <div class="collapse" id="afm2023">
+        <div class="well-collapse">
+          <p>
+Single-layer graphene (SLG) has drawn considerable interest in photoelectrochemical (PEC) cells due to its atomically flat pinhole-free structure and remarkable in-plane carrier mobility. It is challenging, however, to obtain efficient SLG-modified photoelectrodes for PEC water splitting mainly due to the inefficient charge transfer interface. Here, a transition metal oxide/SLG/transition metal sandwich structure modified n-Si-based model photoanode is constructed to regulate the interfacial charge transfer behavior for enhanced PEC water oxidation performance. In this sandwich configuration, SLG tailors the morphology, structure, and work function properties of surface metal electrocatalysts to obtain both higher thermodynamic photovoltage and faster kinetical charge transfer at the semiconductor/electrolyte interface. In addition, SLG promotes the surface catalytic reaction as an effective charge trap and storage layer. This study provides a new structural design to engineer the SLG interfacial properties for high-performance energy conversion devices.
+</p>
+        </div>
+      </div>
+      <div class="col-md-center col-sm-10 col-xs-12">
+        <p><img src="/images/papers/afm2023.pdf" width="50%" style="margin-top:0px" /></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>1. Surface charge recombination matters for single- versus polycrystalline catalysts in the case study of hematite photoanodes
+</strong></font>
+<br />Yawen Dai†, <b><u>Guancai Xie</u></b>†, Xinrui Jia, Beidou Guo, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Applied Surface Science</b></i></font>, 2023, 610, 155501.
+<br /><a href="/papers/2023/ass2023.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1016/j.apsusc.2022.155501" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#ass2023" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="ass2023">ABSTRACT</a></p>
+      <div class="collapse" id="ass2023">
+        <div class="well-collapse">
+          <p>
+Charge recombination is a critical problem limiting the efficiency of catalysts for solar water splitting. Constructing both single- and polycrystalline structures have been proposed to tackle this issue, however, comparison of the two is mainly focused on the crystallinity and a comprehensive analysis of the underlying reasons is lacking. Herein, we show that the enhancement in water-oxidation activity of the single crystalline photoanode is dominated by the lower surface charge recombination as compared to the polycrystalline one, taking hematite nanorod arrays prepared by gas phase cation exchange to exclude the influence of shape as the model catalyst. In contrast, the unexpected lower bulk charge separation efficiency of single crystal than that of polycrystal indicates that increasing the crystallinity is actually not the major factor for improving bulk charge transport efficiency. Our study sheds light on the structure-property relationship of monocrystal versus polycrystal in the hematite photoelectrochemical cell, beneficial to design of high-efficient catalysts for solar energy conversion.
+</p>
+        </div>
+      </div>
+      <div class="col-md-center col-sm-10 col-xs-12">
+        <p><img src="/images/papers/ass2023.tiff" width="80%" style="margin-top:0px" /></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h4 id="before-2023">Before 2023</h4>
+<div class="jumbotron">
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>20. A facile covalent strategy for ultrafast negative photoconductance hybrid graphene/porphyrin-based photodetector</strong></font>
+<br />Mengshan Li, Xiaoqing Ma, Yanqi Mu, <b><u>Guancai Xie</u></b>, Hongfeng Wan, Minli Tao<sup>✉︎</sup>, Beidou Guo<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Nanotechnology</b></i></font>, 2022, 34(8), 085201.
+<br /><a href="/papers/2023bf/nt2022.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1088/1361-6528/aca598" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#nt2022" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="nt2022">ABSTRACT</a></p>
+      <div class="collapse" id="nt2022">
+        <div class="well-collapse">
+          <p>
+Abstract As a powerful complement to positive photoconductance (PPC), negative photoconductance (NPC) holds great potential for photodetector. However, the slow response of NPC relative to PPC devices limits their integration. Here, we propose a facile covalent strategy for an ultrafast NPC hybrid 2D photodetector. Our transistor-based graphene/porphyrin model device with a rise time of 0.2 ms and decay time of 0.3 ms has the fastest response time in the so far reported NPC hybrid photodetectors, which is attributed to efficient photogenerated charge transport and transfer. Both the photosensitive porphyrin with an electron-rich and large rigid structure and the built-in graphene frame with high carrier mobility are prone to the photogenerated charge transport. Especially, the intramolecular donor-acceptor system formed by graphene and porphyrin through covalent bonding promotes photoinduced charge transfer. This covalent strategy can be applied to other nanosystems for high-performance NPC hybrid photodetector.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>19. Nanoarray Structures for Artificial Photosynthesis</strong></font>
+<br />Liangqiu Tian†, Qi Xin†, Chang Zhao†, <b><u>Guancai Xie</u></b>, Muhammad Zain Akram, Wenrong Wang, Renping Ma, Xinrui Jia, Beidou Guo<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Small</b></i></font>, 2021, 17(38), 2006530.
+<br /><a href="/papers/2023bf/small2021.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1002/smll.202006530" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#small2021" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="small2021">ABSTRACT</a></p>
+      <div class="collapse" id="small2021">
+        <div class="well-collapse">
+          <p>
+Conversion and storage of solar energy into fuels and chemicals by artificial photosynthesis has been considered as one of the promising methods to address the global energy crisis. However, it is still far from the practical applications on a large scale. Nanoarray structures that combine the advantages of nanosize and array alignment have demonstrated great potential to improve solar energy conversion efficiency, stability, and selectivity. This article provides a comprehensive review on the utilization of nanoarray structures in artificial photosynthesis of renewable fuels and high value‐added chemicals. First, basic principles of solar energy conversion and superiorities of using nanoarray structures in this field are described. Recent research progress on nanoarray structures in both abiotic and abiotic–biotic hybrid systems is then outlined, highlighting contributions to light absorption, charge transport and transfer, and catalytic reactions (including kinetics and selectivity). Finally, conclusions and outlooks on future research directions of nanoarray structures for artificial photosynthesis are presented. Nanoarray structures that combine the advantages of nanosize and array alignment have demonstrated great potential to improve solar energy conversion efficiency, stability, and selectivity. The recent research progress in the development of various nanoarray structures in both abiotic and abiotic–biotic hybrid artificial photosynthetic systems is summarized, highlighting their contributions to light absorption, charge transport and transfer, and catalytic reactions.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>18. Role of transition-metal electrocatalysts for oxygen evolution with Si-based photoanodes</strong></font>
+<br />Rajender Boddula†, <b><u>Guancai Xie</u></b>†, Beidou Guo, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Chinese Journal of Catalysis</b></i></font>, 2021, 42(8), 1387-1394.
+<br /><a href="/papers/2023bf/cjc2021.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1016/s1872-2067(20)63647-6" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#cjc2021" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="cjc2021">ABSTRACT</a></p>
+      <div class="collapse" id="cjc2021">
+        <div class="well-collapse">
+          <p>
+A comprehensive understanding of the role of the electrocatalyst in photoelectrochemical (PEC) water splitting is central to improving its performance. Herein, taking the Si-based photoanodes (n+p-Si/SiOx/Fe/FeOx/MOOH, M = Fe, Co, Ni) as a model system, we investigate the effect of the transition-metal electrocatalysts on the oxygen evolution reaction (OER). Among the photoanodes with the three different electrocatalysts, the best OER activity, with a low-onset potential of ∼1.01 V RHE, a high photocurrent density of 24.10 mA cm−2 at 1.23 V RHE, and a remarkable saturation photocurrent density of 38.82 mA cm−2, was obtained with the NiOOH overlayer under AM 1.5G simulated sunlight (100 mW cm−2) in 1 M KOH electrolyte. The optimal interfacial engineering for electrocatalysts plays a key role for achieving high performance because it promotes interfacial charge transport, provides a larger number of surface active sites, and results in higher OER activity, compared to other electrocatalysts. This study provides insights into how electrocatalysts function in water-splitting devices to guide future studies of solar energy conversion.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>17. Modification of interface and electronic transport in van der Waals heterojunctions by UV/O3</strong></font>
+<br />Xiaoqing Ma, Yanqi Mu, <b><u>Guancai Xie</u></b>, Hongfeng Wan, Weixuan Li, Mengshan Li, Haitao Dai, Beidou Guo<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Nanotechnology</b></i></font>, 2021, 32(41), 415703.
+<br /><a href="/papers/2023bf/nt2021.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1088/1361-6528/ac1095" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#nt2021" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="nt2021">ABSTRACT</a></p>
+      <div class="collapse" id="nt2021">
+        <div class="well-collapse">
+          <p>
+Two-dimensional (2D) van der Waals heterojunctions have many unique properties, and energy band modulation is central to applying these properties to electronic devices. Taking the 2D graphene/MoS2heterojunction as a model system, we demonstrate that the band structure can be finely tuned by changing the graphene structure of the 2D heterojunction via ultraviolet/ozone (UV/O3). With increasing UV/O3exposure time, graphene in the heterojunction has more defect structures. The varied defect levels in graphene modulate the interfacial charge transfer, accordingly the band structure of the heterojunction. And the corresponding performance change of the graphene/MoS2field effect transistor indicates the shift of the Schottky barrier height after UV/O3treatment. The result further proves the effective band structure modulation of the graphene/MoS2heterojunction by UV/O3. This work will be beneficial to both fundamental research and practical applications of 2D van der Waals heterojunction in electronic devices.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>16. Memristors based on TiOx/HfOx or AlOx/HfOx Multilayers with Gradually Varied Thickness</strong></font>
+<br />Binfeng Yin†, Yongzhi Wang†, <b><u>Guancai Xie</u></b>, Beidou Guo<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Physica Status Solidi (RRL) – Rapid Research Letters</b></i></font>, 2021, 15(6), 2000607.
+<br /><a href="/papers/2023bf/pssr2021.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1002/pssr.202000607" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#pssr2021" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="pssr2021">ABSTRACT</a></p>
+      <div class="collapse" id="pssr2021">
+        <div class="well-collapse">
+          <p>
+As a fourth fundamental two‐terminal circuit element, memristors have received great research interest as resistive random access memory (RRAM). Herein, a new memristor structure based on TiOx/HfOx or AlOx/HfOx multilayers with gradually varied thickness as the switching material is fabricated. The devices show forming‐free, self‐compliance, reliable multilevel resistive switching, and low switching voltage properties, and are promising for applications in future advanced integrated circuits. A novel memristor based on multilayer TiOx/HfOx or AlOx/HfOx with gradually varied thickness simultaneously realizes the properties of forming‐free, multilevel resistive switching, low switching voltage, and self‐compliance.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>15. Atomic arrangement matters: band-gap variation in composition-tunable (Ga1–xZnx)(N1–xOx) nanowires</strong></font>
+<br />Kai Zhang†, Tao Chen†, Yasir Abbas†, Saad Ullah Jan, Zhaohui Zhou, Shengqi Chu, <b><u>Guancai Xie</u></b>, Sana Ullah, Muhammad Zain Akram, Jing Zhang<sup>✉︎</sup>, Yimin Xuan<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Matter</b></i></font>, 2021, 4(3), 1054-1071.
+<br /><a href="/papers/2023bf/matter2021.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1016/j.matt.2020.12.024" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#matter2021" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="matter2021">ABSTRACT</a></p>
+      <div class="collapse" id="matter2021">
+        <div class="well-collapse">
+          <p>
+We synthesized single-crystal (Ga1–xZnx)(N1–xOx) nanowires with fully tunable compositions (0 &lt; x &lt; 1) using a customized chemical vapor deposition strategy. Despite the uniform distributions of component elements at the nanometer scale, X-ray absorption fine structure analysis in combination with ab initio multiple-scattering calculation verified the existence of a strong clustering tendency, i.e., the energetic preference of the valence-matched Ga-N and Zn-O pairs, in the synthesized nanowires. The strong clustering tendency plays a dominant role in determining the electronic band structures of the nanowires, causing a continuous band-gap reduction with increasing ZnO content, which is interpreted via a type II band alignment among the intracrystalline heterojunctions formed between the incorporated clusters and the host material. This, ultimately, makes the sample with the highest ZnO content show the highest water-splitting activity. Atomic arrangement engineering will provide an additional tool for band-gap engineering of semiconductor alloys, greatly benefiting the development of new functional materials for energy conversion applications.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>14. Overall Regulation of Exciton Dynamics by Defect Engineering in Polymeric Photocatalysts for Hydrogen Evolution</strong></font>
+<br />Liangqiu Tian†, Wenjing Xie†, Xianxin Wu, Beidou Guo, <b><u>Guancai Xie</u></b>, Ping Cheng<sup>✉︎</sup>, Xinfeng Liu<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>The Journal of Physical Chemistry C</b></i></font>, 2020, 124(45), 24667-24676.
+<br /><a href="/papers/2023bf/jpcc2020.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1021/acs.jpcc.0c08830" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#jpcc2020" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="jpcc2020">ABSTRACT</a></p>
+      <div class="collapse" id="jpcc2020">
+        <div class="well-collapse">
+          <p>
+For photocatalysts with a strong exciton effect, overall understanding and regulating exciton dynamics, which is central to optimizing performance, have been ignored. Herein, taking a carbon nitride derivative as the model system, we demonstrate the alteration of multiple band structures for regulating the overall exciton dynamics and accordingly the photocatalytic hydrogen evolution performance by introducing cyano defects. Both experimental and theoretical data show that with increasing defect concentration, the defect-mediated trap state (TS) increases the singlet exciton generation, facilitates the exciton transfer from the first singlet excited state to TS rather than to the triplet excited state, promotes exciton dissociation, and suppresses the singlet exciton recombination until reaching to the highest activity. However, excess defects will act as recombination centers, leading to severe exciton recombination and decreased activity. This work provides a new insight into an in-depth understanding of comprehensive regulation of exciton dynamics for high-efficiency solar energy conversion.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>13. Metal Sputtering Buffer Layer for High Performance Si-Based Water Oxidation Photoanode</strong></font>
+<br />Chang Zhao†, Beidou Guo†, <b><u>Guancai Xie</u></b>, Chengcheng Li, Wenjing Xie, Yawen Dai, Jinlong Gong<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>ACS Applied Energy Materials</b></i></font>, 2020, 3(9), 8216-8223.
+<br /><a href="/papers/2023bf/aem2020.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1021/acsaem.0c00609" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#aem2020" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="aem2020">ABSTRACT</a></p>
+      <div class="collapse" id="aem2020">
+        <div class="well-collapse">
+          <p>
+The sputtering deposition commonly adopted in the photoelectrochemical water splitting device usually causes structure damage and accordingly performance degradation. Taking the Si-based photoanode as a model system, we propose a facile strategy to enable sputtering deposition of the film without damaging the underlying layer by introducing a metal sputtering buffer layer, which ensures high-quality interface structure and excellent water oxidation performance. In our work, the Ni sputtering buffer layer avoids the damage on the Al2O3 passivation layer during the NiFe oxide electrocatalyst sputtering process. Consequently, a Si/Al2O3/Ni metal–insulator–semiconductor junction with a precise configuration is formed, which increases the Si barrier height by reducing the interface state density and suppressing Fermi-level pinning, thus enhancing the photovoltage in thermodynamics and accelerating the oxygen evolution reaction (OER) in kinetics. In addition, the dense NiFe oxide with high transmittance and antireflection properties functions as both an efficient OER electrocatalyst and a robust protective layer and contributes to efficient use of the incident light. The photoanode affords a high water oxidation activity with an onset potential of ∼0.92 V vs reversible hydrogen electrode (VRHE) and a high photocurrent density of ∼31 mA cm–2 at 1.23 VRHE after further incorporating the cocatalyst NiFe-layered double hydroxide and has no obvious decay after 330 h of continuous operation. This strategy is beneficial for developing energy conversion devices on a large scale.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>12. Enhanced photochemical CO2 reduction in the gas phase by graphdiyne</strong></font>
+<br />Shaowen Cao, Yajie Wang, Bicheng Zhu, <b><u>Guancai Xie</u></b>, Jiaguo Yu<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Journal of Materials Chemistry A</b></i></font>, 2020, 8(16), 7671-7676.
+<br /><a href="/papers/2023bf/jmca2020.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1039/d0ta02256j" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#jmca2020" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="jmca2020">ABSTRACT</a></p>
+      <div class="collapse" id="jmca2020">
+        <div class="well-collapse">
+          <p>
+Photocatalytic CO2 reduction is promising for reducing the greenhouse effect and producing renewable energy, but still shows low activity and selectivity due to the ineffective utilization of photogenerated charge carriers and insufficient active sites for CO2 adsorption and activation. Taking CdS nanocrystals as a model semiconductor, we demonstrate that graphdiyne, a new type of two-dimensional carbon allotrope uniquely formed from sp- and sp2-hybridized carbon, enhances CO2 photoreduction over CdS with higher activity, selectivity, and stability in the gas phase without any sacrificial agent compared to graphene. Both experimental and theoretical results prove that the chemical bonding between graphdiyne and CdS and sufficient CO2 adsorption sites due to the strong interfacial interaction-induced sulfur vacancies in CdS and more electron-deficient acetylenic linkages in graphdiyne lead to more efficient electron transfer and storage for the subsequent CO2 reduction reaction. The excellent properties of graphdiyne make it promising for applications in solar energy conversion.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>11. GaP/GaPN core/shell nanowire array on silicon for enhanced photoelectrochemical hydrogen production</strong></font>
+<br /><b><u>Guancai Xie</u></b>†, Saad Ullah Jan†, Zejian Dong, Yawen Dai, Rajender Boddula, Yuxuan Wei, Chang Zhao, Qi Xin, Jiao-Na Wang, Yinfang Du, Lan Ma, Beidou Guo<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Chinese Journal of Catalysis</b></i></font>, 2020, 41(1), 2-8.
+<br /><a href="/papers/2023bf/cjc2020.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1016/s1872-2067(19)63465-0" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#cjc2020" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="cjc2020">ABSTRACT</a></p>
+      <div class="collapse" id="cjc2020">
+        <div class="well-collapse">
+          <p>
+Simultaneously improving the efficiency and stability on a large scale is significant for the development of photoelectrochemical (PEC) water splitting systems. Here, we demonstrated a novel design of GaP/GaPN core/shell nanowire (NW) decorated p-Si photocathode for improved PEC hydrogen production performance compared to that of bare p-Si photocathode. The formation of the p-n junction between p-Si and GaP NW promotes charge separation, and the lower conduction band position of GaPN relative to that of GaP further facilitates the transfer of photogenerated electrons to the electrode surface. In addition, the NW morphology both shortens the carrier collection distance and increases the specific surface area, which result in superior reaction kinetics. Moreover, introduction of N in GaP is beneficial for enhancing the light absorption as well as stability. Our efficient and facile strategy can be applied to other solar energy conversion systems as well.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>10. Irradiation Direction‐Dependent Surface Charge Recombination in Hematite Thin‐Film Oxygen Evolution Photoanodes</strong></font>
+<br /><b><u>Guancai Xie</u></b>†, Xiaoyue Zhang†, Xiao Ouyang†, Qi Xin, Beidou Guo<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>ChemCatChem</b></i></font>, 2019, 11(24), 6332-6338.
+<br /><a href="/papers/2023bf/cctc2019.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1002/cctc.201901524" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#cctc2019" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="cctc2019">ABSTRACT</a></p>
+      <div class="collapse" id="cctc2019">
+        <div class="well-collapse">
+          <p>
+For photoelectrochemical (PEC) devices, light irradiation direction changes photogenerated charge distribution and thus will affect the charge collection efficiency of the photoelectrodes. Herein, we studied the influence of irradiation direction on charge collection properties of α‐Fe2O3 photoanodes with different geometries, and demonstrated the controlled charge collection by modifying surface geometry. An irradiation direction‐dependent surface charge recombination was identified. In comparison with backside irradiation, frontside irradiation was found to be favorable to obtain high photocurrent because of the effective hole collection, except for the thick planar film due to its high surface recombination. This problem can be solved by patterning the planar film surface with nanonet geometry to promote surface charge transfer. As a result, the nanonet photoanode exhibited a higher photocurrent than the planar counterpart under frontside irradiation. Our finding provides useful guidance on designing high efficiency PEC devices. Irradiation direction affects charge collection: Frontside irradiation is generally beneficial for photohole collection and high photocurrent, but the high surface charge recombination in thick planar films makes it inferior compared to backside irradiation. Patterning planar film surfaces with nanonet structures can suppress charge recombination by accelerating photohole injection at surface.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>9. Modulating Photoelectrochemical Water-Splitting Activity by Charge-Storage Capacity of Electrocatalysts</strong></font>
+<br />Yawen Dai†, Ping Cheng†, <b><u>Guancai Xie</u></b>†, Chengcheng Li, Muhammad Zain Akram, Beidou Guo, Rajender Boddula, Xinghua Shi<sup>✉︎</sup>, Jinlong Gong<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>The Journal of Physical Chemistry C</b></i></font>, 2019, 123(47), 28753-28762.
+<br /><a href="/papers/2023bf/jpcc2019.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1021/acs.jpcc.9b08343" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#jpcc2019" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="jpcc2019">ABSTRACT</a></p>
+      <div class="collapse" id="jpcc2019">
+        <div class="well-collapse">
+          <p>
+Electrocatalysts (ECs) are indispensable for high-efficiency photoelectrochemical (PEC) water splitting, but the underlying mechanism for performance modulation is still not clear. Taking the α-Fe2O3 semiconductor (SC) decorated with the cobalt oxide ECs as the model photoanode system, we demonstrate the opposite changes of PEC water oxidation activities by tuning the charge-storage capacity of ECs. Holes stored in the EC can increase the hole density on the photoanode surface, which can benefit the multihole surface water oxidation reaction, as well as aggravate the SC–EC interfacial charge recombination due to the Coulomb attraction. Both experimental and theoretical data prove that the EC with low hole-storage capacity brings limited interfacial charge recombination, enabling faster hole injection to improve the water oxidation activity. In contrast, the EC with high hole-storage capacity causes severe interfacial charge recombination, hindering the hole injection, thus decreasing the water oxidation activity. As a result, the PEC activity of photoanodes changes nonmonotonically with increasing surface hole density. This study can provide insightful guidance to interface design for solar energy-conversion systems.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>8. Synergetic Effects of Dual Electrocatalysts for High-Performance Solar-Driven Water Oxidation</strong></font>
+<br />Rajender Boddula†, Beidou Guo†, Akbar Ali†, <b><u>Guancai Xie</u></b>, Yawen Dai, Chang Zhao, Yuxuan Wei, Saad Ullah Jan, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>ACS Applied Energy Materials</b></i></font>, 2019, 2(10), 7256-7262.
+<br /><a href="/papers/2023bf/aem2019.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1021/acsaem.9b01209" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#aem2019" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="aem2019">ABSTRACT</a></p>
+      <div class="collapse" id="aem2019">
+        <div class="well-collapse">
+          <p>
+Integration of electrocatalysts (ECs) with photoabsorbers is indispensable for high-performance solar water splitting. However, how the interaction between different ECs affects the performance is less explored. In the model system of the Si-based photoanode paired with different transition-metal-based EC dual layers, the oxygen evolution reaction with high efficiency and stability is obtained at low cost via synergetic effects of dual ECs. The spontaneous mutual doping between the EC dual layers greatly increases the conductivity of the electrode, thus facilitating the interfacial charge transfer, and the EC interlayer with high hole-accumulation ability can dramatically improve the hole collection capacity of the EC overlayer. In addition, the dynamic cycle of dissolution, diffusion, and deposition of a tiny amount of metal species between the EC dual layers favors the electrode stability. This work provides insightful guidance to interface design of high-performance devices for solar energy conversion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>7. Improving the Water Oxidation Efficiency with a Light-Induced Electric Field in Nanograting Photoanodes</strong></font>
+<br />Wenrong Wang†, Beidou Guo†, Haitao Dai, Chang Zhao, <b><u>Guancai Xie</u></b>, Renping Ma, Muhammad Zain Akram, Hangyong Shan, Congzhong Cai, Zheyu Fang<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Nano Letters</b></i></font>, 2019, 19(9), 6133-6139.
+<br /><a href="/papers/2023bf/nl2019_2.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1021/acs.nanolett.9b02122" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#nl2019_2" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="nl2019_2">ABSTRACT</a></p>
+      <div class="collapse" id="nl2019_2">
+        <div class="well-collapse">
+          <p>
+Severe charge recombination in solar water-splitting devices significantly limits their performance. To address this issue, we design a frustum of a cone nanograting configuration by taking the hematite and Au-based thin-film photoanode as a model system, which greatly improves the photoelectrochemical water oxidation activity, affording an approximately 10-fold increase in the photocurrent density at 1.23 V versus the reversible hydrogen electrode compared to the planar counterpart. The surface plasmon polariton-induced electric field in hematite plays a dominant role in efficiency enhancement by facilitating charge separation, thus dramatically increasing the incident photon-to-current efficiency (IPCE) by more than 2 orders of magnitude in the near band gap of hematite. And the relatively weak electric field caused by light scattering in the nanograting structure is responsible for the approximate maximum 20-fold increase in IPCE within a broadband wavelength range. Our scalable strategy can be generalized to other solar energy conversion systems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>6. Interaction-Dependent Interfacial Charge-Transfer Behavior in Solar Water-Splitting Systems</strong></font>
+<br /><b><u>Guancai Xie</u></b>†, Liming Guan†, Linjuan Zhang†, Beidou Guo, Aisha Batool, Qi Xin, Rajender Boddula, Saad Ullah Jan, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Nano Letters</b></i></font>, 2019, 19(2), 1234-1241.
+<br /><a href="/papers/2023bf/nl2019.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1021/acs.nanolett.8b04768" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#nl2019" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="nl2019">ABSTRACT</a></p>
+      <div class="collapse" id="nl2019">
+        <div class="well-collapse">
+          <p>
+Dual-band-gap systems are promising for solar water splitting due to their excellent light-harvesting capability and high charge-separation efficiency. However, a fundamental understanding of interfacial charge-transfer behavior in the dual-band-gap configuration is still incomplete. Taking CdS/reduced graphene oxide (CdS/RGO) nanoheterojunctions as a model solar water splitting system, we attempt here to highlight the interaction-dependent interfacial charge-transfer behavior based on both experimental observations and theoretical calculations. Experimental evidence points to charge transfer at the CdS-RGO interface playing a dominant role in the photocatalytic hydrogen production activity. By tuning the degree of reduction of RGO, the interfacial interaction, and, thereby, the charge transfer can be controlled at the CdS-RGO interface. This observation is supported by theoretical analysis, where we find that the interfacial charge transfer is a balance between the effective single-electron- and hole-transfer probability and the surface free electron and hole concentration, both of which are related to the surface potential and tailored by interfacial interaction. This mechanism is applicable to all systems for solar water splitting, providing a useful guidance for the design and study of heterointerfaces for high-efficiency energy conversion.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>5. Vertically Aligned Porous Organic Semiconductor Nanorod Array Photoanodes for Efficient Charge Utilization</strong></font>
+<br />Beidou Guo†, Liangqiu Tian†, Wenjing Xie†, Aisha Batool, <b><u>Guancai Xie</u></b>, Qin Xiang, Saad Ullah Jan, Rajender Boddula, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Nano Letters</b></i></font>, 2018,18(9), 5954-5960.
+<br /><a href="/papers/2023bf/nl2018_2.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1021/acs.nanolett.8b02740" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#nl2018_2" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="nl2018_2">ABSTRACT</a></p>
+      <div class="collapse" id="nl2018_2">
+        <div class="well-collapse">
+          <p>
+Because of inefficient charge utilization caused by localized π-electron conjugation and large exciton binding energy, the photoelectrochemical water-splitting efficiency of organic polymers is seriously limited. Taking the graphitic carbon nitride (g-CN) polymer as an example, we report a novel photoanode based on a vertically aligned g-CN porous nanorod (PNR) array prepared in situ, using a thermal polycondensation approach, with anodic aluminum oxide as the template. The g-CN PNR array exhibits an excellent photocurrent density of 120.5 μA cm-2 at 1.23 VRHE under one sun illumination, the highest reported incident photon-to-current efficiency of ∼15% at 360 nm, and an outstanding oxygen evolution reaction stability in 0.1 M Na2SO4 aqueous solution, which constitutes a benchmark performance among the reported g-CN-based polymer photoanodes without any sacrificial reagents. When compared with its planar counterpart, the enhanced performance of the PNR array results principally from its unique structure that enables a high degree of aromatic ring π-electron conjugation for higher mobility of charge carriers, provides a direct pathway for the electron transport to the substrate, produces a large portion of hole-accepting defect sites and space charge region to promote exciton dissociation, and also withstands more strain at the interface to ensure intimate contact with the substrate. This work opens a new avenue to develop nanostructured organic semiconductors for large-scale application of solar energy conversion devices.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>4. Facile Integration between Si and Catalyst for High-Performance Photoanodes by a Multifunctional Bridging Layer</strong></font>
+<br />Beidou Guo†, Aisha Batool†, <b><u>Guancai Xie</u></b>, Rajender Boddula, Liangqiu Tian, Saad Ullah Jan, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Nano Letters</b></i></font>, 2018, 18(2), 1516-1521.
+<br /><a href="/papers/2023bf/nl2018.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1021/acs.nanolett.7b05314" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#nl2018" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="nl2018">ABSTRACT</a></p>
+      <div class="collapse" id="nl2018">
+        <div class="well-collapse">
+          <p>
+Designing high-quality interfaces is crucial for high-performance photoelectrochemical (PEC) water-splitting devices. Here, we demonstrate a facile integration between polycrystalline n+p-Si and NiFe-layered double hydroxide (LDH) nanosheet array by a partially activated Ni (Ni/NiOx) bridging layer for the excellent PEC water oxidation. In this model system, the thermally deposited Ni interlayer protects Si against corrosion and makes good contact with Si, and NiOx has a high capacity of hole accumulation and strong bonding with the electrodeposited NiFe-LDH due to the similarity in material composition and structure, facilitating transfer of accumulated holes to the catalyst. In addition, the back illumination configuration makes NiFe-LDH sufficiently thick for more catalytically active sites without compromising Si light absorption. This earth-abundant multicomponent photoanode affords the PEC performance with an onset potential of ∼0.78 V versus reversible hydrogen electrode (RHE), a photocurrent density of ∼37 mA cm-2 at 1.23 V versus RHE, and retains good stability in 1.0 M KOH, the highest water oxidation activity so far reported for the crystalline Si-based photoanodes. This bridging layer strategy is efficient and simple to smooth charge transfer and make robust contact at the semiconductor/electrocatalyst interface in the solar water-splitting systems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>3. Sacrificial Interlayer for Promoting Charge Transport in Hematite Photoanode</strong></font>
+<br />Kai Zhang†, Tianjiao Dong†, <b><u>Guancai Xie</u></b>†, Liming Guan†, Beidou Guo†, Qin Xiang, Yawen Dai, Liangqiu Tian, Aisha Batool, Saad Ullah Jan, Rajender Boddula, Akbar Ali Thebo, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>ACS Applied Materials &amp; Interfaces</b></i></font>, 2017, 9(49), 42723-42733.
+<br /><a href="/papers/2023bf/ami2017.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1021/acsami.7b13163 " target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#ami2017" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="ami2017">ABSTRACT</a></p>
+      <div class="collapse" id="ami2017">
+        <div class="well-collapse">
+          <p>
+The semiconductor/electrolyte interface plays a crucial role in photoelectrochemical (PEC) water-splitting devices as it determines both thermodynamic and kinetic properties of the photoelectrode. Interfacial engineering is central for the device performance improvement. Taking the cheap and stable hematite (α-Fe2O3) wormlike nanostructure photoanode as a model system, we design a facile sacrificial interlayer approach to suppress the crystal overgrowth and realize Ti doping into the crystal lattice of α-Fe2O3 in one annealing step as well as to avoid the consequent anodic shift of the photocurrent onset potential, ultimately achieving five times increase in its water oxidation photocurrent compared to the bare hematite by promoting the transport of charge carriers, including both separation of photogenerated charge carriers within the bulk semiconductor and transfer of holes across the semiconductor-electrolyte interface. Our research indicates that understanding the semiconductor/electrolyte interfacial engineering mechanism is pivotal for reconciling various strategies in a beneficial way, and this simple and cost-effective method can be generalized into other systems aiming for efficient and scalable solar energy conversion.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>2. A Photoelectrochemical Investigation on the Synergetic Effect between CdS and Reduced Graphene Oxide for Solar-Energy Conversion</strong></font>
+<br /><b><u>Guancai Xie</u></b>†, Kai Zhang†, Hui Fang, Beidou Guo, Ruzhi Wan<sup>✉︎</sup>, Hui Yan, Liang Fang<sup>✉︎</sup>, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Chemistry - An Asian Journal</b></i></font>, 2013, 8, 2395–2400.
+<br /><a href="/papers/2023bf/caj2013.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1002/asia.201300524" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#caj2013" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="caj2013">ABSTRACT</a></p>
+      <div class="collapse" id="caj2013">
+        <div class="well-collapse">
+          <p>
+CdS modified with reduced graphene oxide (RGO) has been widely demonstrated to be effective in the field of solar-energy conversion. However, the inherent mechanism of this superior property is still not thoroughly understood. Thus the photoelectrochemical method was employed to systemically investigate the synergetic effect between CdS and RGO. The result shows that the photoelectrochemical properties of RGO/CdS samples are sensitive to the relative ratio of RGO to CdS, and the photoelectrode with 1.0 wt % ratio of RGO possesses the best photoelectrochemical performance. Further investigation demonstrates that the synergetic effect between CdS and RGO directly influences the charge-transport property and band-structure of the composite, which is also supported by the X-ray photoelectron spectroscopy data and first-principle simulation, respectively.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-auto col-sm-12 col-xs-12">
+      <p><font color="#88af9a"><strong>1. Graphene-Based Materials for Hydrogen Generation from Light-Driven Water Splitting</strong></font>
+<br /><b><u>Guancai Xie</u></b>, Kai Zhang, Beidou Guo, Qian Liu, Liang Fang, Jian Ru Gong<sup>✉︎</sup>
+<br /><font color="#d97b61"><i><b>Advanced Materials</b></i></font>, 2013, 25(28), 3820-3839.
+<br /><a href="/papers/2023bf/am2013.pdf" target="_blank"><button type="button" class="btn btn-success btn-sm">PDF</button></a>
+<a href="http://doi.org/10.1002/adma.201301207" target="_blank"><button type="button" class="btn btn-warning btn-sm">DOI</button></a>
+<a data-toggle="collapse" href="#am2013" class="btn btn-sm btn-info" role="button" aria-expanded="false" aria-controls="am2013">ABSTRACT</a></p>
+      <div class="collapse" id="am2013">
+        <div class="well-collapse">
+          <p>
+Hydrogen production from solar water splitting has been considered as an ultimate solution to the energy and environmental issues. Over the past few years, graphene has made great contribution to improving the light-driven hydrogen generation performance. This article provides a comprehensive overview of the recent research progress on graphene-based materials for hydrogen evolution from light-driven water splitting. It begins with a brief introduction of the current status and basic principles of hydrogen generation from solar water splitting, and tailoring properties of graphene for application in this area. Then, the roles of graphene in hydrogen generation reaction, including an electron acceptor and transporter, a cocatalyst, a photocatalyst, and a photosensitizer, are elaborated respectively. After that, the comparison between graphene and other carbon materials in solar water splitting is made. Last, this review is concluded with remarks on some challenges and perspectives in this emerging field.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+
+<!-- end custom main bottom snippet -->
+</div>
+            </div></div></div><div class="page__footer d-print-none"><br/>
+<section id="footer">
+<div class="container-footer">
+  <div class="panel-footer">
+	 <center><p>Last updated on Dec 31, 2022 </p></center> 
+     <center><p>&copy 2022 FDI </p></center>
+	</div>
+  </div>
+</div>
+
+<script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+<script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+</div></div>
+    </div><script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $body = $('body'), $window = $(window);
+    var $pageRoot = $('.js-page-root'), $pageMain = $('.js-page-main');
+    var activeCount = 0;
+    function modal(options) {
+      var $root = this, visible, onChange, hideWhenWindowScroll = false;
+      var scrollTop;
+      function setOptions(options) {
+        var _options = options || {};
+        visible = _options.initialVisible === undefined ? false : show;
+        onChange = _options.onChange;
+        hideWhenWindowScroll = _options.hideWhenWindowScroll;
+      }
+      function init() {
+        setState(visible);
+      }
+      function setState(isShow) {
+        if (isShow === visible) {
+          return;
+        }
+        visible = isShow;
+        if (visible) {
+          activeCount++;
+          scrollTop = $(window).scrollTop() || $pageMain.scrollTop();
+          $root.addClass('modal--show');
+          $pageMain.scrollTop(scrollTop);
+          activeCount === 1 && ($pageRoot.addClass('show-modal'), $body.addClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.on('scroll', hide);
+          $window.on('keyup', handleKeyup);
+        } else {
+          activeCount > 0 && activeCount--;
+          $root.removeClass('modal--show');
+          $window.scrollTop(scrollTop);
+          activeCount === 0 && ($pageRoot.removeClass('show-modal'), $body.removeClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.off('scroll', hide);
+          $window.off('keyup', handleKeyup);
+        }
+        onChange && onChange(visible);
+      }
+      function show() {
+        setState(true);
+      }
+      function hide() {
+        setState(false);
+      }
+      function handleKeyup(e) {
+        // Char Code: 27  ESC
+        if (e.which ===  27) {
+          hide();
+        }
+      }
+      setOptions(options);
+      init();
+      return {
+        show: show,
+        hide: hide,
+        $el: $root
+      };
+    }
+    $.fn.modal = modal;
+  });
+})();
+</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal"><script>
+(function () {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    // search panel
+    var search = (window.search || (window.search = {}));
+    var useDefaultSearchBox = window.useDefaultSearchBox === undefined ?
+      true : window.useDefaultSearchBox ;
+
+    var $searchModal = $('.js-page-search-modal');
+    var $searchToggle = $('.js-search-toggle');
+    var searchModal = $searchModal.modal({ onChange: handleModalChange, hideWhenWindowScroll: true });
+    var modalVisible = false;
+    search.searchModal = searchModal;
+
+    var $searchBox = null;
+    var $searchInput = null;
+    var $searchClear = null;
+
+    function getModalVisible() {
+      return modalVisible;
+    }
+    search.getModalVisible = getModalVisible;
+
+    function handleModalChange(visible) {
+      modalVisible = visible;
+      if (visible) {
+        search.onShow && search.onShow();
+        useDefaultSearchBox && $searchInput[0] && $searchInput[0].focus();
+      } else {
+        search.onShow && search.onHide();
+        useDefaultSearchBox && $searchInput[0] && $searchInput[0].blur();
+        setTimeout(function() {
+          useDefaultSearchBox && ($searchInput.val(''), $searchBox.removeClass('not-empty'));
+          search.clear && search.clear();
+          window.pageAsideAffix && window.pageAsideAffix.refresh();
+        }, 400);
+      }
+    }
+
+    $searchToggle.on('click', function() {
+      modalVisible ? searchModal.hide() : searchModal.show();
+    });
+    // Char Code: 83  S, 191 /
+    $(window).on('keyup', function(e) {
+      if (!modalVisible && !window.isFormElement(e.target || e.srcElement) && (e.which === 83 || e.which === 191)) {
+        modalVisible || searchModal.show();
+      }
+    });
+
+    if (useDefaultSearchBox) {
+      $searchBox = $('.js-search-box');
+      $searchInput = $searchBox.children('input');
+      $searchClear = $searchBox.children('.js-icon-clear');
+      search.getSearchInput = function() {
+        return $searchInput.get(0);
+      };
+      search.getVal = function() {
+        return $searchInput.val();
+      };
+      search.setVal = function(val) {
+        $searchInput.val(val);
+      };
+
+      $searchInput.on('focus', function() {
+        $(this).addClass('focus');
+      });
+      $searchInput.on('blur', function() {
+        $(this).removeClass('focus');
+      });
+      $searchInput.on('input', window.throttle(function() {
+        var val = $(this).val();
+        if (val === '' || typeof val !== 'string') {
+          search.clear && search.clear();
+        } else {
+          $searchBox.addClass('not-empty');
+          search.onInputNotEmpty && search.onInputNotEmpty(val);
+        }
+      }, 400));
+      $searchClear.on('click', function() {
+        $searchInput.val(''); $searchBox.removeClass('not-empty');
+        search.clear && search.clear();
+      });
+    }
+  });
+})();
+</script><div class="search search--dark">
+  <div class="main">
+    <div class="search__header">Search</div>
+    <div class="search-bar">
+      <div class="search-box js-search-box">
+        <div class="search-box__icon-search"><i class="fas fa-search"></i></div>
+        <input type="text" />
+        <div class="search-box__icon-clear js-icon-clear">
+          <a><i class="fas fa-times"></i></a>
+        </div>
+      </div>
+      <button class="button button--theme-dark button--pill search__cancel js-search-toggle">
+        Cancel</button>
+    </div>
+    <div class="search-result js-search-result"></div>
+  </div>
+</div>
+<script>var SOURCES = window.TEXT_VARIABLES.sources;
+var PAHTS = window.TEXT_VARIABLES.paths;
+window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
+  var search = (window.search || (window.search = {}));
+  var searchData = window.TEXT_SEARCH_DATA || {};
+
+  function memorize(f) {
+    var cache = {};
+    return function () {
+      var key = Array.prototype.join.call(arguments, ',');
+      if (key in cache) return cache[key];
+      else return cache[key] = f.apply(this, arguments);
+    };
+  }
+
+  /// search
+  function searchByQuery(query) {
+    var i, j, key, keys, cur, _title, result = {};
+    keys = Object.keys(searchData);
+    for (i = 0; i < keys.length; i++) {
+      key = keys[i];
+      for (j = 0; j < searchData[key].length; j++) {
+        cur = searchData[key][j], _title = cur.title;
+        if ((result[key] === undefined || result[key] && result[key].length < 4 )
+          && _title.toLowerCase().indexOf(query.toLowerCase()) >= 0) {
+          if (result[key] === undefined) {
+            result[key] = [];
+          }
+          result[key].push(cur);
+        }
+      }
+    }
+    return result;
+  }
+
+  var renderHeader = memorize(function(header) {
+    return $('<p class="search-result__header">' + header + '</p>');
+  });
+
+  var renderItem = function(index, title, url) {
+    return $('<li class="search-result__item" data-index="' + index + '"><a class="button" href="' + url + '">' + title + '</a></li>');
+  };
+
+  function render(data) {
+    if (!data) { return null; }
+    var $root = $('<ul></ul>'), i, j, key, keys, cur, itemIndex = 0;
+    keys = Object.keys(data);
+    for (i = 0; i < keys.length; i++) {
+      key = keys[i];
+      $root.append(renderHeader(key));
+      for (j = 0; j < data[key].length; j++) {
+        cur = data[key][j];
+        $root.append(renderItem(itemIndex++, cur.title, cur.url));
+      }
+    }
+    return $root;
+  }
+
+  // search box
+  var $result = $('.js-search-result'), $resultItems;
+  var lastActiveIndex, activeIndex;
+
+  function clear() {
+    $result.html(null);
+    $resultItems = $('.search-result__item'); activeIndex = 0;
+  }
+  function onInputNotEmpty(val) {
+    $result.html(render(searchByQuery(val)));
+    $resultItems = $('.search-result__item'); activeIndex = 0;
+    $resultItems.eq(0).addClass('active');
+  }
+
+  search.clear = clear;
+  search.onInputNotEmpty = onInputNotEmpty;
+
+  function updateResultItems() {
+    lastActiveIndex >= 0 && $resultItems.eq(lastActiveIndex).removeClass('active');
+    activeIndex >= 0 && $resultItems.eq(activeIndex).addClass('active');
+  }
+
+  function moveActiveIndex(direction) {
+    var itemsCount = $resultItems ? $resultItems.length : 0;
+    if (itemsCount > 1) {
+      lastActiveIndex = activeIndex;
+      if (direction === 'up') {
+        activeIndex = (activeIndex - 1 + itemsCount) % itemsCount;
+      } else if (direction === 'down') {
+        activeIndex = (activeIndex + 1 + itemsCount) % itemsCount;
+      }
+      updateResultItems();
+    }
+  }
+
+  // Char Code: 13  Enter, 37  ⬅, 38  ⬆, 39  ➡, 40  ⬇
+  $(window).on('keyup', function(e) {
+    var modalVisible = search.getModalVisible && search.getModalVisible();
+    if (modalVisible) {
+      if (e.which === 38) {
+        modalVisible && moveActiveIndex('up');
+      } else if (e.which === 40) {
+        modalVisible && moveActiveIndex('down');
+      } else if (e.which === 13) {
+        modalVisible && $resultItems && activeIndex >= 0 && $resultItems.eq(activeIndex).children('a')[0].click();
+      }
+    }
+  });
+
+  $result.on('mouseover', '.search-result__item > a', function() {
+    var itemIndex = $(this).parent().data('index');
+    itemIndex >= 0 && (lastActiveIndex = activeIndex, activeIndex = itemIndex, updateResultItems());
+  });
+});
+</script>
+</div></div>
+
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function scrollToAnchor(anchor, duration, callback) {
+      var $root = this;
+      $root.animate({ scrollTop: $(anchor).position().top }, duration, function() {
+        window.history.replaceState(null, '', window.location.href.split('#')[0] + anchor);
+        callback && callback();
+      });
+    }
+    $.fn.scrollToAnchor = scrollToAnchor;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function affix(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroll,
+        offsetBottom = 0, scrollTarget = window, scroll = window.document, disabled = false, isOverallScroller = true,
+        rootTop, rootLeft, rootHeight, scrollBottom, rootBottomTop,
+        hasInit = false, curState;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.offsetBottom && (offsetBottom = _options.offsetBottom);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroll && (scroll = _options.scroll);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $scrollTarget = $(scrollTarget);
+        isOverallScroller = window.isOverallScroller($scrollTarget[0]);
+        $scroll = $(scroll);
+      }
+      function preCalc() {
+        top();
+        rootHeight = $root.outerHeight();
+        rootTop = $root.offset().top + (isOverallScroller ? 0 :  $scrollTarget.scrollTop());
+        rootLeft = $root.offset().left;
+      }
+      function calc(needPreCalc) {
+        needPreCalc && preCalc();
+        scrollBottom = $scroll.outerHeight() - offsetBottom - rootHeight;
+        rootBottomTop = scrollBottom - rootTop;
+      }
+      function top() {
+        if (curState !== 'top') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: 0
+          });
+          curState = 'top';
+        }
+      }
+      function fixed() {
+        if (curState !== 'fixed') {
+          $root.addClass('fixed').css({
+            left: rootLeft + 'px',
+            top: 0
+          });
+          curState = 'fixed';
+        }
+      }
+      function bottom() {
+        if (curState !== 'bottom') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: rootBottomTop + 'px'
+          });
+          curState = 'bottom';
+        }
+      }
+      function setState() {
+        var scrollTop = $scrollTarget.scrollTop();
+        if (scrollTop >= rootTop && scrollTop <= scrollBottom) {
+          fixed();
+        } else if (scrollTop < rootTop) {
+          top();
+        } else {
+          bottom();
+        }
+      }
+      function init() {
+        if(!hasInit) {
+          var interval, timeout;
+          calc(true); setState();
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState();
+          });
+          $window.on('resize', function() {
+            disabled || (calc(true), setState());
+          });
+          hasInit = true;
+        }
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions,
+        refresh: function() {
+          calc(true, { animation: false }); setState();
+        }
+      };
+    }
+    $.fn.affix = affix;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function toc(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroller, $tocUl = $('<ul class="toc toc--ellipsis"></ul>'), $tocLi, $headings, $activeLast, $activeCur,
+        selectors = 'h1,h2,h3', container = 'body', scrollTarget = window, scroller = 'html, body', disabled = false,
+        headingsPos, scrolling = false, hasRendered = false, hasInit = false;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.selectors && (selectors = _options.selectors);
+        _options.container && (container = _options.container);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroller && (scroller = _options.scroller);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $headings = $(container).find(selectors).filter('[id]');
+        $scrollTarget = $(scrollTarget);
+        $scroller = $(scroller);
+      }
+      function calc() {
+        headingsPos = [];
+        $headings.each(function() {
+          headingsPos.push(Math.floor($(this).position().top));
+        });
+      }
+      function setState(element, disabled) {
+        var scrollTop = $scrollTarget.scrollTop(), i;
+        if (disabled || !headingsPos || headingsPos.length < 1) { return; }
+        if (element) {
+          $activeCur = element;
+        } else {
+          for (i = 0; i < headingsPos.length; i++) {
+            if (scrollTop >= headingsPos[i]) {
+              $activeCur = $tocLi.eq(i);
+            } else {
+              $activeCur || ($activeCur = $tocLi.eq(i));
+              break;
+            }
+          }
+        }
+        $activeLast && $activeLast.removeClass('active');
+        ($activeLast = $activeCur).addClass('active');
+      }
+      function render() {
+        if(!hasRendered) {
+          $root.append($tocUl);
+          $headings.each(function() {
+            var $this = $(this);
+            $tocUl.append($('<li></li>').addClass('toc-' + $this.prop('tagName').toLowerCase())
+              .append($('<a></a>').text($this.text()).attr('href', '#' + $this.prop('id'))));
+          });
+          $tocLi = $tocUl.children('li');
+          $tocUl.on('click', 'a', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            scrolling = true;
+            setState($this.parent());
+            $scroller.scrollToAnchor($this.attr('href'), 400, function() {
+              scrolling = false;
+            });
+          });
+        }
+        hasRendered = true;
+      }
+      function init() {
+        var interval, timeout;
+        if(!hasInit) {
+          render(); calc(); setState(null, scrolling);
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState(null, scrolling);
+          });
+          $window.on('resize', window.throttle(function() {
+            if (!disabled) {
+              render(); calc(); setState(null, scrolling);
+            }
+          }, 100));
+        }
+        hasInit = true;
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions
+      };
+    }
+    $.fn.toc = toc;
+  });
+})();
+/*(function () {
+
+})();*/
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
+
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
+    }
+
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
+  });
+})();
+</script><script>
+  window.Lazyload.js(['https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js', 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js'], function() {
+    var $canvas = null, $this = null, _ctx = null, _text = '';
+    $('.language-chart').each(function(){
+      $this = $(this);
+      $canvas = $('<canvas></canvas>');
+      _text = $this.text();
+      $this.text('').append($canvas);
+      _ctx = $canvas.get(0).getContext('2d');
+      (_ctx && _text) && (new Chart(_ctx, JSON.parse(_text)) && $this.attr('data-processed', true));
+    });
+  });
+</script>
+<script type="text/x-mathjax-config">
+	var _config = { tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']]
+	}};_config.TeX = { equationNumbers: { autoNumber: "all" } };MathJax.Hub.Config(_config);
+</script>
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script>
+  window.Lazyload.js('https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js', function() {
+    mermaid.initialize({
+      startOnLoad: true
+    });
+    mermaid.init(undefined, '.language-mermaid');
+  });
+</script>
+
+    </div>
+    <script>(function () {
+  var $root = document.getElementsByClassName('root')[0];
+  if (window.hasEvent('touchstart')) {
+    $root.dataset.isTouch = true;
+    document.addEventListener('touchstart', function(){}, false);
+  }
+})();
+</script>
+  </body>
+</html>
+
