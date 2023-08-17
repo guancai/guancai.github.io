@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-01-03T15:15:23+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FDI</title><subtitle>Academic webpage of Dr. Guancai Xie</subtitle><entry><title type="html">Open-circuit potential and photovoltage in photoelectrodes</title><link href="http://localhost:4000/2022/12/06/ocp_pv.html" rel="alternate" type="text/html" title="Open-circuit potential and photovoltage in photoelectrodes" /><published>2022-12-06T00:00:00+08:00</published><updated>2022-12-06T00:00:00+08:00</updated><id>http://localhost:4000/2022/12/06/ocp_pv</id><content type="html" xml:base="http://localhost:4000/2022/12/06/ocp_pv.html"><![CDATA[<p><strong>The open-circuit potential</strong> (OCP, $V_\mathrm{oc}$) is the potential of the work electrode (WE) relative to the reference electrode (RE) under open-circuit condition (no potential or current is being applied to the cell). It can be established by leaving the potential of the WE uncontrolled, allowing it to achieve equilibrium with the electrolyte. This can be done in both the light and the dark. The open circuit potential is obtained by monitoring the rate of change of the WE potential until it is negligible.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-06-13T12:38:46+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FDI</title><subtitle>Academic webpage of Dr. Guancai Xie</subtitle><entry><title type="html">Creat Scientific Plots Using Matplotlib</title><link href="http://localhost:4000/2023/01/21/Power.html" rel="alternate" type="text/html" title="Creat Scientific Plots Using Matplotlib" /><published>2023-01-21T00:00:00+08:00</published><updated>2023-01-21T00:00:00+08:00</updated><id>http://localhost:4000/2023/01/21/Power</id><content type="html" xml:base="http://localhost:4000/2023/01/21/Power.html"><![CDATA[<p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.</p>
+
+<p><strong>Reference:</strong></p>
+<ol>
+  <li>https://en.wikipedia.org/wiki/Air_mass_(solar_energy)</li>
+</ol>
+
+<p>https://towardsdatascience.com/matplotlib-styles-for-scientific-plotting-d023f74515b4</p>]]></content><author><name>Guancai Xie</name><email>man.xiegc@gmail.com</email></author><category term="IT" /><summary type="html"><![CDATA[Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.]]></summary></entry><entry><title type="html">Creat Scientific Plots Using Matplotlib</title><link href="http://localhost:4000/2023/01/21/plots.html" rel="alternate" type="text/html" title="Creat Scientific Plots Using Matplotlib" /><published>2023-01-21T00:00:00+08:00</published><updated>2023-01-21T00:00:00+08:00</updated><id>http://localhost:4000/2023/01/21/plots</id><content type="html" xml:base="http://localhost:4000/2023/01/21/plots.html"><![CDATA[<p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.</p>
+
+<p><strong>Reference:</strong></p>
+<ol>
+  <li>https://en.wikipedia.org/wiki/Air_mass_(solar_energy)</li>
+</ol>
+
+<p>https://towardsdatascience.com/matplotlib-styles-for-scientific-plotting-d023f74515b4</p>]]></content><author><name>Guancai Xie</name><email>man.xiegc@gmail.com</email></author><category term="IT" /><summary type="html"><![CDATA[Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.]]></summary></entry><entry><title type="html">The AM1.5G Spectrum - Standard Solar Spctrum</title><link href="http://localhost:4000/2023/01/11/AM15G.html" rel="alternate" type="text/html" title="The AM1.5G Spectrum - Standard Solar Spctrum" /><published>2023-01-11T00:00:00+08:00</published><updated>2023-01-11T00:00:00+08:00</updated><id>http://localhost:4000/2023/01/11/AM15G</id><content type="html" xml:base="http://localhost:4000/2023/01/11/AM15G.html"><![CDATA[<p>The solar spectrum changes throughout the day and with location. This is because of a combination of local atmospheric conditions and geometric considerations. The tropics, for example, receive more irradiance on average than the equator due to a lower prevalence of clouds, which reflect much of the incoming solar radiation (see Figure 1). This variation in the solar irradiance would make it extremely difficult to compare the performance of different solar cell technologies measured in different locations, even if you kept the time of day and year kept consistent. For this reason, it is necessary to have ‘standardised’ solar spectra. These spectra function as a universally accepted reference for testing and comparing photovoltaic devices.<!--more--></p>
+
+<center>
+  <img src="/images/wiki/AM15-1.png" />
+  <br />
+  <b>Figure 1</b>. Map of long-term average of global horizonal irradiation
+</center>
+
+<p>Standard reference spectra are defined to allow the performance comparison of photovoltaic devices from different manufacturers and research laboratories. The first standardised solar spectrum came from the International Commission on Illumination (CIE) in 1972 and represented the solar noon sun at the equator on an equinox ($θ_s = 0°$) with no cloud but a defined volume of water vapour, ozone and aerosols in the atmosphere. They also suggested using an irradiance of 1000 W/m$^2$ (100 mW/cm$^2$) in the 290 nm – 3000 nm wavelength range as a reference intensity. This reference spectrum has been refined over the years. In 1982 the American Society for Testing and Materials (ASTM) published two calculated reference spectra that would become the basis for standardised solar cell testing:</p>
+<ol>
+  <li>A direct normal irradiance spectrum (AM1.5D)</li>
+  <li>A global horizontal irradiance spectrum (AM1.5G)</li>
+</ol>
+
+<p>The ‘AM1.5’ in both reference spectrums refers to the <strong>air mass</strong> used in calculating the spectra. As the sunlight travels through the atmosphere, chemicals interact with the sunlight and absorb certain wavelengths changing the amount of short-wavelength light reaching the Earth’s surface. Both absorption and scattering depend rather strongly on the path length of sunlight through the atmosphere, i.e. on the sun’s elevation angle above the horizon. <u>Air mass is the path length which light takes through the atmosphere normalized to the shortest possible path length (that is, when the sun is directly overhead). The Air Mass quantifies the reduction in the power of light as it passes through the atmosphere and is absorbed by air and dust.</u>  The air mass is defined as:</p>
+
+\[\mathrm{AM} = \frac{1}{\cos(\theta)}\]
+
+<p>where $\theta$ is the angle (in degrees) from the vertical (zenith angle) (see Figure 2).</p>
+
+<center>
+  <img src="/images/wiki/AM15-2.png" />
+  <br />
+  <b>Figure 2</b>. Schematic of air mass definition
+</center>
+
+<p>The above calculation for air mass assumes that the atmosphere is a flat horizontal layer, but because of the curvature of the atmosphere, the air mass is not quite equal to the atmospheric path length when the sun is close to the horizon. However, it is reasonably accurate for values of zenith angel up to around 75°. At sunrise, the angle of the sun from the vertical position is 90° and the air mass is infinite, whereas the path length clearly is not. An equation which incorporates the curvature of the earth is:</p>
+
+\[\mathrm{AM} = \frac{1}{\cos(\theta)+0.50572(96.07995-\theta)^{-1.6364}}\]
+
+<p><strong>AM0</strong>, meaning “zero atmospheres”, is the spectrum outside the atmosphere. Solar cells used for space power applications, like those on communications satellites, are generally characterized using AM0.</p>
+
+<p><strong>AM1.5</strong>, <u>corresponding to a solar zenith angle of 48.2°, was chosen as the ‘standard’ for terrestrial solar cell testing because it is a good representation of the yearly average irradiance in the temperate latitudes where there are many large population centres.</u>  <strong>The latest AM1.5 standards pertaining to photovoltaic applications are the <a href="/files/data/AM0AM1_5.xls">ASTM G-173</a> and IEC 60904.</strong></p>
+<ul>
+  <li>AM1.5D: The direct radiation of the test plane when sunlight passes through 1.5 times thickness of the atmosphere at an angle of θ=48.2°. It is defined for solar concentrator work. It includes the the direct beam from the sun plus the circumsolar component in a disk 2.5 degrees around the sun. The direct plus circumsolar spectrum has an integrated power density of 900 W/m$^2$.</li>
+  <li>AM1.5G: The global radiation of the test plane when sunlight passes through 1.5 times thickness of the atmosphere at an angle of θ=48.2°. The sum of the direct and diffuse radiation. It is designed for flat plate modules and has an integrated power of 1000 W/m$^2$ (100 mW/cm$^2$).</li>
+</ul>
+
+<center>
+  <img src="/images/wiki/AM15-spectra.png" width="80%" />
+  <br />
+  <b>Figure 3</b>. Reference solar spectral irradiances (ASTM)
+</center>
+
+<p><strong>The difference between AM 1.5G and AM1.5D</strong>: Solar radiation refers to the electromagnetic waves and particle streams emitted by the sun into space. The solar radiation energy received by earth is only one-twentieth billionth of the total solar radiation. Common solar radiation nouns are:</p>
+<ul>
+  <li>Direct: When sunlight passes through the atmosphere, part of it reaches the ground without changing its radiation direction.</li>
+  <li>Diffuse: Another portion of solar radiation that changes direction after being reflected and scattered by the atmosphere.</li>
+  <li>Global: The sum of the direct and diffuse solar radiation reaching the ground after the weakening of the atmosphere.</li>
+  <li>The relationship between Direct/Diffuse/Global is as the formula：</li>
+</ul>
+
+\[\mathrm{Global} = \mathrm{Direct} * \cos(\theta) + \mathrm{Diffuse}\]
+
+<p><strong>Reference:</strong></p>
+<ol>
+  <li>https://en.wikipedia.org/wiki/Air_mass_(solar_energy)</li>
+  <li>https://www.ossila.com/en-jp/pages/standard-solar-spectrum</li>
+  <li>https://www.pveducation.org/pvcdrom/appendices/standard-solar-spectra</li>
+  <li>https://globalsolaratlas.info/download/world</li>
+  <li>https://www.pveducation.org/pvcdrom/properties-of-sunlight/air-mass</li>
+  <li>https://enlitechnology.com/zh-hans/blog/pv/ss-x-solar-simulatior/solar-simulator-01/</li>
+</ol>]]></content><author><name>Guancai Xie</name><email>man.xiegc@gmail.com</email></author><category term="PC-PEC" /><category term="Basic" /><summary type="html"><![CDATA[The solar spectrum changes throughout the day and with location. This is because of a combination of local atmospheric conditions and geometric considerations. The tropics, for example, receive more irradiance on average than the equator due to a lower prevalence of clouds, which reflect much of the incoming solar radiation (see Figure 1). This variation in the solar irradiance would make it extremely difficult to compare the performance of different solar cell technologies measured in different locations, even if you kept the time of day and year kept consistent. For this reason, it is necessary to have ‘standardised’ solar spectra. These spectra function as a universally accepted reference for testing and comparing photovoltaic devices.]]></summary></entry><entry><title type="html">Open-circuit potential and photovoltage in photoelectrodes</title><link href="http://localhost:4000/2022/12/06/ocp_pv.html" rel="alternate" type="text/html" title="Open-circuit potential and photovoltage in photoelectrodes" /><published>2022-12-06T00:00:00+08:00</published><updated>2022-12-06T00:00:00+08:00</updated><id>http://localhost:4000/2022/12/06/ocp_pv</id><content type="html" xml:base="http://localhost:4000/2022/12/06/ocp_pv.html"><![CDATA[<p><strong>The open-circuit potential</strong> (OCP, $V_\mathrm{oc}$) is the potential of the working electrode (WE) relative to the reference electrode (RE) under open-circuit condition (no potential or current is being applied to the cell). It can be established by leaving the potential of the WE uncontrolled, allowing it to achieve equilibrium with the electrolyte. This can be done in both the light and the dark. The open circuit potential is obtained by monitoring the rate of change of the WE potential until it is negligible.</p>
 
 <p>For a PEC water splitting device, the redox couples of interest are the H$^+$/$\mathrm{H_2}$ couple for a p-type semiconductor photocathode, and the $\mathrm{O_2}$/$\mathrm{H_2}$O couple for an n-type semiconductor photoanode. In the case of an n-type semiconductor, the established thermodynamic equilibrium ($E_F = E_\mathrm{O_2/H_2O}$) between the semiconductor and the electrolyte results in an upward band bending of the semiconductor surface. In the dark, the measured $V_\mathrm{oc-dark}$ is thus the $E_F / E_\mathrm{O_2/H_2O}$ relative to the RE. Whereas in the light, the $E_\mathrm{F_n}$ rises because of the higher occupancy of the conduction band and the $E_\mathrm{F_p}$ equilibrates with the $E_\mathrm{redox}$ ($E_\mathrm{F_p} = E_\mathrm{O_2/H_2O}$). The measured $V_\mathrm{oc-light}$ is thus the $E_\mathrm{F_n}$ relative to the RE. Furthermore, under illumination, the photogenerated holes can accumulate at the surface lowering the barrier for electrons with increasing light intensity until the electrons can reach the surface at the same rate as holes, at which condition the measured $V_\mathrm{oc-light}$ approximates the $V_\mathrm{fb}$ versus the RE.</p>
 
@@ -19,13 +95,305 @@
   <li>
     <p>Walter M G, Warren E L, McKone J R, et al. Solar water splitting cells. Chemical Reviews, 2010, 110(11): 6446-6473</p>
   </li>
-</ol>]]></content><author><name>Guancai Xie</name><email>man.xiegc@gmail.com</email></author><category term="PC-PEC" /><summary type="html"><![CDATA[The open-circuit potential (OCP, $V_\mathrm{oc}$) is the potential of the work electrode (WE) relative to the reference electrode (RE) under open-circuit condition (no potential or current is being applied to the cell). It can be established by leaving the potential of the WE uncontrolled, allowing it to achieve equilibrium with the electrolyte. This can be done in both the light and the dark. The open circuit potential is obtained by monitoring the rate of change of the WE potential until it is negligible.]]></summary></entry><entry><title type="html">Work function of metal oxides</title><link href="http://localhost:4000/2022/12/05/workfunc_mo.html" rel="alternate" type="text/html" title="Work function of metal oxides" /><published>2022-12-05T00:00:00+08:00</published><updated>2022-12-05T00:00:00+08:00</updated><id>http://localhost:4000/2022/12/05/workfunc_mo</id><content type="html" xml:base="http://localhost:4000/2022/12/05/workfunc_mo.html"><![CDATA[<p><img src="/images/wiki/.pdf" width="100%" /></p>
+</ol>]]></content><author><name>Guancai Xie</name><email>man.xiegc@gmail.com</email></author><category term="PC-PEC" /><summary type="html"><![CDATA[The open-circuit potential (OCP, $V_\mathrm{oc}$) is the potential of the working electrode (WE) relative to the reference electrode (RE) under open-circuit condition (no potential or current is being applied to the cell). It can be established by leaving the potential of the WE uncontrolled, allowing it to achieve equilibrium with the electrolyte. This can be done in both the light and the dark. The open circuit potential is obtained by monitoring the rate of change of the WE potential until it is negligible.]]></summary></entry><entry><title type="html">Work function</title><link href="http://localhost:4000/2022/12/05/workfunc.html" rel="alternate" type="text/html" title="Work function" /><published>2022-12-05T00:00:00+08:00</published><updated>2022-12-05T00:00:00+08:00</updated><id>http://localhost:4000/2022/12/05/workfunc</id><content type="html" xml:base="http://localhost:4000/2022/12/05/workfunc.html"><![CDATA[<h3 id="introduction">Introduction</h3>
 
-<p>Reference:</p>
+<p>In solid-state physics, the <strong>work function</strong> (sometimes spelt <strong>workfunction</strong>, WF) is the minimum thermodynamic work (i.e., energy) needed to remove an electron from a solid to a point in the vacuum immediately outside the solid surface. Here “immediately” means that the final electron position is far from the surface on the atomic scale (the force between the electron and its image charge in the surface can be neglected, many nm), but still too close to the solid to be influenced by ambient electric fields in the vacuum. <u>The work function is not a characteristic of a bulk material, but rather a property of the surface of the material (depending on crystal face and contamination).</u></p>
 
+<p>The work function $W$ for a given surface is defined by the difference</p>
+
+\[W = -e\phi - E_F\]
+
+<p>where $−e$ is the charge of an electron, $\phi$ is the electrostatic potential in the vacuum nearby the surface, and $E_F$ is the Fermi level (electrochemical potential of electrons) inside the material. The term $−e\phi$ is the energy of an electron at rest in the vacuum nearby the surface. Because the Fermi level is the chemical potential of the system, by definition, <u>the work function is equal to the energy difference between the Fermi level and the vacuum level at the surface of the material</u>.</p>
+
+<p>In practice, one directly controls $E_F$ by the voltage applied to the material through electrodes, and the work function is generally a fixed characteristic of the surface material. Consequently, this means that when a voltage is applied to a material, the electrostatic potential $\phi$ produced in the vacuum will be somewhat lower than the applied voltage, the difference depending on the work function of the material surface. Rearranging the above equation, one has</p>
+
+\[\phi = V- \frac{W}{e}\]
+
+<p>where $V = −E_F/e$ is the voltage of the material (as measured by a voltmeter, through an attached electrode), relative to an electrical ground that is defined as having zero Fermi level. The fact that $\phi$ depends on the material surface means that the space between two dissimilar conductors will have a built-in electric field, when those conductors are in total equilibrium with each other (electrically shorted to each other, and with equal temperatures).</p>
+
+<center>
+  <img src="/images/wiki/WF_IE_AE.png" width="60%" />
+  <br />
+  <b>Figure 1</b>. Schematic band diagram for metal and semiconductor
+</center>
+
+<p>Here, one should note that the minimum energy required to extract one electron from either a semiconductor or insulator is not the WF but the ionization energy (IE). The electron affinity (EA), which is the energy released by adding one electron to a material, is a concept similar to the WF but the direction of electron transfer is opposite. For metals, the EA has the same value as the WF (See <strong>Figure 1</strong>).</p>
+
+<h3 id="wf-of-elements">WF of Elements</h3>
+
+<p>Because WF is dependent on the cleanliness of the surface, measurements reported in the literature often cover a considerable range. <strong>Figure 2</strong> contains selected values for the electron work function of the elements which may be regarded as typical values for a reasonably clean surface. Those values, marked R in the table, come from analysis of results from different measurement methods. The method of measurement is indicated for each value. The following abbreviations appear:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Abbre.</th>
+      <th>Full name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">R –</td>
+      <td>Recommended value</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">TE –</td>
+      <td>Thermionic emission</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">PE –</td>
+      <td>Photoelectric effect</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">FE –</td>
+      <td>Field emission</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CPD –</td>
+      <td>Contact potential difference</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">polycr –</td>
+      <td>Polycrystalline sample</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">amorp –</td>
+      <td>Amorphous sample</td>
+    </tr>
+  </tbody>
+</table>
+
+<center>
+  <img src="/images/wiki/wf_metal.png" width="80%" />
+  <br />
+  <b>Figure 2</b>. Work function of elements
+</center>
+
+<h3 id="wf-of-metal-oxides">WF of Metal Oxides</h3>
+
+<p>The WFs of metal oxides can be difficult to reproduce because there are so many factors that alter an oxide’s work function (WF values for a given material can span over 1 eV). <u>The large variation in reported WF values is because WF represents the sum of electron chemical potential and surface dipole, and it is very sensitive to a number of factors.</u> Fators such as surface roughness, exposed crystal face, radiation exposure,  and adsorbate coverage affect the surface dipole component, whereas electron chemical potential is affected by the chemical identity of a material, the presence of impurities and the stoichiometry of a material.</p>
+
+<p>Although there are many factors that can alter WF, it is possible to gain control over many of these factors to tune WF. Under certain preparation conditions, one can obtain reproducible WF values for a given material. A compilation of WF values for various metal oxides (prepared by <em>in-situ</em> metal oxidation) is provided in <strong>Table 1</strong>. The values in Table 1 represent the average of the most thermodynamically stable crystal faces of each oxide, as the oxides represented here were polycrystalline and prepared by <em>in-situ</em> metal oxidation. The oxides were not exposed to air, so adsorbates likely have a minimal effect on the WF values shown here. Furthermore, as the oxides were prepared via <em>in-situ</em> oxidation (and vacuum annealing in the case of reduced oxides), they should all consist of stable oxygen-terminated surfaces. Consequently, the magnitude of the surface dipole in the WF values listed in Table 1 can be considered similar in magnitude. Thus, the values allow an approximate comparison of relative electron chemical potential values.</p>
+
+<center>
+  <b>Table 1</b>. WF values for in-situ oxidized metal oxides, measured by photoemission spectroscopy. Bandgap values were determined using combined UPS and IPES.
+</center>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Oxide</th>
+      <th style="text-align: center">WF (eV)</th>
+      <th style="text-align: center">IE (eV)</th>
+      <th style="text-align: center">Bandgap (eV)</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Oxide</th>
+      <th>WF (eV)</th>
+      <th>IE (eV)</th>
+      <th style="text-align: center">Bandgap (eV)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">TiO$_2$</td>
+      <td style="text-align: center">5.4±0.2</td>
+      <td style="text-align: center">8.0</td>
+      <td style="text-align: center">3.4</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">V$_2$O$_5$</td>
+      <td>6.8±0.1</td>
+      <td>9.26</td>
+      <td style="text-align: center">2.8</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">MoO$_3$</td>
+      <td style="text-align: center">6.82±0.05</td>
+      <td style="text-align: center">9.4</td>
+      <td style="text-align: center">3.0</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">Cr$_2$O$_3$</td>
+      <td>5.0±0.5</td>
+      <td>6.5</td>
+      <td style="text-align: center">3.2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">CuO</td>
+      <td style="text-align: center">5.9±0.1</td>
+      <td style="text-align: center">5.7</td>
+      <td style="text-align: center">1.4</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">CrO$_{3−x}$</td>
+      <td>6.75±0.2</td>
+      <td>9.0</td>
+      <td style="text-align: center">2.25</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">Cu$_2$O</td>
+      <td style="text-align: center">4.9±0.1</td>
+      <td style="text-align: center">5.5</td>
+      <td style="text-align: center">2.3</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">MoO$_2$</td>
+      <td>5.9±0.2</td>
+      <td>6.0</td>
+      <td style="text-align: center">0</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">NiO</td>
+      <td style="text-align: center">6.3±0.2</td>
+      <td style="text-align: center">6.7</td>
+      <td style="text-align: center">3.2</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">Ta$_2$O$_5$</td>
+      <td>5.2±0.2</td>
+      <td>8.9</td>
+      <td style="text-align: center">3.9</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">WO$_3$</td>
+      <td style="text-align: center">6.8±0.4</td>
+      <td style="text-align: center">9.8</td>
+      <td style="text-align: center">3.4</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">V$_2$O$_3$</td>
+      <td>4.9</td>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">CoO</td>
+      <td style="text-align: center">4.6±0.2</td>
+      <td style="text-align: center">5.2</td>
+      <td style="text-align: center">2.4</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">W$<em>{18}$O$</em>{49}$</td>
+      <td>6.4±0.1</td>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">CO$_3$O$_4$</td>
+      <td style="text-align: center">6.3±0.3</td>
+      <td style="text-align: center">6.4</td>
+      <td style="text-align: center">1.6</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">TiO</td>
+      <td>4.7±0.2</td>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">Ag$_2$O</td>
+      <td style="text-align: center">5.51</td>
+      <td style="text-align: center">6.4</td>
+      <td style="text-align: center">1.3</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<center>
+  <img src="/images/wiki/wf_mo.png" width="60%" />
+  <br />
+  <b>Figure 3</b>. Energy levels of in-situ oxidized metal oxides on an absolute energy scale (determined from direct and inverse photoemission).
+</center>
+
+<ul>
+  <li>Reducing the cation oxidation state of an oxide tends to decrease its work function</li>
+  <li>Removing oxygen in an oxide tends to decrease the work function, whereas adding oxygen tends to increase its work function.</li>
+  <li>Work function of an oxide after the air-saturated (approximately a week later in air) is universally lower than the initially measured value with a difference that scales with the initial work function.</li>
+</ul>
+
+<h3 id="wf-of-other-common-materials">WF of Other Common Materials</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Material</th>
+      <th>WF (eV)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ITO</td>
+      <td>~4.7</td>
+    </tr>
+    <tr>
+      <td>FTO</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td>Graphene</td>
+      <td>~4.4</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Reference:</strong></p>
 <ol>
-  <li>Universal energy-level alignment of molecules on metal oxides</li>
-</ol>]]></content><author><name>Guancai Xie</name><email>man.xiegc@gmail.com</email></author><category term="Data" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Metrics for evaluating PEC performance</title><link href="http://localhost:4000/2022/12/04/pec_metric.html" rel="alternate" type="text/html" title="Metrics for evaluating PEC performance" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/2022/12/04/pec_metric</id><content type="html" xml:base="http://localhost:4000/2022/12/04/pec_metric.html"><![CDATA[<p>By definition, the efficiency for any process that converts energy from one form to another is the ratio of the total power output to the total power input. For PEC systems, the <strong>solar-to-hydrogen (STH) efficiency</strong> is the single value by which all PEC devices can be reliably ranked against one another, which can be directly determined by analysis of the hydrogen formed under solar AM 1.5G illumination <u>in the absence of an applied bias</u>. For a correct STH efficiency measurement, the working electrode (WE) and counter electrode (CE) should be short-circuited, which infers that STH is <u>measured in a 2-electrode system</u>. Besides, one must have both the WE and CE immersed in the same pH solution. In addition, <u>the electrolyte should not contain any sacrificial donors or acceptors</u>.</p>
+  <li>Wikipedia-work function, <a href="https://en.wikipedia.org/wiki/Work_function">https://en.wikipedia.org/wiki/Work_function</a>.</li>
+  <li><a href="https://hbcp.chemnetbase.com/faces/documents/12_21/12_21_0001.xhtml">ELECTRON WORK FUNCTION OF THE ELEMENTS</a></li>
+  <li>Universal energy-level alignment of molecules on metal oxides, <em>Nature materials</em> 2012, 11.1: 76-81.</li>
+  <li>Universal Work Function of Metal Oxides Exposed to Air, <em>Advanced Materials Interfaces</em> 2019, 6.12: 1802058.</li>
+  <li>Thin-film metal oxides in organic semiconductor devices: their electronic structures, work functions and interfaces, <em>NPG Asia Materials</em> 2013, 5.7: e55-e55.</li>
+</ol>]]></content><author><name>Guancai Xie</name><email>man.xiegc@gmail.com</email></author><category term="Data" /><category term="Basic" /><summary type="html"><![CDATA[Introduction]]></summary></entry><entry><title type="html">Metrics for evaluating PEC performance</title><link href="http://localhost:4000/2022/12/04/pec_metric.html" rel="alternate" type="text/html" title="Metrics for evaluating PEC performance" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/2022/12/04/pec_metric</id><content type="html" xml:base="http://localhost:4000/2022/12/04/pec_metric.html"><![CDATA[<p>By definition, the efficiency for any process that converts energy from one form to another is the ratio of the total power output to the total power input. For PEC systems, the <strong>solar-to-hydrogen (STH) efficiency</strong> is the single value by which all PEC devices can be reliably ranked against one another, which can be directly determined by analysis of the hydrogen formed under solar AM 1.5G illumination <u>in the absence of an applied bias</u>. For a correct STH efficiency measurement, the working electrode (WE) and counter electrode (CE) should be short-circuited, which infers that STH is <u>measured in a 2-electrode system</u>. Besides, one must have both the WE and CE immersed in the same pH solution. In addition, <u>the electrolyte should not contain any sacrificial donors or acceptors</u>.</p>
 
 <p><strong>STH</strong> can be calculated from the product of the rate of hydrogen production $r_\mathrm{H_2}$ (mmol/s) and the gain in Gibbs energy $\Delta G$ (237 kJ mol$^{−1}$).</p>
 
@@ -87,56 +455,7 @@
   <li>
     <p>Hisatomi T, et al. Recent advances in semiconductors for photocatalytic and photoelectrochemical water splitting. Chem. Soc. Rev., 2014, 43(22): 7520-7535.</p>
   </li>
-</ol>]]></content><author><name>Guancai Xie</name><email>man.xiegc@gmail.com</email></author><category term="PC-PEC" /><summary type="html"><![CDATA[By definition, the efficiency for any process that converts energy from one form to another is the ratio of the total power output to the total power input. For PEC systems, the solar-to-hydrogen (STH) efficiency is the single value by which all PEC devices can be reliably ranked against one another, which can be directly determined by analysis of the hydrogen formed under solar AM 1.5G illumination in the absence of an applied bias. For a correct STH efficiency measurement, the working electrode (WE) and counter electrode (CE) should be short-circuited, which infers that STH is measured in a 2-electrode system. Besides, one must have both the WE and CE immersed in the same pH solution. In addition, the electrolyte should not contain any sacrificial donors or acceptors.]]></summary></entry><entry><title type="html">Work function of metals</title><link href="http://localhost:4000/2022/12/04/workfunc_metal.html" rel="alternate" type="text/html" title="Work function of metals" /><published>2022-12-04T00:00:00+08:00</published><updated>2022-12-04T00:00:00+08:00</updated><id>http://localhost:4000/2022/12/04/workfunc_metal</id><content type="html" xml:base="http://localhost:4000/2022/12/04/workfunc_metal.html"><![CDATA[<p>The electron work function Φ is a measure of the minimum energy required to extract an electron from the surface of a solid. It is defined more precisely as the energy difference between the state in which an electron has been removed to a distance from the surface of a single crystal face that is large enough that the image force is negligible but small compared to the distance to any other face (typically about 10$^{-4}$ cm) and the state in which the electron is in the bulk solid. In general, Φ differs for each face of a monocrystalline sample.</p>
-
-<p>Because Φ is dependent on the cleanliness of the surface, measurements reported in the literature often cover a considerable range (Refs. 1-4). This table contains selected values for the electron work function of the elements which may be regarded as typical values for a reasonably clean surface. The table contains recommended values from a recent review that includes estimated uncertainties (see Ref. 1 for more details). Those values, marked R in the table, come from analysis of results from different measurement methods. The method of measurement is indicated for each value. The following abbreviations appear:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Abbre.</th>
-      <th>Full name</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">R –</td>
-      <td>Recommended value from Ref. 1</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">TE –</td>
-      <td>Thermionic emission</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">PE –</td>
-      <td>Photoelectric effect</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">FE –</td>
-      <td>Field emission</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">CPD –</td>
-      <td>Contact potential difference</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">polycr –</td>
-      <td>Polycrystalline sample</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">amorp –</td>
-      <td>Amorphous sample</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img src="/images/wiki/metalwf.pdf" width="100%" /></p>
-
-<p>Reference:</p>
-
-<ol>
-  <li>https://hbcp.chemnetbase.com/faces/documents/12_21/12_21_0001.xhtml</li>
-</ol>]]></content><author><name>Guancai Xie</name><email>man.xiegc@gmail.com</email></author><category term="Data" /><summary type="html"><![CDATA[The electron work function Φ is a measure of the minimum energy required to extract an electron from the surface of a solid. It is defined more precisely as the energy difference between the state in which an electron has been removed to a distance from the surface of a single crystal face that is large enough that the image force is negligible but small compared to the distance to any other face (typically about 10$^{-4}$ cm) and the state in which the electron is in the bulk solid. In general, Φ differs for each face of a monocrystalline sample.]]></summary></entry><entry><title type="html">Mott-Schottky analysis in photo(electro)catalytic experiments</title><link href="http://localhost:4000/2022/12/03/mott_schottky.html" rel="alternate" type="text/html" title="Mott-Schottky analysis in photo(electro)catalytic experiments" /><published>2022-12-03T00:00:00+08:00</published><updated>2022-12-03T00:00:00+08:00</updated><id>http://localhost:4000/2022/12/03/mott_schottky</id><content type="html" xml:base="http://localhost:4000/2022/12/03/mott_schottky.html"><![CDATA[<p> Assuming only the space-charge capacitance that varies with the changing electrode
+</ol>]]></content><author><name>Guancai Xie</name><email>man.xiegc@gmail.com</email></author><category term="PC-PEC" /><summary type="html"><![CDATA[By definition, the efficiency for any process that converts energy from one form to another is the ratio of the total power output to the total power input. For PEC systems, the solar-to-hydrogen (STH) efficiency is the single value by which all PEC devices can be reliably ranked against one another, which can be directly determined by analysis of the hydrogen formed under solar AM 1.5G illumination in the absence of an applied bias. For a correct STH efficiency measurement, the working electrode (WE) and counter electrode (CE) should be short-circuited, which infers that STH is measured in a 2-electrode system. Besides, one must have both the WE and CE immersed in the same pH solution. In addition, the electrolyte should not contain any sacrificial donors or acceptors.]]></summary></entry><entry><title type="html">Mott-Schottky analysis in photo(electro)catalytic experiments</title><link href="http://localhost:4000/2022/12/03/mott_schottky.html" rel="alternate" type="text/html" title="Mott-Schottky analysis in photo(electro)catalytic experiments" /><published>2022-12-03T00:00:00+08:00</published><updated>2022-12-03T00:00:00+08:00</updated><id>http://localhost:4000/2022/12/03/mott_schottky</id><content type="html" xml:base="http://localhost:4000/2022/12/03/mott_schottky.html"><![CDATA[<p> Assuming only the space-charge capacitance that varies with the changing electrode
 potential, the reverse-bias dependence of the inverse square capacitance of the space-charge region in the semiconductor is given by the Mott-Schottky relation: <!--more--></p>
 
 \[\frac{1}{C^2}=\frac{2}{A^2\epsilon\epsilon_0 q N_D}(E-E_\textrm{fb}-\frac{kT}{q})\]

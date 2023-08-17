@@ -10,12 +10,12 @@
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
     })();
-    </script><title>Work function of metals - FDI</title>
+    </script><title>Work function - FDI</title>
 
-<meta name="description" content="The electron work function Φ is a measure of the minimum energy required to extract an electron from the surface of a solid. It is defined more precisely as ...">
-<link rel="canonical" href="http://localhost:4000/2022/12/04/workfunc_metal.html"><link rel="alternate" type="application/rss+xml" title="FDI" href="/feed.xml">
+<meta name="description" content="Introduction">
+<link rel="canonical" href="http://localhost:4000/2022/12/05/workfunc.html"><link rel="alternate" type="application/rss+xml" title="FDI" href="/feed.xml">
 <link rel="stylesheet" href="/assets/main.css">
-<link rel="canonical" href="http://localhost:4000/2022/12/04/workfunc_metal.html">
+<link rel="canonical" href="http://localhost:4000/2022/12/05/workfunc.html">
 <link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/favicon.ico">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
@@ -284,17 +284,44 @@
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>Work function of metals</h1></header></div><meta itemprop="headline" content="Work function of metals"><div class="article__info clearfix"><ul class="left-col menu"><li>
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>Work function</h1></header></div><meta itemprop="headline" content="Work function"><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=Data">Data</a>
-            </li></ul><ul class="right-col menu"><li><i class="fas fa-user"></i> <span>Guancai Xie</span></li><li><i class="far fa-calendar-alt"></i> <span>Dec 04, 2022</span>
-            </li></ul></div><meta itemprop="author" content="Guancai Xie"/><meta itemprop="datePublished" content="2022-12-04T00:00:00+08:00">
-    <meta itemprop="keywords" content="Data"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=Basic">Basic</a>
+            </li></ul><ul class="right-col menu"><li><i class="fas fa-user"></i> <span>Guancai Xie</span></li><li><i class="far fa-calendar-alt"></i> <span>Dec 05, 2022</span>
+            </li></ul></div><meta itemprop="author" content="Guancai Xie"/><meta itemprop="datePublished" content="2022-12-05T00:00:00+08:00">
+    <meta itemprop="keywords" content="Data,Basic"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><p>The electron work function Φ is a measure of the minimum energy required to extract an electron from the surface of a solid. It is defined more precisely as the energy difference between the state in which an electron has been removed to a distance from the surface of a single crystal face that is large enough that the image force is negligible but small compared to the distance to any other face (typically about 10$^{-4}$ cm) and the state in which the electron is in the bulk solid. In general, Φ differs for each face of a monocrystalline sample.</p>
+<div class="article__content" itemprop="articleBody"><h3 id="introduction">Introduction</h3>
 
-<p>Because Φ is dependent on the cleanliness of the surface, measurements reported in the literature often cover a considerable range (Refs. 1-4). This table contains selected values for the electron work function of the elements which may be regarded as typical values for a reasonably clean surface. The table contains recommended values from a recent review that includes estimated uncertainties (see Ref. 1 for more details). Those values, marked R in the table, come from analysis of results from different measurement methods. The method of measurement is indicated for each value. The following abbreviations appear:</p>
+<p>In solid-state physics, the <strong>work function</strong> (sometimes spelt <strong>workfunction</strong>, WF) is the minimum thermodynamic work (i.e., energy) needed to remove an electron from a solid to a point in the vacuum immediately outside the solid surface. Here “immediately” means that the final electron position is far from the surface on the atomic scale (the force between the electron and its image charge in the surface can be neglected, many nm), but still too close to the solid to be influenced by ambient electric fields in the vacuum. <u>The work function is not a characteristic of a bulk material, but rather a property of the surface of the material (depending on crystal face and contamination).</u></p>
+
+<p>The work function $W$ for a given surface is defined by the difference</p>
+
+\[W = -e\phi - E_F\]
+
+<p>where $−e$ is the charge of an electron, $\phi$ is the electrostatic potential in the vacuum nearby the surface, and $E_F$ is the Fermi level (electrochemical potential of electrons) inside the material. The term $−e\phi$ is the energy of an electron at rest in the vacuum nearby the surface. Because the Fermi level is the chemical potential of the system, by definition, <u>the work function is equal to the energy difference between the Fermi level and the vacuum level at the surface of the material</u>.</p>
+
+<p>In practice, one directly controls $E_F$ by the voltage applied to the material through electrodes, and the work function is generally a fixed characteristic of the surface material. Consequently, this means that when a voltage is applied to a material, the electrostatic potential $\phi$ produced in the vacuum will be somewhat lower than the applied voltage, the difference depending on the work function of the material surface. Rearranging the above equation, one has</p>
+
+\[\phi = V- \frac{W}{e}\]
+
+<p>where $V = −E_F/e$ is the voltage of the material (as measured by a voltmeter, through an attached electrode), relative to an electrical ground that is defined as having zero Fermi level. The fact that $\phi$ depends on the material surface means that the space between two dissimilar conductors will have a built-in electric field, when those conductors are in total equilibrium with each other (electrically shorted to each other, and with equal temperatures).</p>
+
+<center>
+  <img src="/images/wiki/WF_IE_AE.png" width="60%" />
+  <br />
+  <b>Figure 1</b>. Schematic band diagram for metal and semiconductor
+</center>
+
+<p>Here, one should note that the minimum energy required to extract one electron from either a semiconductor or insulator is not the WF but the ionization energy (IE). The electron affinity (EA), which is the energy released by adding one electron to a material, is a concept similar to the WF but the direction of electron transfer is opposite. For metals, the EA has the same value as the WF (See <strong>Figure 1</strong>).</p>
+
+<h3 id="wf-of-elements">WF of Elements</h3>
+
+<p>Because WF is dependent on the cleanliness of the surface, measurements reported in the literature often cover a considerable range. <strong>Figure 2</strong> contains selected values for the electron work function of the elements which may be regarded as typical values for a reasonably clean surface. Those values, marked R in the table, come from analysis of results from different measurement methods. The method of measurement is indicated for each value. The following abbreviations appear:</p>
 
 <table>
   <thead>
@@ -306,7 +333,7 @@
   <tbody>
     <tr>
       <td style="text-align: left">R –</td>
-      <td>Recommended value from Ref. 1</td>
+      <td>Recommended value</td>
     </tr>
     <tr>
       <td style="text-align: left">TE –</td>
@@ -335,18 +362,243 @@
   </tbody>
 </table>
 
-<p><img src="/images/wiki/metalwf.pdf" width="100%" /></p>
+<center>
+  <img src="/images/wiki/wf_metal.png" width="80%" />
+  <br />
+  <b>Figure 2</b>. Work function of elements
+</center>
 
-<p>Reference:</p>
+<h3 id="wf-of-metal-oxides">WF of Metal Oxides</h3>
 
+<p>The WFs of metal oxides can be difficult to reproduce because there are so many factors that alter an oxide’s work function (WF values for a given material can span over 1 eV). <u>The large variation in reported WF values is because WF represents the sum of electron chemical potential and surface dipole, and it is very sensitive to a number of factors.</u> Fators such as surface roughness, exposed crystal face, radiation exposure,  and adsorbate coverage affect the surface dipole component, whereas electron chemical potential is affected by the chemical identity of a material, the presence of impurities and the stoichiometry of a material.</p>
+
+<p>Although there are many factors that can alter WF, it is possible to gain control over many of these factors to tune WF. Under certain preparation conditions, one can obtain reproducible WF values for a given material. A compilation of WF values for various metal oxides (prepared by <em>in-situ</em> metal oxidation) is provided in <strong>Table 1</strong>. The values in Table 1 represent the average of the most thermodynamically stable crystal faces of each oxide, as the oxides represented here were polycrystalline and prepared by <em>in-situ</em> metal oxidation. The oxides were not exposed to air, so adsorbates likely have a minimal effect on the WF values shown here. Furthermore, as the oxides were prepared via <em>in-situ</em> oxidation (and vacuum annealing in the case of reduced oxides), they should all consist of stable oxygen-terminated surfaces. Consequently, the magnitude of the surface dipole in the WF values listed in Table 1 can be considered similar in magnitude. Thus, the values allow an approximate comparison of relative electron chemical potential values.</p>
+
+<center>
+  <b>Table 1</b>. WF values for in-situ oxidized metal oxides, measured by photoemission spectroscopy. Bandgap values were determined using combined UPS and IPES.
+</center>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Oxide</th>
+      <th style="text-align: center">WF (eV)</th>
+      <th style="text-align: center">IE (eV)</th>
+      <th style="text-align: center">Bandgap (eV)</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Oxide</th>
+      <th>WF (eV)</th>
+      <th>IE (eV)</th>
+      <th style="text-align: center">Bandgap (eV)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">TiO$_2$</td>
+      <td style="text-align: center">5.4±0.2</td>
+      <td style="text-align: center">8.0</td>
+      <td style="text-align: center">3.4</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">V$_2$O$_5$</td>
+      <td>6.8±0.1</td>
+      <td>9.26</td>
+      <td style="text-align: center">2.8</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">MoO$_3$</td>
+      <td style="text-align: center">6.82±0.05</td>
+      <td style="text-align: center">9.4</td>
+      <td style="text-align: center">3.0</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">Cr$_2$O$_3$</td>
+      <td>5.0±0.5</td>
+      <td>6.5</td>
+      <td style="text-align: center">3.2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">CuO</td>
+      <td style="text-align: center">5.9±0.1</td>
+      <td style="text-align: center">5.7</td>
+      <td style="text-align: center">1.4</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">CrO$_{3−x}$</td>
+      <td>6.75±0.2</td>
+      <td>9.0</td>
+      <td style="text-align: center">2.25</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">Cu$_2$O</td>
+      <td style="text-align: center">4.9±0.1</td>
+      <td style="text-align: center">5.5</td>
+      <td style="text-align: center">2.3</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">MoO$_2$</td>
+      <td>5.9±0.2</td>
+      <td>6.0</td>
+      <td style="text-align: center">0</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">NiO</td>
+      <td style="text-align: center">6.3±0.2</td>
+      <td style="text-align: center">6.7</td>
+      <td style="text-align: center">3.2</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">Ta$_2$O$_5$</td>
+      <td>5.2±0.2</td>
+      <td>8.9</td>
+      <td style="text-align: center">3.9</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">WO$_3$</td>
+      <td style="text-align: center">6.8±0.4</td>
+      <td style="text-align: center">9.8</td>
+      <td style="text-align: center">3.4</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">V$_2$O$_3$</td>
+      <td>4.9</td>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">CoO</td>
+      <td style="text-align: center">4.6±0.2</td>
+      <td style="text-align: center">5.2</td>
+      <td style="text-align: center">2.4</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">W$<em>{18}$O$</em>{49}$</td>
+      <td>6.4±0.1</td>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">CO$_3$O$_4$</td>
+      <td style="text-align: center">6.3±0.3</td>
+      <td style="text-align: center">6.4</td>
+      <td style="text-align: center">1.6</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">TiO</td>
+      <td>4.7±0.2</td>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">Ag$_2$O</td>
+      <td style="text-align: center">5.51</td>
+      <td style="text-align: center">6.4</td>
+      <td style="text-align: center">1.3</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<center>
+  <img src="/images/wiki/wf_mo.png" width="60%" />
+  <br />
+  <b>Figure 3</b>. Energy levels of in-situ oxidized metal oxides on an absolute energy scale (determined from direct and inverse photoemission).
+</center>
+
+<ul>
+  <li>Reducing the cation oxidation state of an oxide tends to decrease its work function</li>
+  <li>Removing oxygen in an oxide tends to decrease the work function, whereas adding oxygen tends to increase its work function.</li>
+  <li>Work function of an oxide after the air-saturated (approximately a week later in air) is universally lower than the initially measured value with a difference that scales with the initial work function.</li>
+</ul>
+
+<h3 id="wf-of-other-common-materials">WF of Other Common Materials</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Material</th>
+      <th>WF (eV)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ITO</td>
+      <td>~4.7</td>
+    </tr>
+    <tr>
+      <td>FTO</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td>Graphene</td>
+      <td>~4.4</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Reference:</strong></p>
 <ol>
-  <li>https://hbcp.chemnetbase.com/faces/documents/12_21/12_21_0001.xhtml</li>
+  <li>Wikipedia-work function, <a href="https://en.wikipedia.org/wiki/Work_function">https://en.wikipedia.org/wiki/Work_function</a>.</li>
+  <li><a href="https://hbcp.chemnetbase.com/faces/documents/12_21/12_21_0001.xhtml">ELECTRON WORK FUNCTION OF THE ELEMENTS</a></li>
+  <li>Universal energy-level alignment of molecules on metal oxides, <em>Nature materials</em> 2012, 11.1: 76-81.</li>
+  <li>Universal Work Function of Metal Oxides Exposed to Air, <em>Advanced Materials Interfaces</em> 2019, 6.12: 1802058.</li>
+  <li>Thin-film metal oxides in organic semiconductor devices: their electronic structures, work functions and interfaces, <em>NPG Asia Materials</em> 2013, 5.7: e55-e55.</li>
 </ol>
-</div><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2022-12-04T00:00:00+08:00"><!-- start custom article footer snippet -->
+</div><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2022-12-05T00:00:00+08:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 </footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/2022/12/04/pec_metric.html">Metrics for evaluating PEC performance</a></div><div class="next"><span>NEXT</span><a href="/2022/12/05/workfunc_mo.html">Work function of metal oxides</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/2022/12/04/pec_metric.html">Metrics for evaluating PEC performance</a></div><div class="next"><span>NEXT</span><a href="/2022/12/06/ocp_pv.html">Open-circuit potential and photovoltage in photoelectrodes</a></div></div></div>
 
 </div>
 
@@ -383,7 +635,7 @@
 <section id="footer">
 <div class="container-footer">
   <div class="panel-footer">
-	 <center><p>Last updated on Jan 03, 2023 </p></center> 
+	 <center><p>Last updated on Jun 13, 2023 </p></center> 
      <center><p>&copy 2023 FDI </p></center>
 	</div>
   </div>

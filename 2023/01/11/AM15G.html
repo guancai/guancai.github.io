@@ -10,12 +10,12 @@
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
     })();
-    </script><title>Metrics for evaluating PEC performance - FDI</title>
+    </script><title>The AM1.5G Spectrum - Standard Solar Spctrum - FDI</title>
 
-<meta name="description" content="By definition, the efficiency for any process that converts energy from one form to another is the ratio of the total power output to the total power input. ...">
-<link rel="canonical" href="http://localhost:4000/2022/12/04/pec_metric.html"><link rel="alternate" type="application/rss+xml" title="FDI" href="/feed.xml">
+<meta name="description" content="The solar spectrum changes throughout the day and with location. This is because of a combination of local atmospheric conditions and geometric consideration...">
+<link rel="canonical" href="http://localhost:4000/2023/01/11/AM15G.html"><link rel="alternate" type="application/rss+xml" title="FDI" href="/feed.xml">
 <link rel="stylesheet" href="/assets/main.css">
-<link rel="canonical" href="http://localhost:4000/2022/12/04/pec_metric.html">
+<link rel="canonical" href="http://localhost:4000/2023/01/11/AM15G.html">
 <link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/favicon.ico">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
@@ -284,82 +284,85 @@
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>Metrics for evaluating PEC performance</h1></header></div><meta itemprop="headline" content="Metrics for evaluating PEC performance"><div class="article__info clearfix"><ul class="left-col menu"><li>
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>The AM1.5G Spectrum - Standard Solar Spctrum</h1></header></div><meta itemprop="headline" content="The AM1.5G Spectrum - Standard Solar Spctrum"><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=PC-PEC">PC-PEC</a>
-            </li></ul><ul class="right-col menu"><li><i class="fas fa-user"></i> <span>Guancai Xie</span></li><li><i class="far fa-calendar-alt"></i> <span>Dec 04, 2022</span>
-            </li></ul></div><meta itemprop="author" content="Guancai Xie"/><meta itemprop="datePublished" content="2022-12-04T00:00:00+08:00">
-    <meta itemprop="keywords" content="PC-PEC"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=Basic">Basic</a>
+            </li></ul><ul class="right-col menu"><li><i class="fas fa-user"></i> <span>Guancai Xie</span></li><li><i class="far fa-calendar-alt"></i> <span>Jan 11, 2023</span>
+            </li></ul></div><meta itemprop="author" content="Guancai Xie"/><meta itemprop="datePublished" content="2023-01-11T00:00:00+08:00">
+    <meta itemprop="keywords" content="PC-PEC,Basic"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><p>By definition, the efficiency for any process that converts energy from one form to another is the ratio of the total power output to the total power input. For PEC systems, the <strong>solar-to-hydrogen (STH) efficiency</strong> is the single value by which all PEC devices can be reliably ranked against one another, which can be directly determined by analysis of the hydrogen formed under solar AM 1.5G illumination <u>in the absence of an applied bias</u>. For a correct STH efficiency measurement, the working electrode (WE) and counter electrode (CE) should be short-circuited, which infers that STH is <u>measured in a 2-electrode system</u>. Besides, one must have both the WE and CE immersed in the same pH solution. In addition, <u>the electrolyte should not contain any sacrificial donors or acceptors</u>.</p>
+<div class="article__content" itemprop="articleBody"><p>The solar spectrum changes throughout the day and with location. This is because of a combination of local atmospheric conditions and geometric considerations. The tropics, for example, receive more irradiance on average than the equator due to a lower prevalence of clouds, which reflect much of the incoming solar radiation (see Figure 1). This variation in the solar irradiance would make it extremely difficult to compare the performance of different solar cell technologies measured in different locations, even if you kept the time of day and year kept consistent. For this reason, it is necessary to have ‘standardised’ solar spectra. These spectra function as a universally accepted reference for testing and comparing photovoltaic devices.<!--more--></p>
 
-<p><strong>STH</strong> can be calculated from the product of the rate of hydrogen production $r_\mathrm{H_2}$ (mmol/s) and the gain in Gibbs energy $\Delta G$ (237 kJ mol$^{−1}$).</p>
+<center>
+  <img src="/images/wiki/AM15-1.png" />
+  <br />
+  <b>Figure 1</b>. Map of long-term average of global horizonal irradiation
+</center>
 
-\[\eta_{\mathrm{STH}}=\left[\frac{r_{\mathrm{H}_2} \times \Delta G}{P_{\text {total }} \times S}\right]_{\mathrm{AM} 1.5 \mathrm{G}}\]
-
-<p>where $P_\textrm{total}$ is the energy flux of the sunlight (mW/cm$^2$) and <em>S</em> is the illuminated photoelectrode area (cm$^2$). Or, it can be calculated from the product of voltage, current, and the <strong>faradaic efficiency</strong> for hydrogen evolution $\eta_F$.</p>
-
-\[\eta_{\mathrm{STH}}=\left[\frac{\left|J_{\mathrm{SC}}\right| \times 1.23(\mathrm{~V}) \times \eta_{\mathrm{F}}}{P_{\text {total }}}\right]_{\mathrm{AM} 1.5 \mathrm{G}}\]
-
-<p>where$ J_\mathrm{SC}$ is the short-circuit photocurrent density (mA/cm$^2$) normalized to the illuminated electrode area.</p>
-
-<p>For PEC systems that require an external bias to split water, $\eta_\textrm{STH}$ is zero. However, other metrics are invaluable scientifically and can be employed to provide insight into the functionality and limitations of a PEC device. <u>These metrics including applied-bias photon-to-current efficiency (ABPE), half-cell solar-to-hydrogen efficiency (HC-STH), external quantum efficiency (EQE) = incident photon-to-current efficiency (IPCE), and internal quantum efficiency (IQE) = absorbed photon-to-current efficiency (APCE) are called diagnostic efficiencies.</u></p>
-
-<p><strong>ABPE</strong> measures the net chemical output power (rate of production of free energy of products less the input electrical power) of a system in units of incident solar power, and it represents the fraction of the energy stored in the chemical products that can be assigned to the photovoltage provided by the input solar illumination. It is frequently used for two-electrode measurements when an external voltage is applied to PEC systems as the electrical energy has to be subtracted from the energy gain. As with STH, ABPE measurements also require that both the WE and CE should be immersed in the same pH solution and the electrolyte should not contain any sacrificial donors or acceptors. ABPE is the difference of the power output in chemical fuel and any added electrical input power, divided by the solar power input.</p>
-
-\[\eta_{\mathrm{ABPE}}=\left[\frac{\left|J_{\mathrm{ph}}\right| \times\left(1.23-V_{\mathrm{b}}\right) \times \eta_{\mathrm{F}}}{P_{\text {total }}}\right]_{\mathrm{AM} 1.5 \mathrm{G}}\]
-
-<p>where $J_\textrm{ph}$ (mA/cm$^2$) is the photocurrent density obtained under an applied bias V$_\textrm{b}$ (V).</p>
-
-<p>For a photoanode (photocathode) measured in the three-electrode configuration, the product of the potential gain and the photocurrent could be regarded as the hypothetical <strong>HC-STH</strong>. The gain in potential by PEC water splitting could be approximated by the difference of the potential of a photoanode (photocathode) from the oxygen (hydrogen) equilibrium potential:</p>
-
-\[\eta_{\mathrm{HC}-\mathrm{STH}}=\left\{\begin{array}{l}
-{\left[\frac{\left|J_{\mathrm{ph}}\right| \times\left(E_{\mathrm{O}_2 / \mathrm{H}_2 \mathrm{O}}-E_{\mathrm{b}}\right)}{P_{\text {total }}}\right]_{\mathrm{AM} 1.5 \mathrm{G}}} \\
-{\left[\frac{\left[J_{\mathrm{ph}} \mid \times\left(E_{\mathrm{b}}-E_{\mathrm{H}^{+} / \mathrm{H} 2}\right)\right.}{P_{\text {total }}}\right]_{\mathrm{AM} 1.5 \mathrm{G}}}
-\end{array}\right.\]
-
-<p>where $E_\textrm{b}$ is the applied potential (<em>vs.</em> RHE). $E_\mathrm{O_2/H_2O}$ and $E_\mathrm{H^+/H_2}$ stand for the equilibrium potentials of oxygen evolution (+1.23 V <em>vs.</em> RHE) and hydrogen evolution (0 V <em>vs.</em> RHE), respectively. Provided that $η_F$ of PEC water splitting is unity and that a counter electrode drives the counter reaction without any overpotential, HC-STH is a convenient estimate of maximum ABPE of a half-cell independent of properties of a counter electrode. In reality, however, the potential of a counter electrode is not equilibrated with the potential of the redox reaction on the counter electrode as mentioned in the previous section. Therefore, HC-STH should not be regarded as ABPE.</p>
-
-<p><strong>IPCE</strong> describes the photocurrent collected per incident photon flux as a function of illumination wavelength. The researcher can ideally integrate the IPCE data over the solar spectrum to estimate the maximum possible STH efficiency for that device, but only for the IPCE data collected under zero bias (2-electrode, short-circuit) conditions. IPCE under an applied bias is not considered a valid estimate for STH, but it is still a useful diagnostic tool that gives insight into the PEC material properties because it yields device efficiency in terms of “electrons out per photons in”. IPCE takes into account efficiencies for three fundamental processes involved in PEC: photon absorptance, defined as the fraction of electron-hole pairs generated per incident photon flux ($\eta_{e­^-/h^+}$), charge transport to the solid-liquid interface ($\eta_\textrm{charge separation}$), and the efficiency of interfacial charge transfer ($\eta_\textrm{charge injection}$). This method assumes that the counter electrode is not limiting current flowing through the circuit.</p>
-
-\[\text { IPCE }=\eta_{\mathrm{e}^{-}/\mathrm{h^+}} \times \eta_{\text {charge separation }} \times \eta_{\text {charge injection }}\]
-
-<p>where</p>
-
-\[\eta_{\mathrm{e}^{-} / \mathrm{h}^{+}}=\frac{I_0-I}{I}=1-10^{-A_e}\]
-
-<p>where $A$ is the absorbance of a sample defined as the logarithmic ratio of the measured output light intensity ($I$) versus the initial input light intensity ($I_0$).</p>
-
-<p>IPCE is usually obtained from a chronoamperometry (potentiostatic) measurement. In this system, a bias can be applied between the sample/working electrode versus a counter electrode (2-electrode experiment) or a reference electrode (3-electrode experiment) while measuring the current that arises from subjecting the PEC electrode to monochromatic light at various wavelengths. The difference between the steady-state current under monochromatic illumination and the steady-state background current is the photocurrent that arises due to redox reactions occurring at the surface of the working and counter electrodes.</p>
-
-\[\eta_{\mathrm{IPCE}}=\frac{\text { electrons }}{\text { photons }}=\frac{\left|J_{\mathrm{ph}}\right| \times h c}{P_{\text {mono }} \times \lambda}\]
-
-<p>where $P_\textrm{mono}$ is the calibrated and monochromated illumination power intensity (mW/cm$^2$), and $\lambda$ (nm) is the wavelength at which this illumination power is measured. Besides, the integration of IPCE over the entire solar spectrum can provide an estimation of the maximum possible STH, if (and only if) no applied bias is used in the IPCE measurement.</p>
-
-<p><strong>APCE</strong> describes the photocurrent collected per incident photon absorbed. This value is a particularly useful quantity to measure when studying thin films, because it helps to determine the optimum balance between maximal path length for photon absorption versus minimal effective carrier transport distance within the material.</p>
-
-\[\text { APCE }=\frac{\text { IPCE }}{\eta_{\mathrm{e}^{-} / \mathrm{h}^{+}}}=\eta_{\text {charge separation }} \times \eta_{\text {charge injection }}\]
-
-<p>By combining the equations for determining IPCE and $\eta_{e­^-/h^+}$ experimentally, we can derive APCE as follows:</p>
-
-\[\eta_{\mathrm{APCE}}=\frac{\left|J_{\mathrm{ph}}\right| \times h c}{P_{\text {mono }} \times \lambda \times\left(1-10^{-A}\right)}\]
-
-<p>Reference:</p>
-
+<p>Standard reference spectra are defined to allow the performance comparison of photovoltaic devices from different manufacturers and research laboratories. The first standardised solar spectrum came from the International Commission on Illumination (CIE) in 1972 and represented the solar noon sun at the equator on an equinox ($θ_s = 0°$) with no cloud but a defined volume of water vapour, ozone and aerosols in the atmosphere. They also suggested using an irradiance of 1000 W/m$^2$ (100 mW/cm$^2$) in the 290 nm – 3000 nm wavelength range as a reference intensity. This reference spectrum has been refined over the years. In 1982 the American Society for Testing and Materials (ASTM) published two calculated reference spectra that would become the basis for standardised solar cell testing:</p>
 <ol>
-  <li>
-    <p>Chen Z, et al. Accelerating materials development for photoelectrochemical hydrogen production: Standards for methods, definitions, and reporting protocols. J. Mater. Res., 2010, 25(01): 3-16.</p>
-  </li>
-  <li>
-    <p>Hisatomi T, et al. Recent advances in semiconductors for photocatalytic and photoelectrochemical water splitting. Chem. Soc. Rev., 2014, 43(22): 7520-7535.</p>
-  </li>
+  <li>A direct normal irradiance spectrum (AM1.5D)</li>
+  <li>A global horizontal irradiance spectrum (AM1.5G)</li>
 </ol>
-</div><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2022-12-04T00:00:00+08:00"><!-- start custom article footer snippet -->
+
+<p>The ‘AM1.5’ in both reference spectrums refers to the <strong>air mass</strong> used in calculating the spectra. As the sunlight travels through the atmosphere, chemicals interact with the sunlight and absorb certain wavelengths changing the amount of short-wavelength light reaching the Earth’s surface. Both absorption and scattering depend rather strongly on the path length of sunlight through the atmosphere, i.e. on the sun’s elevation angle above the horizon. <u>Air mass is the path length which light takes through the atmosphere normalized to the shortest possible path length (that is, when the sun is directly overhead). The Air Mass quantifies the reduction in the power of light as it passes through the atmosphere and is absorbed by air and dust.</u>  The air mass is defined as:</p>
+
+\[\mathrm{AM} = \frac{1}{\cos(\theta)}\]
+
+<p>where $\theta$ is the angle (in degrees) from the vertical (zenith angle) (see Figure 2).</p>
+
+<center>
+  <img src="/images/wiki/AM15-2.png" />
+  <br />
+  <b>Figure 2</b>. Schematic of air mass definition
+</center>
+
+<p>The above calculation for air mass assumes that the atmosphere is a flat horizontal layer, but because of the curvature of the atmosphere, the air mass is not quite equal to the atmospheric path length when the sun is close to the horizon. However, it is reasonably accurate for values of zenith angel up to around 75°. At sunrise, the angle of the sun from the vertical position is 90° and the air mass is infinite, whereas the path length clearly is not. An equation which incorporates the curvature of the earth is:</p>
+
+\[\mathrm{AM} = \frac{1}{\cos(\theta)+0.50572(96.07995-\theta)^{-1.6364}}\]
+
+<p><strong>AM0</strong>, meaning “zero atmospheres”, is the spectrum outside the atmosphere. Solar cells used for space power applications, like those on communications satellites, are generally characterized using AM0.</p>
+
+<p><strong>AM1.5</strong>, <u>corresponding to a solar zenith angle of 48.2°, was chosen as the ‘standard’ for terrestrial solar cell testing because it is a good representation of the yearly average irradiance in the temperate latitudes where there are many large population centres.</u>  <strong>The latest AM1.5 standards pertaining to photovoltaic applications are the <a href="/files/data/AM0AM1_5.xls">ASTM G-173</a> and IEC 60904.</strong></p>
+<ul>
+  <li>AM1.5D: The direct radiation of the test plane when sunlight passes through 1.5 times thickness of the atmosphere at an angle of θ=48.2°. It is defined for solar concentrator work. It includes the the direct beam from the sun plus the circumsolar component in a disk 2.5 degrees around the sun. The direct plus circumsolar spectrum has an integrated power density of 900 W/m$^2$.</li>
+  <li>AM1.5G: The global radiation of the test plane when sunlight passes through 1.5 times thickness of the atmosphere at an angle of θ=48.2°. The sum of the direct and diffuse radiation. It is designed for flat plate modules and has an integrated power of 1000 W/m$^2$ (100 mW/cm$^2$).</li>
+</ul>
+
+<center>
+  <img src="/images/wiki/AM15-spectra.png" width="80%" />
+  <br />
+  <b>Figure 3</b>. Reference solar spectral irradiances (ASTM)
+</center>
+
+<p><strong>The difference between AM 1.5G and AM1.5D</strong>: Solar radiation refers to the electromagnetic waves and particle streams emitted by the sun into space. The solar radiation energy received by earth is only one-twentieth billionth of the total solar radiation. Common solar radiation nouns are:</p>
+<ul>
+  <li>Direct: When sunlight passes through the atmosphere, part of it reaches the ground without changing its radiation direction.</li>
+  <li>Diffuse: Another portion of solar radiation that changes direction after being reflected and scattered by the atmosphere.</li>
+  <li>Global: The sum of the direct and diffuse solar radiation reaching the ground after the weakening of the atmosphere.</li>
+  <li>The relationship between Direct/Diffuse/Global is as the formula：</li>
+</ul>
+
+\[\mathrm{Global} = \mathrm{Direct} * \cos(\theta) + \mathrm{Diffuse}\]
+
+<p><strong>Reference:</strong></p>
+<ol>
+  <li>https://en.wikipedia.org/wiki/Air_mass_(solar_energy)</li>
+  <li>https://www.ossila.com/en-jp/pages/standard-solar-spectrum</li>
+  <li>https://www.pveducation.org/pvcdrom/appendices/standard-solar-spectra</li>
+  <li>https://globalsolaratlas.info/download/world</li>
+  <li>https://www.pveducation.org/pvcdrom/properties-of-sunlight/air-mass</li>
+  <li>https://enlitechnology.com/zh-hans/blog/pv/ss-x-solar-simulatior/solar-simulator-01/</li>
+</ol>
+</div><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2023-01-11T00:00:00+08:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 </footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/2022/12/03/mott_schottky.html">Mott-Schottky analysis in photo(electro)catalytic experiments</a></div><div class="next"><span>NEXT</span><a href="/2022/12/05/workfunc.html">Work function</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/2022/12/06/ocp_pv.html">Open-circuit potential and photovoltage in photoelectrodes</a></div><div class="next"><span>NEXT</span><a href="/2023/01/21/Power.html">Creat Scientific Plots Using Matplotlib</a></div></div></div>
 
 </div>
 
